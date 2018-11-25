@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Page Background
+--------------------------------------------------------------*/
+#main-navigation-wrap {
+  /*background-image: url(../../../../images/theme/grunge-line-bg.png);
+  background-repeat: repeat-x;
+  background-position: 50% 100%;*/
+}
+@media screen and (min-width: 37.5em) {
+  #main-navigation-wrap {
+    /*position: absolute;
+    width: 100%;*/
+  }
+  #main-navigation-wrap #site-navigation:before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 22px;
+    height: 2px;
+   /* background-image: url("../../../../images/theme/line-grunge.png");
+    background-repeat: repeat-x;
+    background-position: center;*/
+  }
+}
+body.foliageblog_bg1 {
+  background-image: none !important;
+}
+body.foliageblog_bg2 {
+  background-image: url("../../../../images/theme/background-2.png") !important;
+}
+body.foliageblog_bg3 {
+  background-image: url("../../../../images/theme/background-3.jpg") !important;
+}
+body.foliageblog_bg4 {
+  background-image: url("../../../../images/theme/background-4.jpg") !important;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgNz4iLCIvdGhlbWVzL2l0ZW1zL19idWlsZC9mb2xpYWdlLWJsb2cvc3R5bGUucGFnZV9iYWNrZ3JvdW5kLmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O2dFQUVnRTtBQ0toRTtFQUNFLGlEQUFBO0VBQ0EsNEJBQUE7RUFDQSw4QkFBQTtDREhEO0FDc0JEO0VBY0E7SUEvQkksbUJBQUE7SUFDQSxZQUFBO0dEREQ7RUNHRztJQUNFLG1CQUFBO0lBQ0EsWUFBQTtJQUNBLGVBQUE7SUFDQSxRQUFBO0lBQ0EsU0FBQTtJQUNBLGFBQUE7SUFDQSxZQUFBO0lBQ0EsZ0RBQUE7SUFDQSw0QkFBQTtJQUNBLDRCQUFBO0dEREw7Q0FDRjtBQ0tEO0VBQ0Usa0NBQUE7Q0RIRDtBQ0tEO0VBQ0UsNERBQUE7Q0RIRDtBQ0tEO0VBQ0UsNERBQUE7Q0RIRDtBQ0tEO0VBQ0UsNERBQUE7Q0RIRCIsImZpbGUiOiJ0by5jc3MifQ== */

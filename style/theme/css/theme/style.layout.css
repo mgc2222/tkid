@@ -1,0 +1,229 @@
+#header-content-inner {
+  margin-top: 0;
+}
+/* Line Titles: */
+.dtb-heading-line {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.dtb-heading-line > div h1,
+.dtb-heading-line > div h2,
+.dtb-heading-line > div h3 {
+  display: inline-block;
+  position: relative;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  padding: 10px 16px 9px !important;
+}
+.dtb-heading-line > div h1:before,
+.dtb-heading-line > div h2:before,
+.dtb-heading-line > div h3:before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 4px;
+  right: 100%;
+  top: 50%;
+  width: 1000px;
+}
+.dtb-heading-line > div h1:after,
+.dtb-heading-line > div h2:after,
+.dtb-heading-line > div h3:after {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 4px;
+  left: 100%;
+  top: 50%;
+  width: 1000px;
+}
+.foliageblog_page_option_title_normal .page > header h1 {
+  margin-bottom: 0;
+}
+.foliageblog_page_option_title_show .page > header,
+.blog .entry-header .blog-title {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.foliageblog_page_option_title_show .page > header .entry-title,
+.blog .entry-header .blog-title .entry-title {
+  display: inline-block;
+  position: relative;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  padding: 5px 16px !important;
+}
+.foliageblog_page_option_title_show .page > header .entry-title:before,
+.blog .entry-header .blog-title .entry-title:before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 4px;
+  right: 100%;
+  top: 50%;
+  width: 1000px;
+}
+.foliageblog_page_option_title_show .page > header .entry-title:after,
+.blog .entry-header .blog-title .entry-title:after {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 4px;
+  left: 100%;
+  top: 50%;
+  width: 1000px;
+}
+.archive.foliageblog_page_option_title_show .page-header {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.archive.foliageblog_page_option_title_show .page-header .page-title {
+  display: inline-block;
+  position: relative;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  padding: 5px 16px !important;
+}
+.archive.foliageblog_page_option_title_show .page-header .page-title:before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 4px;
+  right: 100%;
+  top: 50%;
+  width: 1000px;
+}
+.archive.foliageblog_page_option_title_show .page-header .page-title:after {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 4px;
+  left: 100%;
+  top: 50%;
+  width: 1000px;
+}
+.elementor-widget-sidebar .widget .widget-title-wrap,
+aside.widget-area .widget .widget-title-wrap {
+  text-align: center;
+  position: relative;
+  margin: 0 -15px 10px;
+}
+.elementor-widget-sidebar .widget .widget-title-wrap .widget-title,
+aside.widget-area .widget .widget-title-wrap .widget-title {
+  display: inline-block;
+  position: relative;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  padding: 5px 16px;
+}
+.elementor-widget-sidebar .widget .widget-title-wrap .widget-title:before,
+aside.widget-area .widget .widget-title-wrap .widget-title:before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 4px;
+  right: 100%;
+  top: 50%;
+  width: 1000px;
+}
+.elementor-widget-sidebar .widget .widget-title-wrap .widget-title:after,
+aside.widget-area .widget .widget-title-wrap .widget-title:after {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 4px;
+  left: 100%;
+  top: 50%;
+  width: 1000px;
+}
+.foliageblog-slider-caption {
+  display: none;
+}
+@media screen and (min-width: 37.5em) {
+  .foliageblog-slider-caption {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 45px 20px 20px;
+    background: rgba(255, 255, 255, 0.63);
+    color: #000;
+    text-align: center;
+  }
+  .foliageblog-slider-pretty .foliageblog-slider-caption {
+    background: url("../../../../images/theme/banner-over-white-80.png") repeat-x center top;
+  }
+  .foliageblog-slider-pretty .foliageblog-slider-caption > div {
+    position: relative;
+    overflow: hidden;
+  }
+  .foliageblog-slider-pretty .foliageblog-slider-caption > div > div {
+    display: inline-block;
+    position: relative;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    padding: 5px 16px;
+  }
+  .foliageblog-slider-pretty .foliageblog-slider-caption > div > div:before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    height: 4px;
+    right: 100%;
+    top: 50%;
+    width: 1000px;
+  }
+  .foliageblog-slider-pretty .foliageblog-slider-caption > div > div:after {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    height: 4px;
+    left: 100%;
+    top: 50%;
+    width: 1000px;
+  }
+  .foliageblog-slider-pretty .foliageblog-slider-caption > div > div h3 {
+    margin: 0;
+  }
+  .foliageblog-slider-pretty .foliageblog-slider-caption > div > div div {
+    font-size: 20px;
+  }
+}
+/** slider decoration **/
+.foliageblog-slider-pretty .slick-slide {
+  position: relative;
+}
+.foliageblog-slider-pretty .slick-slide .slick-slide-inner:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+footer#footer {
+  padding: 0 0 20px;
+}
+
+.home .elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
+  padding: 0;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi90aGVtZXMvaXRlbXMvX2J1aWxkL2ZvbGlhZ2UtYmxvZy9zdHlsZS5sYXlvdXQubGVzcyIsIjxpbnB1dCBjc3MgMjM+Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBQTtDQ0NEO0FBQ0Qsa0JBQWtCO0FER2xCO0VBQ0UsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0NDREQ7QURGRDs7O0VBS0ksc0JBQUE7RUFDQSxtQkFBQTtFQUNBLCtCQUFBO0VBQ0EsZ0NBQUE7RUFDQSxrQ0FBQTtDQ0VIO0FEREc7OztFQUNFLFlBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsaUNBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFNBQUE7RUFDQSxjQUFBO0NDS0w7QURIRzs7O0VBQ0UsWUFBQTtFQUNBLG1CQUFBO0VBQ0EsOEJBQUE7RUFDQSxpQ0FBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0VBQ0EsU0FBQTtFQUNBLGNBQUE7Q0NPTDtBREhEO0VBQ0UsaUJBQUE7Q0NLRDtBREhEOztFQUVFLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtDQ0tEO0FEVEQ7O0VBTUksc0JBQUE7RUFDQSxtQkFBQTtFQUNBLCtCQUFBO0VBQ0EsZ0NBQUE7RUFDQSw2QkFBQTtDQ09IO0FETkc7O0VBQ0UsWUFBQTtFQUNBLG1CQUFBO0VBQ0EsOEJBQUE7RUFDQSxpQ0FBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsU0FBQTtFQUNBLGNBQUE7Q0NTTDtBRFBHOztFQUNFLFlBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsaUNBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLFNBQUE7RUFDQSxjQUFBO0NDVUw7QURORDtFQUNFLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtDQ1FEO0FEWEQ7RUFLSSxzQkFBQTtFQUNBLG1CQUFBO0VBQ0EsK0JBQUE7RUFDQSxnQ0FBQTtFQUNBLDZCQUFBO0NDU0g7QURSRztFQUNFLFlBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsaUNBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFNBQUE7RUFDQSxjQUFBO0NDVUw7QURSRztFQUNFLFlBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsaUNBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLFNBQUE7RUFDQSxjQUFBO0NDVUw7QURORDs7RUFJTSxtQkFBQTtFQUNBLG1CQUFBO0VBQ0EscUJBQUE7Q0NNTDtBRFpEOztFQVFRLHNCQUFBO0VBQ0EsbUJBQUE7RUFDQSwrQkFBQTtFQUNBLGdDQUFBO0VBQ0Esa0JBQUE7Q0NRUDtBRFBPOztFQUNFLFlBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsaUNBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFNBQUE7RUFDQSxjQUFBO0NDVVQ7QURSTzs7RUFDRSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSw4QkFBQTtFQUNBLGlDQUFBO0VBQ0EsWUFBQTtFQUNBLFdBQUE7RUFDQSxTQUFBO0VBQ0EsY0FBQTtDQ1dUO0FETEQ7RUFDRSxjQUFBO0NDT0Q7QUR1REQ7RUExREU7SUFDRSxtQkFBQTtJQUNBLGVBQUE7SUFDQSxZQUFBO0lBQ0EsUUFBQTtJQUNBLFNBQUE7SUFDQSx3QkFBQTtJQUNBLHNDQUFBO0lBQ0EsWUFBQTtJQUNBLG1CQUFBO0dDTUQ7RURKRDtJQUNFLHVFQUFBO0dDTUQ7RURQRDtJQUdJLG1CQUFBO0lBQ0EsaUJBQUE7R0NPSDtFRFhEO0lBTU0sc0JBQUE7SUFDQSxtQkFBQTtJQUNBLCtCQUFBO0lBQ0EsZ0NBQUE7SUFDQSxrQkFBQTtHQ1FMO0VEUEs7SUFDRSxZQUFBO0lBQ0EsbUJBQUE7SUFDQSw4QkFBQTtJQUNBLGlDQUFBO0lBQ0EsWUFBQTtJQUNBLFlBQUE7SUFDQSxTQUFBO0lBQ0EsY0FBQTtHQ1NQO0VEUEs7SUFDRSxZQUFBO0lBQ0EsbUJBQUE7SUFDQSw4QkFBQTtJQUNBLGlDQUFBO0lBQ0EsWUFBQTtJQUNBLFdBQUE7SUFDQSxTQUFBO0lBQ0EsY0FBQTtHQ1NQO0VEdENEO0lBZ0NRLFVBQUE7R0NTUDtFRHpDRDtJQW1DUSxnQkFBQTtHQ1NQO0NBQ0Y7QUFDRCx5QkFBeUI7QURDekI7RUFDRSxtQkFBQTtDQ0NEO0FEQ0c7RUFDRSxZQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0VBQ0EsNENBQUE7RUFDQSw2QkFBQTtFQUNBLHFCQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7RUFDQSxPQUFBO0VBQ0EsVUFBQTtDQ0NMO0FES0Q7RUFDRSxrQkFBQTtDQ0hEIiwiZmlsZSI6InRvLmNzcyJ9 */

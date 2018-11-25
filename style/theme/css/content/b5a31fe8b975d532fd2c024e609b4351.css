@@ -1,0 +1,221 @@
+
+
+                        .main-navigation a {
+                color: #165090 !important;
+            }
+
+                        input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea{
+                background-color: #f7f7f7;
+            }
+                        .main-navigation .current-page-parent > a,
+            .main-navigation .current_page_parent > a,
+            .main-navigation .current_page_ancestor > a,
+            .main-navigation .current_page_item > a,
+            .main-navigation .current-menu-item > a,
+            .main-navigation a:hover{
+                color: #11bfab !important;
+                opacity: 1;
+            }
+
+            .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,
+            .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+                color: #11bfab;
+                background-color: #f7f7f7;
+            }
+
+            
+        
+
+
+			                .site-header {
+                    background-image: url(../../../../images/theme/header1-bottom-lg.png);
+                    background-image: url(../../../../images/theme/header1-bottom-lg.png), linear-gradient(to top, #f2fdff, rgba(255, 255, 255, 0));
+                }
+                
+							.site-header .site-branding .site-title {
+					display: none !important;
+				}
+					
+
+a:hover {color: #11bfab; }
+
+.main-navigation {color: #165090; }
+
+.main-navigation {font-family: 'Give You Glory'; }
+
+.main-navigation {font-size: 22px; }
+
+.main-navigation {font-style: normal; }
+
+.main-navigation {font-weight: 300; }
+
+.site-title div a {color: #165090; }
+
+.site-title div a {font-family: 'Cedarville Cursive'; }
+
+.site-title div a {font-size: 90px; }
+
+.site-title div a {font-style: normal; }
+
+.site-title div a {font-weight: 300; }
+
+.site-title .site-description {color: #11bfab; }
+
+.site-title .site-description {font-family: 'Waiting for the Sunrise'; }
+
+.site-title .site-description {font-size: 22px; }
+
+.site-title .site-description {font-style: normal; }
+
+.site-title .site-description {font-weight: 300; }
+
+.elementor-button, .elementor-button.elementor-size-large, body .map_buttons a, .dtbaker_button, .blog_button a, body .blog_button a:link, body .blog_button a:visited, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .slick-next, .slick-next:focus, .slick-prev, .slick-prev:focus, button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a,
+.woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a, .woocommerce ul.products li.product a.button, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button {background-color: #f7f7f7; }
+
+.elementor-button, .elementor-button.elementor-size-large, body .map_buttons a, .dtbaker_button, .blog_button a, body .blog_button a:link, body .blog_button a:visited, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .slick-next, .slick-next:focus, .slick-prev, .slick-prev:focus, button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a,
+.woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a, .woocommerce ul.products li.product a.button, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button {color: #000000; }
+
+.elementor-button, .elementor-button.elementor-size-large, body .map_buttons a, .dtbaker_button, .blog_button a, body .blog_button a:link, body .blog_button a:visited, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .slick-next, .slick-next:focus, .slick-prev, .slick-prev:focus, button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a,
+.woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a, .woocommerce ul.products li.product a.button, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button {font-weight: 100; }
+
+.elementor-button, .elementor-button.elementor-size-large, body .map_buttons a, .dtbaker_button, .blog_button a, body .blog_button a:link, body .blog_button a:visited, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .slick-next, .slick-next:focus, .slick-prev, .slick-prev:focus, button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a,
+.woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a, .woocommerce ul.products li.product a.button, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button {padding-top: 14px; }
+
+.elementor-button, .elementor-button.elementor-size-large, body .map_buttons a, .dtbaker_button, .blog_button a, body .blog_button a:link, body .blog_button a:visited, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .slick-next, .slick-next:focus, .slick-prev, .slick-prev:focus, button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a,
+.woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a, .woocommerce ul.products li.product a.button, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button {padding-bottom: 14px; }
+
+.elementor-button, .elementor-button.elementor-size-large, body .map_buttons a, .dtbaker_button, .blog_button a, body .blog_button a:link, body .blog_button a:visited, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .slick-next, .slick-next:focus, .slick-prev, .slick-prev:focus, button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a,
+.woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a, .woocommerce ul.products li.product a.button, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button {padding-left: 17px; }
+
+.elementor-button, .elementor-button.elementor-size-large, body .map_buttons a, .dtbaker_button, .blog_button a, body .blog_button a:link, body .blog_button a:visited, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .slick-next, .slick-next:focus, .slick-prev, .slick-prev:focus, button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a,
+.woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a, .woocommerce ul.products li.product a.button, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button {padding-right: 17px; }
+
+.elementor-button, .elementor-button.elementor-size-large, body .map_buttons a, .dtbaker_button, .blog_button a, body .blog_button a:link, body .blog_button a:visited, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .slick-next, .slick-next:focus, .slick-prev, .slick-prev:focus, button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a,
+.woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a, .woocommerce ul.products li.product a.button, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button {text-transform: uppercase; }
+
+.elementor-button:hover, .elementor-button.elementor-size-large:hover, body .map_buttons a:hover, .dtbaker_button:hover, body .blog_button a:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a:hover, .woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a:hover, .woocommerce ul.products li.product a.button:hover, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button:hover, .slick-next:hover, .slick-prev:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {background-color: #cee6e5; }
+
+.elementor-button:hover, .elementor-button.elementor-size-large:hover, body .map_buttons a:hover, .dtbaker_button:hover, body .blog_button a:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a:hover, .woocommerce .widget_shopping_cart .widget_shopping_cart_content p.buttons a:hover, .woocommerce ul.products li.product a.button:hover, .dtbaker_woocommerce_product_slider .dtbaker_woocommerce_product > div a.button:hover, .slick-next:hover, .slick-prev:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {color: #000000; }
+
+.blog-title .entry-meta {color: #000000; }
+
+h6, .elementor-widget-heading h6.elementor-heading-title {font-family: 'Open Sans'; }
+
+h6, .elementor-widget-heading h6.elementor-heading-title {font-size: 16px; }
+
+h6, .elementor-widget-heading h6.elementor-heading-title {font-style: normal; }
+
+h6, .elementor-widget-heading h6.elementor-heading-title {font-weight: 400; }
+
+h6, .elementor-widget-heading h6.elementor-heading-title {padding-top: 10px; }
+
+h6, .elementor-widget-heading h6.elementor-heading-title {padding-bottom: 10px; }
+
+h5, .elementor-widget-heading h5.elementor-heading-title {font-family: 'Open Sans'; }
+
+h5, .elementor-widget-heading h5.elementor-heading-title {font-size: 18px; }
+
+h5, .elementor-widget-heading h5.elementor-heading-title {font-style: normal; }
+
+h5, .elementor-widget-heading h5.elementor-heading-title {font-weight: 400; }
+
+h5, .elementor-widget-heading h5.elementor-heading-title {padding-top: 10px; }
+
+h5, .elementor-widget-heading h5.elementor-heading-title {padding-bottom: 10px; }
+
+h4, .elementor-widget-heading h4.elementor-heading-title {font-family: 'Open Sans'; }
+
+h4, .elementor-widget-heading h4.elementor-heading-title {font-size: 20px; }
+
+h4, .elementor-widget-heading h4.elementor-heading-title {font-style: normal; }
+
+h4, .elementor-widget-heading h4.elementor-heading-title {font-weight: 400; }
+
+h4, .elementor-widget-heading h4.elementor-heading-title {padding-top: 10px; }
+
+h4, .elementor-widget-heading h4.elementor-heading-title {padding-bottom: 10px; }
+
+h3, .elementor-widget-heading h3.elementor-heading-title {font-family: 'Open Sans'; }
+
+h3, .elementor-widget-heading h3.elementor-heading-title {font-size: 24px; }
+
+h3, .elementor-widget-heading h3.elementor-heading-title {font-style: normal; }
+
+h3, .elementor-widget-heading h3.elementor-heading-title {font-weight: 400; }
+
+h3, .elementor-widget-heading h3.elementor-heading-title {padding-top: 10px; }
+
+h3, .elementor-widget-heading h3.elementor-heading-title {padding-bottom: 10px; }
+
+h2, .elementor-widget-heading h2.elementor-heading-title {font-family: 'Open Sans'; }
+
+h2, .elementor-widget-heading h2.elementor-heading-title {font-size: 27px; }
+
+h2, .elementor-widget-heading h2.elementor-heading-title {font-style: normal; }
+
+h2, .elementor-widget-heading h2.elementor-heading-title {font-weight: 400; }
+
+h2, .elementor-widget-heading h2.elementor-heading-title {padding-top: 10px; }
+
+h2, .elementor-widget-heading h2.elementor-heading-title {padding-bottom: 10px; }
+
+h1 {font-family: 'Open Sans'; }
+
+h1 {font-size: 30px; }
+
+h1 {font-style: normal; }
+
+h1 {font-weight: 400; }
+
+h1 {padding-top: 10px; }
+
+h1 {padding-bottom: 10px; }
+
+.blog .entry-title, .page > header > .entry-title, #content > header > .entry-title, .page-title, .elementor-widget-heading h1.elementor-heading-title, .elementor-widget-heading  h2.elementor-heading-title, .blog > header.entry-header h1 {color: #11bfab; }
+
+.blog .entry-title, .page > header > .entry-title, #content > header > .entry-title, .page-title, .elementor-widget-heading h1.elementor-heading-title, .elementor-widget-heading  h2.elementor-heading-title, .blog > header.entry-header h1 {font-family: 'Give You Glory'; }
+
+.blog .entry-title, .page > header > .entry-title, #content > header > .entry-title, .page-title, .elementor-widget-heading h1.elementor-heading-title, .elementor-widget-heading  h2.elementor-heading-title, .blog > header.entry-header h1 {font-size: 30px; }
+
+.blog .entry-title, .page > header > .entry-title, #content > header > .entry-title, .page-title, .elementor-widget-heading h1.elementor-heading-title, .elementor-widget-heading  h2.elementor-heading-title, .blog > header.entry-header h1 {font-style: normal; }
+
+.blog .entry-title, .page > header > .entry-title, #content > header > .entry-title, .page-title, .elementor-widget-heading h1.elementor-heading-title, .elementor-widget-heading  h2.elementor-heading-title, .blog > header.entry-header h1 {font-weight: 400; }
+
+.blog .entry-title, .page > header > .entry-title, #content > header > .entry-title, .page-title, .elementor-widget-heading h1.elementor-heading-title, .elementor-widget-heading  h2.elementor-heading-title, .blog > header.entry-header h1 {padding-top: 10px; }
+
+.blog .entry-title, .page > header > .entry-title, #content > header > .entry-title, .page-title, .elementor-widget-heading h1.elementor-heading-title, .elementor-widget-heading  h2.elementor-heading-title, .blog > header.entry-header h1 {padding-bottom: 10px; }
+
+.foliageblog-slider-caption h3 {color: #000000; }
+
+.foliageblog-slider-caption h3 {font-family: 'Give You Glory'; }
+
+.foliageblog-slider-caption h3 {font-size: 40px; }
+
+.foliageblog-slider-caption h3 {font-style: normal; }
+
+.foliageblog-slider-caption h3 {font-weight: 400; }
+
+.foliageblog-slider-caption h3 {padding-bottom: 10px; }
+
+.widget-title {color: #11bfab; }
+
+.widget-title {font-family: 'Give You Glory'; }
+
+.widget-title {font-size: 30px; }
+
+.widget-title {font-style: normal; }
+
+.widget-title {font-weight: 400; }
+
+.widget-title {padding-top: 10px; }
+
+.widget-title {padding-bottom: 10px; }
+
+body {color: #333333; }
+
+body {font-family: 'Open Sans'; }
+
+body {font-size: 16px; }
+
+body {font-weight: 300; }
+

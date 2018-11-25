@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+# Contact Form 7
+--------------------------------------------------------------*/
+.cf7-grid * {
+  box-sizing: border-box;
+}
+.cf7-grid-col {
+  width: 50%;
+  float: left;
+  padding-right: 9.8%;
+}
+.cf7-grid-col:nth-child(2) {
+  padding-right: 0;
+}
+div.wpcf7 input,
+div.wpcf7 textarea {
+  margin-bottom: 15px;
+}
+div.wpcf7 textarea {
+  height: 180px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgMjA+IiwiL3RoZW1lcy9pdGVtcy9fYnVpbGQvZm9saWFnZS1ibG9nL3N0eWxlLmNmNy5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztnRUFFZ0U7QUNFaEU7RUFDRSx1QkFBQTtDREFEO0FDR0Q7RUFDRSxXQUFBO0VBQ0EsWUFBQTtFQUNBLG9CQUFBO0NEREQ7QUNFQztFQUNFLGlCQUFBO0NEQUg7QUNJRDs7RUFDRSxvQkFBQTtDREREO0FDSUQ7RUFDRSxjQUFBO0NERkQiLCJmaWxlIjoidG8uY3NzIn0= */

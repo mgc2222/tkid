@@ -1,0 +1,14 @@
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgMTc+IiwiL3RoZW1lcy9pdGVtcy9fYnVpbGQvZm9saWFnZS1ibG9nL3N0eWxlLmluZmluaXRlX3Njcm9sbC5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztnRUFFZ0U7QUFDaEUsNEVBQTRFO0FDQzVFOztFREVFLDBDQUEwQztFQ0ExQyxjQUFBO0NERUQ7QUFDRCx5SEFBeUg7QUNDekg7RUFDRSxlQUFBO0NEQ0QiLCJmaWxlIjoidG8uY3NzIn0= */

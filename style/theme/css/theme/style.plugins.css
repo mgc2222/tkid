@@ -1,0 +1,225 @@
+/*--------------------------------------------------------------
+# Plugin CSS
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Elementor Tweaks
+--------------------------------------------------------------*/
+body.elementor-page .entry-content {
+  margin: -10px -10px 0;
+}
+body.elementor-page.foliageblog_page_option_width_full .entry-content {
+  margin: 0;
+}
+.elementor-element .elementor-icon-box-content .elementor-icon-box-title a {
+  color: inherit;
+}
+.elementor-image-gallery figure figcaption {
+  background-color: #fdf5f5;
+  padding: 5px;
+}
+.elementor-widget-heading:not(:last-child) {
+  margin-bottom: 0;
+}
+.elementor-widget-container {
+  padding-top: 1px;
+  margin-top: -1px;
+}
+.elementor-editor-active .elementor-widget-container {
+  min-height: 50px;
+}
+.elementor-widget-icon-box.elementor-view-default.elementor-position-left .elementor-widget-container {
+  display: inline-block;
+}
+/*--------------------------------------------------------------
+  ## Instagram Widgets
+  --------------------------------------------------------------*/
+ul.instagram-pics {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+ul.instagram-pics li {
+  display: inline-block;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-height: 80px;
+  width: 33%;
+}
+ul.instagram-pics li a {
+  border: 0 !important;
+}
+ul.instagram-pics li img {
+  max-width: 100%;
+  height: auto;
+}
+.null-instagram-feed p {
+  display: none;
+}
+/*--------------------------------------------------------------
+## Social Icons Widget
+--------------------------------------------------------------*/
+.dtbaker-social-icons-widget ul {
+  text-align: center;
+}
+.dtbaker-social-icons-widget ul li.dtbaker-social_icons-list__item {
+  text-align: center;
+}
+.dtbaker-social-icons-widget ul li.dtbaker-social_icons-list__item a {
+  border: 0 !important;
+}
+.dtbaker-social-icons-widget ul li.dtbaker-social_icons-list__item i {
+  margin: 2px;
+}
+.dtbaker-social-icons-widget ul li.dtbaker-social_icons-list__item i a {
+  border: 0;
+  padding: 4px 1px;
+}
+/*--------------------------------------------------------------
+## Contact Form 7
+--------------------------------------------------------------*/
+div.wpcf7 {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8em;
+}
+div.wpcf7 p {
+  line-height: 0.8em;
+}
+div.wpcf7 input.wpcf7-text,
+div.wpcf7 textarea {
+  display: inline-block;
+  font-size: 1em;
+}
+div.wpcf7 input,
+div.wpcf7 textarea {
+  max-width: 100%;
+}
+div.wpcf7 textarea {
+  height: 100px;
+}
+div.wpcf7-response-output {
+  margin: 2em 0.5em 1em;
+  padding: 15px;
+  border: 1px solid #FBEED5;
+  border-radius: 3px;
+}
+div.wpcf7-mail-sent-ok {
+  background: #DFF0D8;
+  color: #468847;
+}
+div.wpcf7-mail-sent-ng {
+  background: #F2DEDE;
+  color: #B94A48;
+}
+div.wpcf7-spam-blocked {
+  background: #F2DEDE;
+  color: #B94A48;
+}
+div.wpcf7-validation-errors {
+  background: #FCF8E3;
+  color: #C09853;
+}
+span.wpcf7-form-control-wrap {
+  position: relative;
+}
+span.wpcf7-not-valid-tip {
+  color: #B94A48;
+  display: block;
+  font-size: 1em;
+  left: 0;
+  margin: 5px 0 10px;
+  padding: 0;
+  position: relative;
+  top: 0;
+  z-index: 100;
+}
+span.wpcf7-not-valid-tip-no-ajax {
+  color: #FF0000;
+  display: block;
+  font-size: 1em;
+}
+span.wpcf7-list-item {
+  display: block;
+  margin-left: 0.5em;
+  width: auto;
+}
+.wpcf7-display-none {
+  display: none;
+}
+div.wpcf7 img.ajax-loader {
+  border: medium none;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+div.wpcf7 .watermark {
+  color: #888888;
+}
+div.wpcf7 input.wpcf7-not-valid,
+div.wpcf7 textarea.wpcf7-not-valid {
+  border: 1px solid #B94A48;
+}
+div.wpcf7 input.wpcf7-submit {
+  cursor: pointer;
+}
+#footer div.wpcf7 input.wpcf7-submit {
+  padding: 10px 20px;
+}
+div.wpcf7 label {
+  cursor: pointer;
+  width: auto;
+  display: block;
+}
+div.wpcf7 .screen-reader-response {
+  border: 0 none;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.elementor-image-carousel {
+  max-height: 300px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-animation: fadeInFromNone 0.5s ease-out;
+          animation: fadeInFromNone 0.5s ease-out;
+}
+.elementor-image-carousel.slick-initialized {
+  max-height: 100%;
+  overflow: visible;
+  opacity: 1;
+}
+.dtb-image-size-foliageblog_gallery_rounded figure img {
+  border-radius: 50%;
+}
+/*--------------------------------------------------------------
+## Google Map
+--------------------------------------------------------------*/
+.map_buttons {
+  text-align: center;
+  padding: 20px 0;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgMTk+IiwiL3RoZW1lcy9pdGVtcy9fYnVpbGQvZm9saWFnZS1ibG9nL3N0eWxlLnBsdWdpbnMubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Z0VBRWdFO0FBQ2hFOztnRUFFZ0U7QUNFaEU7RUFDRSxzQkFBQTtDREFEO0FDRUQ7RUFDRSxVQUFBO0NEQUQ7QUNJRDtFQUNFLGVBQUE7Q0RGRDtBQ0lEO0VBQ0UsMEJBQUE7RUFDQSxhQUFBO0NERkQ7QUNJRDtFQUNFLGlCQUFBO0NERkQ7QUNJRDtFQUNFLGlCQUFBO0VBQ0EsaUJBQUE7Q0RGRDtBQ0tEO0VBQ0UsaUJBQUE7Q0RIRDtBQ09EO0VBQ0Usc0JBQUE7Q0RMRDtBQUNEOztrRUFFa0U7QUNRbEU7RUFDRSxzQkFBQTtFQUFBLHFCQUFBO0VBQUEsY0FBQTtFQUNBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLG9CQUFBO1VBQUEsZ0JBQUE7Q0RORDtBQ0dEO0VBS0ksc0JBQUE7RUFDQSxxQkFBQTtNQUFBLHFCQUFBO1VBQUEsYUFBQTtFQUNBLGlCQUFBO0VBQ0EsV0FBQTtDRExIO0FDSEQ7RUFVTSxxQkFBQTtDREpMO0FDTkQ7RUFhTSxnQkFBQTtFQUNBLGFBQUE7Q0RKTDtBQ1NEO0VBRUksY0FBQTtDRFJIO0FBQ0Q7O2dFQUVnRTtBQ1loRTtFQUdJLG1CQUFBO0NEWkg7QUNTRDtFQUtNLG1CQUFBO0NEWEw7QUNNRDtFQU9RLHFCQUFBO0NEVlA7QUNHRDtFQVlRLFlBQUE7Q0RaUDtBQ0FEO0VBY1UsVUFBQTtFQUNBLGlCQUFBO0NEWFQ7QUFDRDs7Z0VBRWdFO0FDa0JoRTtFQUNFLFVBQUE7RUFDQSxXQUFBO0VBQ0EsbUJBQUE7Q0RoQkQ7QUNhRDtFQUtJLG1CQUFBO0NEZkg7QUNtQkQ7O0VBQ0Usc0JBQUE7RUFDQSxlQUFBO0NEaEJEO0FDbUJEOztFQUNFLGdCQUFBO0NEaEJEO0FDbUJEO0VBQ0UsY0FBQTtDRGpCRDtBQ29CRDtFQUNFLHNCQUFBO0VBQ0EsY0FBQTtFQUNBLDBCQUFBO0VBQ0EsbUJBQUE7Q0RsQkQ7QUNxQkQ7RUFDRSxvQkFBQTtFQUNBLGVBQUE7Q0RuQkQ7QUNzQkQ7RUFDRSxvQkFBQTtFQUNBLGVBQUE7Q0RwQkQ7QUN1QkQ7RUFDRSxvQkFBQTtFQUNBLGVBQUE7Q0RyQkQ7QUN3QkQ7RUFDRSxvQkFBQTtFQUNBLGVBQUE7Q0R0QkQ7QUN5QkQ7RUFDRSxtQkFBQTtDRHZCRDtBQzBCRDtFQUNFLGVBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtFQUNBLFFBQUE7RUFDQSxtQkFBQTtFQUNBLFdBQUE7RUFDQSxtQkFBQTtFQUNBLE9BQUE7RUFDQSxhQUFBO0NEeEJEO0FDMkJEO0VBQ0UsZUFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0NEekJEO0FDNEJEO0VBQ0UsZUFBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtDRDFCRDtBQzZCRDtFQUNFLGNBQUE7Q0QzQkQ7QUM4QkQ7RUFDRSxvQkFBQTtFQUNBLGlCQUFBO0VBQ0EsdUJBQUE7Q0Q1QkQ7QUMrQkQ7RUFDRSxlQUFBO0NEN0JEO0FDZ0NEOztFQUNFLDBCQUFBO0NEN0JEO0FDZ0NEO0VBQ0UsZ0JBQUE7Q0Q5QkQ7QUMrQkM7RUFDRSxtQkFBQTtDRDdCSDtBQ2lDRDtFQUNFLGdCQUFBO0VBQ0EsWUFBQTtFQUNBLGVBQUE7Q0QvQkQ7QUNrQ0Q7RUFDRSxlQUFBO0VBQ0EsK0JBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLGlCQUFBO0VBQ0EsV0FBQTtFQUNBLG1CQUFBO0VBQ0EsV0FBQTtDRGhDRDtBQ21DRDtFQUNFO0lBQ0UsV0FBQTtHRGpDRDtFQ21DRDtJQUNFLFdBQUE7R0RqQ0Q7Q0FDRjtBQzJCRDtFQUNFO0lBQ0UsV0FBQTtHRGpDRDtFQ21DRDtJQUNFLFdBQUE7R0RqQ0Q7Q0FDRjtBQ3FDRDtFQUNFLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxXQUFBO0VBQ0EsZ0RBQUE7VUFBQSx3Q0FBQTtDRG5DRDtBQ3FDRDtFQUNFLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0NEbkNEO0FDNENEO0VBR00sbUJBQUE7Q0Q1Q0w7QUFDRDs7Z0VBRWdFO0FDbURoRTtFQUNFLG1CQUFBO0VBQ0EsZ0JBQUE7Q0RqREQiLCJmaWxlIjoidG8uY3NzIn0= */

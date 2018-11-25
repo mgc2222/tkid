@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+.wp-caption-text {
+  text-align: center;
+}
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em;
+}
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+  margin: 1em 0;
+}
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+.gallery-caption {
+  display: block;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgMTg+IiwiL3RoZW1lcy9pdGVtcy9fYnVpbGQvZm9saWFnZS1ibG9nL3N0eWxlLm1lZGlhLmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O2dFQUVnRTtBQ0NoRTs7O0VBR0UsYUFBQTtFQUNBLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLFdBQUE7Q0RDRDtBQUNELHdEQUF3RDtBQ0V4RDs7O0VBR0UsZ0JBQUE7Q0RBRDtBQUNEOztnRUFFZ0U7QUNHaEU7RUFDRSxxQkFBQTtFQUNBLGdCQUFBO0NEREQ7QUNJRDtFQUNFLGVBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0NERkQ7QUNLRDtFQUNFLG1CQUFBO0NESEQ7QUNNRDtFQUNFLG1CQUFBO0NESkQ7QUFDRDs7Z0VBRWdFO0FDT2hFO0VBQ0UscUJBQUE7Q0RMRDtBQ1FEO0VBQ0Usc0JBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7Q0RORDtBQ1NEO0VBQ0UsZUFBQTtDRFBEO0FDVUQ7RUFDRSxrQkFBQTtDRFJEO0FDV0Q7RUFDRSxlQUFBO0NEVEQ7QUNZRDtFQUNFLGVBQUE7Q0RWRDtBQ2FEO0VBQ0Usa0JBQUE7Q0RYRDtBQ2NEO0VBQ0Usa0JBQUE7Q0RaRDtBQ2VEO0VBQ0UsaUJBQUE7Q0RiRDtBQ2dCRDtFQUNFLGtCQUFBO0NEZEQ7QUNpQkQ7RUFDRSxlQUFBO0NEZkQiLCJmaWxlIjoidG8uY3NzIn0= */

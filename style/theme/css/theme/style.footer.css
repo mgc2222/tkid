@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer#footer {
+  padding: 70px 0 20px;
+  color: #686868;
+  margin-bottom: 30px;
+  /*input[type="text"], input[type="email"] {
+    background: #FFF;
+    border: 1px solid #f0f0f0;
+    padding: 8px;
+  }*/
+}
+footer#footer .site-info {
+  text-align: center;
+  font-size: 0.8em;
+}
+footer#footer .widget_nav_menu ul.menu {
+  margin-top: -7px;
+}
+footer#footer .dtbaker-social-icons-widget ul.dtbaker-social-icons-list {
+  margin-top: -7px;
+}
+footer#footer .wpcf7-form {
+  margin-top: 5px;
+}
+footer#footer .widget ul li a {
+  padding: 7px 5px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgMTQ+IiwiL3RoZW1lcy9pdGVtcy9fYnVpbGQvZm9saWFnZS1ibG9nL3N0eWxlLmZvb3Rlci5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztnRUFFZ0U7QUNDaEU7RUFDRSxxQkFBQTtFQUNBLGVBQUE7RUFDQSxvQkFBQTtFRENBOzs7O0tBSUc7Q0FDSjtBQ1REO0VBV0ksbUJBQUE7RUFDQSxpQkFBQTtDRENIO0FDYkQ7RUFpQk0saUJBQUE7Q0RETDtBQ2hCRDtFQXNCTSxpQkFBQTtDREhMO0FDbkJEO0VBMEJJLGdCQUFBO0NESkg7QUN0QkQ7RUE2QkksaUJBQUE7Q0RKSCIsImZpbGUiOiJ0by5jc3MifQ== */

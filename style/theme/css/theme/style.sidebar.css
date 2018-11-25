@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+@media screen and (min-width: 37.5em) {
+  .site-content.with-right-sidebar .content-area {
+    float: left;
+    margin: 0 -30.4% 0 0;
+    width: 100%;
+  }
+  .site-content.with-right-sidebar .site-main {
+    margin: 0 34% 0 0;
+  }
+  .site-content.with-right-sidebar .widget-area {
+    float: right;
+    overflow: hidden;
+    width: 30.4%;
+  }
+  .site-content.with-left-sidebar .content-area {
+    float: right;
+    margin: 0 0 0 -30.4%;
+    width: 100%;
+  }
+  .site-content.with-left-sidebar .site-main {
+    margin: 0 0 0 34%;
+  }
+  .site-content.with-left-sidebar .widget-area {
+    float: left;
+    overflow: hidden;
+    width: 30.4%;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgMTM+IiwiL3RoZW1lcy9pdGVtcy9fYnVpbGQvZm9saWFnZS1ibG9nL3N0eWxlLnNpZGViYXIubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Z0VBRWdFO0FDb0NoRTtFQWpDRTtJQUVJLFlBQUE7SUFDQSxxQkFBQTtJQUNBLFlBQUE7R0RESDtFQ0hEO0lBT0ksa0JBQUE7R0RESDtFQ05EO0lBVUksYUFBQTtJQUNBLGlCQUFBO0lBQ0EsYUFBQTtHRERIO0VDS0Q7SUFHSSxhQUFBO0lBQ0EscUJBQUE7SUFDQSxZQUFBO0dETEg7RUNBRDtJQVFJLGtCQUFBO0dETEg7RUNIRDtJQVdJLFlBQUE7SUFDQSxpQkFBQTtJQUNBLGFBQUE7R0RMSDtDQUNGIiwiZmlsZSI6InRvLmNzcyJ9 */

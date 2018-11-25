@@ -1,0 +1,127 @@
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */
+}
+/** this sets the sticky footer
+ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
+ */
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  /* 1, 3 */
+}
+.flexd #page {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.flexd #page > header,
+#page > footer {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  /* 2 */
+}
+.flexd #page > #header-content,
+.flexd #page > main {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 0;
+  width: 100%;
+}
+#page > #header-content:after,
+#page > main:after {
+  content: '\00a0';
+  /* &nbsp; */
+  display: block;
+  margin-top: 1.5em;
+  height: 0px;
+  visibility: hidden;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+  line-height: 1.8em;
+  word-wrap: break-word;
+}
+.entry-title {
+  word-wrap: break-word;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.5em 1.5em;
+}
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+table {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+  border-collapse: separate;
+  border-radius: 5px;
+}
+table th {
+  font-weight: 700;
+  padding: 9px 12px;
+}
+table td {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+}
+table.no-border th,
+table.no-border td {
+  border: 0;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgNT4iLCIvdGhlbWVzL2l0ZW1zL19idWlsZC9mb2xpYWdlLWJsb2cvc3R5bGUuZWxlbWVudHMubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Z0VBRWdFO0FDQ2hFO0VBQ0UsdUJBQUE7Q0RDRDtBQ0VEOzs7RURFRSxzTUFBc007RUNDdE0sb0JBQUE7Q0RDRDtBQ0VEO0VBQ0UsaUJBQUE7RURBQSxvRUFBb0U7Q0FDckU7QUFDRDs7R0FFRztBQ0VIO0VBQ0UsYUFBQTtDREFEO0FDRUQ7RUFDRSxhQUFBO0VEQUEsVUFBVTtDQUNYO0FDQ0Q7RUFDRSxzQkFBQTtFQUFBLHFCQUFBO0VBQUEsY0FBQTtFQUNBLCtCQUFBO01BQUEsMkJBQUE7VUFBQSx1QkFBQTtDRENEO0FDRUQ7O0VBRUUsbUJBQUE7TUFBQSxlQUFBO1VBQUEsV0FBQTtFREFBLE9BQU87Q0FDUjtBQ0NEOztFQUVFLHVCQUFBO01BQUEsbUJBQUE7VUFBQSxlQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7Q0RDRDtBQ0NEOztFQUVFLGlCQUFBO0VEQ0EsWUFBWTtFQ0FaLGVBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtDREVEO0FDQ0Q7Ozs7RUFJRSxZQUFBO0NEQ0Q7QUNFRDs7RUFFRSxjQUFBO0NEQUQ7QUNHRDtFQUNFLHVCQUFBO0VBQ0EsVUFBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtDREREO0FDSUQ7O0VBRUUsc0JBQUE7RUFDQSxtQkFBQTtFQUNBLHNCQUFBO0NERkQ7QUNJRDtFQUNFLHNCQUFBO0NERkQ7QUNLRDtFQUNFLGlCQUFBO0NESEQ7QUNNRDtFQUNFLG9CQUFBO0NESkQ7QUNPRDs7RUFFRSxpQkFBQTtFQUNBLG1CQUFBO0NETEQ7QUNRRDtFQUNFLGtCQUFBO0NETkQ7QUNTRDtFQUNFLHNCQUFBO0NEUEQ7QUNVRDtFQUNFLGFBQUE7RURSQSw0Q0FBNEM7RUNTNUMsZ0JBQUE7RURQQSxnQ0FBZ0M7Q0FDakM7QUNTRDtFQUVFLHFDQUFBO0VBQ0Esc0JBQUE7RUFDQSxpQkFBQTtFQUNBLFlBQUE7RUFDQSwwQkFBQTtFQUNBLG1CQUFBO0NEUkQ7QUNDRDtFQVNJLGlCQUFBO0VBQ0Esa0JBQUE7Q0RQSDtBQ0hEO0VBYUkseUNBQUE7RUFDQSxrQkFBQTtDRFBIO0FDU0M7O0VBR0ksVUFBQTtDRFJMIiwiZmlsZSI6InRvLmNzcyJ9 */

@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgMj4iLCIvdGhlbWVzL2l0ZW1zL19idWlsZC9mb2xpYWdlLWJsb2cvc3R5bGUuY2xlYXJpbmdzLmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O2dFQUVnRTtBQ0NoRTs7Ozs7Ozs7Ozs7O0VBWUUsWUFBQTtFQUNBLGVBQUE7RUFDQSxvQkFBQTtDRENEO0FDRUQ7Ozs7OztFQU1FLFlBQUE7Q0RBRCIsImZpbGUiOiJ0by5jc3MifQ== */

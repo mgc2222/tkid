@@ -1,0 +1,79 @@
+/*--------------------------------------------------------------
+# Header & Logo
+--------------------------------------------------------------*/
+.site-header {
+  text-align: center;
+  min-height: 374px;
+  margin-bottom: 34px;
+  background-repeat: no-repeat, repeat-x;
+  /*background-position: 50% 0, 0 100%;*/
+  background-position:50% 0;
+  position: relative;
+}
+.home .site-header {
+  margin-bottom: 0;
+}
+/*.site-header:before {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  content: '';
+  height: 61px;
+  background-image: url(../../../../images/theme/header-bg-blue-grunge.png);
+  background-repeat: repeat-x;
+  background-position: 50% 0;
+  z-index: -1;
+}*/
+.site-header .site-branding {
+  display: block;
+  /*padding: 185px 0 0 0;*/
+  margin: 0 auto;
+  position: relative;
+  font-size: 16px;
+  min-height: 300px;
+}
+.site-header .site-branding a {
+  display: block;
+  width: 25%;
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 2%;
+  /* float: left; */
+  /* opacity: 0.7; */
+  /*display: table-cell;
+  vertical-align: bottom;*/
+}
+.foliageblog_header_header1bottomlgpng .site-header .site-branding {
+  padding: 51px 0 0 0;
+}
+.site-header .site-branding img {
+  vertical-align: middle;
+}
+.site-header .site-branding .site-title {
+  vertical-align: middle;
+  display: inline-block;
+}
+.site-header .site-branding .site-title div {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.site-header .site-branding .site-title div a {
+  text-decoration: none;
+  display: inline-block;
+}
+.site-header .site-branding .site-title p {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 37.5em) {
+  .site-header .site-branding:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjxpbnB1dCBjc3MgOD4iLCIvdGhlbWVzL2l0ZW1zL19idWlsZC9mb2xpYWdlLWJsb2cvc3R5bGUuaGVhZGVyX2xvZ28ubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Z0VBRWdFO0FDRWhFO0VBQ0UsbUJBQUE7RUFDQSxrQkFBQTtFQUNBLG9CQUFBO0VBQ0EsdUNBQUE7RUFDQSxtQ0FBQTtFQUNBLG1CQUFBO0NEQUQ7QUNDQztFQUNFLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLFFBQUE7RUFDQSxPQUFBO0VBQ0EsU0FBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0VBQ0Esd0RBQUE7RUFDQSw0QkFBQTtFQUNBLDJCQUFBO0VBQ0EsWUFBQTtDRENIO0FDbkJEO0VBcUJJLHNCQUFBO0VBQ0EscUJBQUE7RUFJQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0NERkg7QUNKRztFQUNFLG9CQUFBO0NETUw7QUM5QkQ7RUErQk0sdUJBQUE7Q0RFTDtBQ2pDRDtFQWtDTSx1QkFBQTtFQUNBLHNCQUFBO0NERUw7QUNyQ0Q7RUFxQ1EsV0FBQTtFQUNBLFVBQUE7RUFDQSxlQUFBO0NER1A7QUMxQ0Q7RUF5Q1Usc0JBQUE7RUFDQSxzQkFBQTtDRElUO0FDOUNEO0VBOENRLFVBQUE7RUFDQSxXQUFBO0NER1A7QUNPRztFQUdKO0lBUlEsWUFBQTtJQUNBLHNCQUFBO0lBQ0EsYUFBQTtJQUNBLHVCQUFBO0dERUw7Q0FDRiIsImZpbGUiOiJ0by5jc3MifQ== */
