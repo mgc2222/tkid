@@ -4,6 +4,10 @@
 aside.widget-area {
   padding-top: 10px;
 }
+.elementor-widget {
+  position: relative;
+  padding: 30px;
+}
 .elementor-widget-sidebar .widget,
 aside.widget-area .widget {
   margin: 0 0 60px;

@@ -5,7 +5,7 @@
 ## Elementor Tweaks
 --------------------------------------------------------------*/
 body.elementor-page .entry-content {
-  margin: -10px -10px 0;
+ /* margin: -10px -10px 0;*/
 }
 body.elementor-page.foliageblog_page_option_width_full .entry-content {
   margin: 0;

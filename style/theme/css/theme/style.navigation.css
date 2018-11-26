@@ -31,7 +31,8 @@ a:active {
   clear: both;
   display: inline-block;
   width: 92%;
-  padding: 16px 0 19px;
+  /*padding: 16px 0 19px;*/
+  padding: 16px 0 0;
 /*  border-top-left-radius: 10px;
   border-top-right-radius: 10px;*/
 }
@@ -42,7 +43,8 @@ a:active {
   padding-left: 0;
 }
 .main-navigation > div > ul > li {
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
+  padding-bottom: 0;
   position: relative;
 }
 @media screen and (min-width: 37.5em) {
@@ -100,6 +102,12 @@ a:active {
     margin: 0 0 0 -6px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .home header.site-header {
+    margin: 0 30px;
+  }
+}
+.main
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
@@ -128,7 +136,7 @@ a:active {
 .menu-toggle {
   margin: 0 auto 30px;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 1200px) {
   .menu-toggle {
     display: none;
   }
@@ -152,6 +160,7 @@ a:active {
   .main-navigation > div > ul > li {
     display: table-cell;
   }
+
 }
 .site-main .comment-navigation,
 .site-main .posts-navigation,

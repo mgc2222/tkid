@@ -106,8 +106,8 @@ class Home extends AdminController
 		$dataSearch->languageId = $this->languageId;
 				
 		$this->webpage->PageHeadTitle = $this->trans[$this->translationPrefix.'.page_title'];
-		$this->webpage->BodyClasses = 'home page-template-default page page-id-20 page-parent wp-custom-logo site_color_white foliageblog_header_header2toplgpng foliageblog_post_option_columns_1 foliageblog_page_option_title_hide foliageblog_page_option_width_full foliageblog_page_option_background_transparent elementor-default elementor-page';
-
+		$this->webpage->BodyClasses =
+			'home page-template-default page page-id-20 page-id-10 page-parent wp-custom-logo site_color_white foliageblog_header_header1bottomlgpng foliageblog_header_bottom foliageblog_post_option_columns_1 foliageblog_page_option_title_show foliageblog_page_option_width_normal foliageblog_page_option_background_transparent elementor-default elementor-page';
 		$appCategories = AppCategories::GetInstance();
 		$data = new stdClass();
 		$data->slider = $appCategories->GetAppCategoryDataById(1); //get slider data

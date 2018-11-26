@@ -26,7 +26,7 @@ class ServingMenu extends AdminController
 		array_push($this->webpage->StyleSheets,
 		 'theme/css/pearl-restaurant.css',
 		 'theme/css/bootstrap.css',
-		 'theme/fonts/pearl-icons.css',
+		 'theme/fontss/pearl-icons.css',
 		 'theme/css/default-color.css',
 		 'theme/css/dropmenu.css', 
 		 'theme/css/sticky-header.css', 

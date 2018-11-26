@@ -6,8 +6,8 @@
 }
 @font-face {
   font-family: WooCommerce;
-  src: url(../../../assets/font/theme/WooCommerce.eot);
-  src: url(../../../assets/font/theme/WooCommerce.eot?#iefix) format('embedded-opentype'), url(../../../assets/font/theme/WooCommerce.woff) format('woff'), url(../../../assets/font/theme/WooCommerce.ttf) format('truetype'), url(../../../assets/font/theme/WooCommerce.svg#WooCommerce) format('svg');
+  src: url(../../../theme/fonts/theme/WooCommerce.eot);
+  src: url(../../../theme/fonts/theme/WooCommerce.eot?#iefix) format('embedded-opentype'), url(../../../theme/fonts/theme/WooCommerce.woff) format('woff'), url(../../../theme/fonts/theme/WooCommerce.ttf) format('truetype'), url(../../../theme/fonts/theme/WooCommerce.svg#WooCommerce) format('svg');
   font-weight: 400;
   font-style: normal;
 }

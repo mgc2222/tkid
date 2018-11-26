@@ -5,7 +5,7 @@ $trans = array();
 //		Home 
 //	===================================================== //
 
-$trans['home.page_title'] = 'Saverio';
+$trans['home.page_title'] = 'The Kid';
 
 //	===================================================== //
 //		Pagina de vizualizare / contact.php

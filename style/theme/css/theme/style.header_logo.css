@@ -3,8 +3,8 @@
 --------------------------------------------------------------*/
 .site-header {
   text-align: center;
-  min-height: 374px;
-  margin-bottom: 34px;
+  /*min-height: 374px;*/
+  /*margin-bottom: 34px;*/
   background-repeat: no-repeat, repeat-x;
   /*background-position: 50% 0, 0 100%;*/
   background-position:50% 0;

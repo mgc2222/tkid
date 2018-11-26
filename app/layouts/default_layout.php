@@ -7,8 +7,11 @@
         <div id="header-content-inner">
 			<?php include(_APPLICATION_FOLDER.'blocks/header.php'); ?>
 			<main id="main-wrapper">
+                <div id="main-content" class="site-content-full inner-content-width">
+                    <!--<div id="primary" class="content-area">
+                        <div id="main" class="site-main">-->
 			<?php if ($webpage->Message!='') { ?>
-				<div class="system_message <?php echo $webpage->MessageCss?>"><span><?php echo $webpage->Message?></span></div><?php } ?>
+				            <div class="system_message <?php echo $webpage->MessageCss?>"><span><?php echo $webpage->Message?></span></div><?php } ?>
 			<?php if ($webpage->ContentInclude != null)
 			{
 				foreach ($webpage->ContentInclude as $contentInclude)
@@ -17,6 +20,9 @@
 				}
 			}
 			?>
+                        <!--</div>
+                    </div>-->
+                </div>
 			</main>
 		</div>
 	</div>

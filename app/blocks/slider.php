@@ -1,15 +1,16 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');  ?>
 <!--Start Banner-->
-<section data-id="whmgdbf" class="elementor-element elementor-element-whmgdbf elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;shape_divider_top&quot;:&quot;&quot;,&quot;shape_divider_bottom&quot;:&quot;&quot;}" data-element_type="section">
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-row">
-            <div data-id="skeydoo" class="elementor-element elementor-element-skeydoo elementor-column elementor-col-100 elementor-top-column" data-settings="[]" data-element_type="column">
-                <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                        <div data-id="f4l20zx" class="elementor-element elementor-element-f4l20zx foliageblog-slider-pretty foliageblog-slider-labels-labels elementor-widget elementor-widget-image-carousel" data-settings="[]" data-element_type="image-carousel.default">
-                            <div class="elementor-widget-container">
-                                <div class="elementor-image-carousel-wrapper elementor-slick-slider" dir="ltr">
-                                    <div class="elementor-image-carousel slick-image-stretch" data-slider_options='{&quot;slidesToShow&quot;:1,&quot;autoplaySpeed&quot;:5000,&quot;autoplay&quot;:true,&quot;infinite&quot;:true,&quot;pauseOnHover&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:false,&quot;dots&quot;:false,&quot;rtl&quot;:false,&quot;fade&quot;:false}'>
+
+<section data-id="7ck00n0" class="elementor-element elementor-element-7ck00n0 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;shape_divider_top&quot;:&quot;&quot;,&quot;shape_divider_bottom&quot;:&quot;&quot;}" data-element_type="section">
+	<div class="elementor-container elementor-column-gap-default">
+		<div class="elementor-row">
+			<div data-id="pey0qh8" class="elementor-element elementor-element-pey0qh8 elementor-column elementor-col-100 elementor-top-column" data-settings="[]" data-element_type="column">
+				<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+						<div data-id="r8ff6st" class="elementor-element elementor-element-r8ff6st foliageblog-slider-normal foliageblog-slider-labels-none elementor-widget elementor-widget-image-carousel" data-settings="[]" data-element_type="image-carousel.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-image-carousel-wrapper elementor-slick-slider" dir="ltr">
+									<div class="elementor-image-carousel slick-arrows-inside slick-dots-outside" data-slider_options='{&quot;slidesToShow&quot;:3,&quot;autoplaySpeed&quot;:5000,&quot;autoplay&quot;:true,&quot;infinite&quot;:true,&quot;pauseOnHover&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;dots&quot;:true,&quot;rtl&quot;:false,&quot;slidesToScroll&quot;:2}'>
                             <?php 
                                 if ($dataView->slider->rows != null)
                                 {
