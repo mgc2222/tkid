@@ -26,7 +26,7 @@ class Home extends AdminController
 		// page initializations
 
 		array_push($this->webpage->StyleSheets,
-			'theme/css/plugin/styles.css',
+			/*'theme/css/plugin/styles.css',
 	        'theme/css/plugin/dtbaker-woocommerce.css',
 	       	'theme/css/plugin/woocommerce-layout.css',
 	        'theme/css/plugin/woocommerce-smallscreen.css',
@@ -65,7 +65,8 @@ class Home extends AdminController
 	        'theme/css/theme/style.color.css',
 	        'theme/css/theme/style.woocommerce.css',
 	        'theme/css/theme/style.layout.css',
-	        'theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'
+	        'theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'*/
+	        'theme/css/stylesheet.css'
 	    );
 
 		array_push($this->webpage->ScriptsFooter,
@@ -73,7 +74,7 @@ class Home extends AdminController
 		    'theme/jquery.form.min.js',
 		    'theme/content/53cf86c741e21951c726ebe800a3241e.js',
 		    'theme/scripts.js',
-		    'theme/dtbaker-woocommerce-slider.js',
+		    //'theme/dtbaker-woocommerce-slider.js',
 		    'theme/jquery.blockUI.min.js',
 		    'theme/woocommerce.min.js',
 		    'theme/jquery.cookie.min.js',
