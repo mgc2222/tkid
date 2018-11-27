@@ -27,10 +27,10 @@ class Home extends AdminController
 
 		array_push($this->webpage->StyleSheets,
 			'theme/css/plugin/styles.css',
-	        //'theme/css/plugin/dtbaker-woocommerce.css',
-	       	//'theme/css/plugin/woocommerce-layout.css',
-	        //'theme/css/plugin/woocommerce-smallscreen.css',
-	        //'theme/css/plugin/woocommerce.css',
+	        'theme/css/plugin/dtbaker-woocommerce.css',
+	       	'theme/css/plugin/woocommerce-layout.css',
+	        'theme/css/plugin/woocommerce-smallscreen.css',
+	        'theme/css/plugin/woocommerce.css',
 	        
 
 	        'theme/css/plugin/socicon.css',
@@ -73,9 +73,9 @@ class Home extends AdminController
 		    'theme/jquery.form.min.js',
 		    'theme/content/53cf86c741e21951c726ebe800a3241e.js',
 		    'theme/scripts.js',
-		    //'theme/dtbaker-woocommerce-slider.js',
+		    'theme/dtbaker-woocommerce-slider.js',
 		    'theme/jquery.blockUI.min.js',
-		    //'theme/woocommerce.min.js',
+		    'theme/woocommerce.min.js',
 		    'theme/jquery.cookie.min.js',
 		    'theme/system/core.min.js',
 		    'theme/javascript.js',
@@ -83,7 +83,7 @@ class Home extends AdminController
 		    'theme/skip-link-focus-fix.js',
 		    'theme/jquery.prettyPhoto.min.js',
 		    'theme/jquery.prettyPhoto.init.min.js',
-		    //'theme/system/wp-embed.min.js',
+		    'theme/system/wp-embed.min.js',
 		    'theme/slick.min.js',
 		    'theme/waypoints.min.js',
 		    'theme/frontend.min.js', 
@@ -112,12 +112,12 @@ class Home extends AdminController
 		$data = new stdClass();
 		$data->slider = $appCategories->GetAppCategoryDataById(1); //get slider data
 		$appCategories->FormatAppImagesRows($data->slider->rows);
-		$data->bannerMasterHealty = $appCategories->GetAppCategoryDataById(2); //get banner master healty data
-		$appCategories->FormatAppImagesRows($data->bannerMasterHealty->rows);
-		$data->bannerUpcomingEvents = $appCategories->GetAppCategoryDataById(5); //get banner upcoming events data
+		$data->gallery = $appCategories->GetAppCategoryDataById(12); //get gallery data
+		$appCategories->FormatAppImagesRows($data->gallery->rows);
+		/*$data->bannerUpcomingEvents = $appCategories->GetAppCategoryDataById(5); //get banner upcoming events data
 		$appCategories->FormatAppImagesRows($data->bannerUpcomingEvents->rows);
 		$data->bannerTableReservation = $appCategories->GetAppCategoryDataById(6); //get banner table reservation data
-		$appCategories->FormatAppImagesRows($data->bannerTableReservation->rows);
+		$appCategories->FormatAppImagesRows($data->bannerTableReservation->rows);*/
 
 		$categoriesMap = ProductCategoriesMap::GetInstance();
    		$categoriesMap->MapCategories();

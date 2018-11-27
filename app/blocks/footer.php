@@ -5,7 +5,7 @@
         <section id="footer_widgets">
             <div class="widget-area widget-columns" role="complementary"></div>
         </section>
-        <div class="site-info inner-content-width">Designed by dtbaker - Theme available for sale on ThemeForest.net</div>
+        <div class="site-info inner-content-width">Designed for tkid.ro - All rights reserved</div>
         <!-- .site-info -->
     </div>
 </footer>

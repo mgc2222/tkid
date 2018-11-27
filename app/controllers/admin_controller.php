@@ -63,10 +63,9 @@ class AdminController extends AbstractController
 			'lib/strings/strings.js',
 			'lib/htmlcontrols/htmlcontrols.js',
 			'lib/form/form.js',
-			//'lib/jquery/jquery-1.7.1.min.js',
+			'lib/jquery/jquery-1.7.1.min.js',
 			//'lib/bootstrap/bootstrap.min.js',
 			'lib/lodash/lodash.min.js');
-        $this->webpage->ScriptsHeader = Array('js/lib/jquery/jquery-1.7.1.min.js');
 		$this->AutoLoadJavascript();
 	}
 	

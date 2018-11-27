@@ -83,7 +83,7 @@ div.pp_woocommerce .pp_next:before {
 }
 div.pp_woocommerce .pp_details {
   margin: 0;
-  padding-top: 1em;
+  padding-top: 10px;
 }
 div.pp_woocommerce .pp_description,
 div.pp_woocommerce .pp_nav {
@@ -277,6 +277,7 @@ div.pp_pic_holder {
   position: absolute;
   width: 100px;
   z-index: 10000;
+  overflow: visible!important;
 }
 .pp_top {
   height: 20px;

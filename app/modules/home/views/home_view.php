@@ -1,6 +1,7 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');  
 include(_APPLICATION_FOLDER.'blocks/slider.php');
 include(_APPLICATION_FOLDER.'blocks/about.php');
+include(_APPLICATION_FOLDER.'blocks/gallery.php');
 include(_APPLICATION_FOLDER.'blocks/google_map.php');
 //include(dirname(__FILE__).'/../'.'blocks/section_master_town.php');
 //include(dirname(__FILE__).'/../'.'blocks/section_our_story.php'); 
