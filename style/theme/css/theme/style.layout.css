@@ -151,13 +151,14 @@ aside.widget-area .widget .widget-title-wrap .widget-title:after {
   width: 1000px;
 }
 .foliageblog-slider-caption {
-  /*display: none;*/
+  display: none;
 }
 @media screen and (max-width: 1200px) {
   .slick-slide .slick-slide-image {
     max-height: 350px;
   }
 }
+@media screen and (min-width: 37.5em) {
   .foliageblog-slider-caption {
     position: absolute;
     display: block;
@@ -169,7 +170,6 @@ aside.widget-area .widget .widget-title-wrap .widget-title:after {
     color: #000;
     text-align: center;
   }
-
   .foliageblog-slider-pretty .foliageblog-slider-caption {
     background: url("../../../../images/theme/banner-over-white-80.png") repeat-x center top;
   }
@@ -210,6 +210,7 @@ aside.widget-area .widget .widget-title-wrap .widget-title:after {
   .foliageblog-slider-pretty .foliageblog-slider-caption > div > div div {
     font-size: 20px;
   }
+}
 /** slider decoration **/
 .foliageblog-slider-pretty .slick-slide {
   position: relative;
