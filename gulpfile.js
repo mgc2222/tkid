@@ -29,10 +29,46 @@ gulp.task('pack-js', function () {
  
 gulp.task('pack-css', function () {	
 	return gulp.src([
-	    'style/theme/css/content/*.css',
-        'style/theme/css/plugin/*.css',
-        'style/theme/css/system/*.css',
-        'style/theme/css/theme/*.css'
+         'style/theme/css/plugin/styles.css',
+         'style/theme/css/plugin/dtbaker-woocommerce.css',
+         'style/theme/css/plugin/woocommerce-layout.css',
+         'style/theme/css/plugin/woocommerce-smallscreen.css',
+         'style/theme/css/plugin/woocommerce.css',
+
+
+         'style/theme/css/plugin/socicon.css',
+         'style/theme/css/plugin/genericons.css',
+         'style/theme/css/plugin/font-awesome.min.css',
+         'style/theme/css/system/dashicons.min.css',
+         'style/theme/css/plugin/elementor-icons.min.css',
+         'style/theme/css/plugin/animations.min.css',
+         'style/theme/css/plugin/frontend.min.css',
+         'style/theme/css/content/post-20.css',
+         'style/theme/css/theme/style.prettyPhoto.css',
+         'style/theme/css/theme/style.normalize.css',
+         'style/theme/css/theme/style.clearings.css',
+         'style/theme/css/theme/style.typorgraphy.css',
+         'style/theme/css/theme/style.widths.css',
+         'style/theme/css/theme/style.elements.css',
+         'style/theme/css/theme/style.forms.css',
+         'style/theme/css/theme/style.page_background.css',
+         'style/theme/css/theme/style.header_logo.css',
+         'style/theme/css/theme/style.navigation.css',
+         'style/theme/css/theme/style.accessibility.css',
+         'style/theme/css/theme/style.alignments.css',
+         'style/theme/css/theme/style.widgets.css',
+         'style/theme/css/theme/style.sidebar.css',
+         'style/theme/css/theme/style.footer.css',
+         'style/theme/css/theme/style.blog.css',
+         'style/theme/css/theme/style.content.css',
+         'style/theme/css/theme/style.infinite_scroll.css',
+         'style/theme/css/theme/style.media.css',
+         'style/theme/css/theme/style.plugins.css',
+         'style/theme/css/theme/style.cf7.css',
+         'style/theme/css/theme/style.color.css',
+         'style/theme/css/theme/style.woocommerce.css',
+         'style/theme/css/theme/style.layout.css',
+         'style/theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'
     ])
 		.pipe(concat('stylesheet.css'))
 		.pipe(cleanCss())
