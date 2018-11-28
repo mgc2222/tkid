@@ -115,9 +115,9 @@ class Home extends AdminController
 		$appCategories->FormatAppImagesRows($data->slider->rows);
 		$data->gallery = $appCategories->GetAppCategoryDataById(12); //get gallery data
 		$appCategories->FormatAppImagesRows($data->gallery->rows);
-		/*$data->bannerUpcomingEvents = $appCategories->GetAppCategoryDataById(5); //get banner upcoming events data
+		$data->events = $appCategories->GetAppCategoryDataById(5); //get events data
 		$appCategories->FormatAppImagesRows($data->bannerUpcomingEvents->rows);
-		$data->bannerTableReservation = $appCategories->GetAppCategoryDataById(6); //get banner table reservation data
+		/*$data->bannerTableReservation = $appCategories->GetAppCategoryDataById(6); //get banner table reservation data
 		$appCategories->FormatAppImagesRows($data->bannerTableReservation->rows);*/
 
 		/*$categoriesMap = ProductCategoriesMap::GetInstance();

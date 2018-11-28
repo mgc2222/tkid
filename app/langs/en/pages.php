@@ -4,14 +4,14 @@ $trans = array();
 //	===================================================== //
 //		Blocul header : blocks/header.php
 //	===================================================== //
-$trans['general.private'] = 'Doar Webmaster';
-$trans['general.save'] = 'Salveaza';
+$trans['general.private'] = 'Webmaster only';
+$trans['general.save'] = 'Save';
 
 
 //	===================================================== //
 //		Blocul header : blocks/header.php
 //	===================================================== //
-$trans['header.title'] = 'Extranet Travelro - Panou de administrare';
+$trans['header.title'] = 'Admin Dashboard';
 $trans['header.user_profile'] = 'User Profile';
 $trans['header.settings'] = 'Settings';
 $trans['header.logout'] = 'Logout';
@@ -19,53 +19,51 @@ $trans['header.logout'] = 'Logout';
 //	===================================================== //
 //		Pagina de login : index.php		
 //	===================================================== //
-$trans['index.sign_in'] = 'Autentificare';
-$trans['index.remember_me'] = 'Tine-ma minte';
+$trans['index.sign_in'] = 'Authentication';
+$trans['index.remember_me'] = 'Remember me';
 $trans['index.login'] = 'Login';
-$trans['index.password'] = 'Parola';
+$trans['index.password'] = 'Password';
 $trans['index.email'] = 'E-mail';
 
 //	===================================================== //
 //		Blocul search: blocks/search_block.php		
 //	===================================================== //
-$trans['search.search'] = 'Cauta...';
+$trans['search.search'] = 'Search...';
 
 //	===================================================== //
 //		Blocul search: blocks/search_master_users_block.php		
 //	===================================================== //
-$trans['search_master_users.search'] = 'Nume/Email';
-$trans['search_master_users.hotel'] = 'Hotel';
+$trans['search_master_users.search'] = 'Name/Email';
+
 
 //	===================================================== //
 //		Pagina de vizualizare utilizatori: users.php		
 //	===================================================== //
-$trans['users.users'] = 'Utilizatori';
+$trans['users.users'] = 'Users';
 
-$trans['users.sort_username'] = 'Sorteaza dupa Nume Utilizator';
-$trans['users.sort_role'] = 'Sorteaza dupa Rol';
-$trans['users.sort_email'] = 'Sorteaza dupa Email';
-$trans['users.sort_first_name'] = 'Sorteaza dupa Prenume';
-$trans['users.sort_last_name'] = 'Sorteaza dupa Nume';
-$trans['users.options'] = 'Optiuni';
+$trans['users.sort_username'] = 'Sort by User Name';
+$trans['users.sort_role'] = 'Sort by Role';
+$trans['users.sort_email'] = 'Sort by Email';
+$trans['users.sort_first_name'] = 'Sort by First Name';
+$trans['users.sort_last_name'] = 'Sort by Last Name';
+$trans['users.options'] = 'Options';
 
-$trans['users.username'] = 'Nume Utilizator';
-$trans['users.role'] = 'Rol';
-$trans['users.hotel'] = 'Hotel';
+$trans['users.username'] = 'User Name';
+$trans['users.role'] = 'Role';
 $trans['users.email'] = 'Email';
-$trans['users.first_name'] = 'Prenume';
-$trans['users.last_name'] = 'Nume';
+$trans['users.first_name'] = 'First Name';
+$trans['users.last_name'] = 'Last Name';
 
-$trans['users.no_elements'] = 'Nu exista utilizatori.';
-$trans['users.new_user'] = 'Adauga Utilizator Nou';
-$trans['users.delete_selected'] = 'Sterge utilizatorii selectati';
+$trans['users.no_elements'] = 'No Users Exists!';
+$trans['users.new_user'] = 'Add New User';
+$trans['users.delete_selected'] = 'Delete Selected Users';
 
 //	===================================================== //
 //		Pagina de editare utilizator: user_edit.php		
 //	===================================================== //
 $trans['user.username'] = 'Nume Utilizator';
 $trans['user.role'] = 'Rol';
-$trans['user.hotel'] = 'Hotel';
-$trans['user.select_hotel'] = 'Alege Hotel';
+
 $trans['user.email'] = 'Email';
 $trans['user.password'] = 'Parola';
 $trans['user.repeat_password'] = 'Repeta Parola';
@@ -116,26 +114,7 @@ $trans['users_permissions.select_permissions'] = 'Selecteaza Permisii';
 $trans['users_permissions.check_all'] = 'Selecteaza toate permisiunile';
 $trans['users_permissions.save'] = 'Salveaza Permisiuni';
 
-//	===================================================== //
-//		Paginile de vizualizare / editare categorii facilitati: facilities_categories.php | facilities_category_edit.php
-//	===================================================== //
-$trans['facilitati_categories.categories_title'] = 'Management Permisiuni';
-$trans['facilitati_categories.new_category'] = 'Adauga categorie noua';
-$trans['facilitati_categories.edit_category'] = 'Editare categorie';
-$trans['facilitati_categories.not_exists'] = 'Categoria de facilitati editata nu exista';
-$trans['facilitati_categories.error_elements'] = 'Nu ati ales nici o categorie';
 
-$trans['facilitati_categories.sort_name'] = 'Sorteaza dupa Nume';
-$trans['facilitati_categories.sort_page_id'] = 'Sorteaza dupa Id Pagina';
-$trans['facilitati_categories.sort_parent'] = 'Sorteaza dupa Parinte Pagina';
-
-$trans['facilitati_categories.name'] = 'Nume';
-$trans['facilitati_categories.page_id'] = 'Id Pagina';
-$trans['facilitati_categories.parent_page'] = 'Pagina Parinte';
-
-$trans['facilitati_categories.save'] = 'Salveaza';
-$trans['facilitati_categories.categories_list'] = 'Lista Categorii';
-$trans['facilitati_categories.private'] = 'Doar Webmaster';
 
 //	===================================================== //
 //		Paginile de vizualizare / editare languages: languages.php | language_edit.php
@@ -155,4 +134,9 @@ $trans['languages.column_abbreviation'] = 'Abreviere';
 
 $trans['languages.items_list'] = 'Lista Limbi Vorbite';
 $trans['languages.save_success'] = 'Limba a fost salvata cu success';
+
+$trans['events.title'] = 'Events';
+$trans['gallery.title'] = 'Gallery';
+$trans['about.section_title'] = 'Our Story';
+$trans['location.section_title'] = 'Our Location';
 ?>

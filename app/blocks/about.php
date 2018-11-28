@@ -1,9 +1,9 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');  ?>
 <article id="post-10" class="post-10 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">
-			About
-		</h1>
+        <h2 class="elementor-heading-title elementor-size-large entry-title" id="section-about">
+            <?php echo $trans['about.section_title'];?>
+		</h2>
 	</header>
 	<!-- .entry-header -->
 	<div class="entry-content">
@@ -43,7 +43,7 @@
 							</div>
 						</div>
 					</section>
-					<section data-id="16skk39" class="elementor-element elementor-element-16skk39 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;shape_divider_top&quot;:&quot;&quot;,&quot;shape_divider_bottom&quot;:&quot;&quot;}" data-element_type="section">
+				<?php if(false) {?>	<section data-id="16skk39" class="elementor-element elementor-element-16skk39 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;shape_divider_top&quot;:&quot;&quot;,&quot;shape_divider_bottom&quot;:&quot;&quot;}" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
 								<div data-id="8lso1xx" class="elementor-element elementor-element-8lso1xx elementor-column elementor-col-33 elementor-top-column" data-settings="[]" data-element_type="column">
@@ -200,6 +200,7 @@
 							</div>
 						</div>
 					</section>
+                <?php }?>
 				</div>
 			</div>
 		</div>

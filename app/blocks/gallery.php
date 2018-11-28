@@ -8,15 +8,16 @@
 ?>
 <article id="post-16" class="post-16 page type-page status-publish hentry">
     <header class="entry-header">
-        <h1 class="entry-title">
-            Gallery
-        </h1>
+        <h2 class="elementor-heading-title elementor-size-large entry-title" id="section-gallery">
+            <?php echo $trans['gallery.section_title'];?>
+        </h2>
     </header>
     <!-- .entry-header -->
     <div class="entry-content">
         <div class="elementor elementor-16">
             <div class="elementor-inner">
                 <div class="elementor-section-wrap">
+                    <?php if(false){ ?>
                     <section data-id="ggqzlbn" class="elementor-element elementor-element-ggqzlbn elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;shape_divider_top&quot;:&quot;&quot;,&quot;shape_divider_bottom&quot;:&quot;&quot;}" data-element_type="section">
                         <div class="elementor-container elementor-column-gap-default">
                             <div class="elementor-row">
@@ -36,6 +37,7 @@
                             </div>
                         </div>
                     </section>
+                    <?php } ?>
                     <section data-id="fvoruiy" class="elementor-element elementor-element-fvoruiy elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;shape_divider_top&quot;:&quot;&quot;,&quot;shape_divider_bottom&quot;:&quot;&quot;}" data-element_type="section">
                         <div class="elementor-container elementor-column-gap-default">
                             <div class="elementor-row">
@@ -62,7 +64,7 @@
                                                                             src="<?php echo $row->imagePath?>"
                                                                             class="attachment-medium size-medium"
                                                                             alt="<?php echo $row->image_alt?>"
-                                                                            style="object-fit:cover; max-height: 200px"
+                                                                            style="object-fit:cover; min-height: 200px; max-height: 200px"
                                                                             aria-describedby="gallery-1-<?php echo $row->id;?>"
                                                                         />
                                                                     </a>
