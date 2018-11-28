@@ -87,8 +87,8 @@ class Home extends AdminController
 		    'theme/system/wp-embed.min.js',
 		    'theme/slick.min.js',
 		    'theme/waypoints.min.js',
-		    'theme/frontend.min.js', 
-			
+		    'theme/frontend.min.js',
+
 			//'lib/validator/jquery.validate.min.js',
 			//'lib/wrappers/validator/validator.js',
 			//'lib/toastr/toastr.min.js', 
@@ -120,7 +120,7 @@ class Home extends AdminController
 		$data->bannerTableReservation = $appCategories->GetAppCategoryDataById(6); //get banner table reservation data
 		$appCategories->FormatAppImagesRows($data->bannerTableReservation->rows);*/
 
-		$categoriesMap = ProductCategoriesMap::GetInstance();
+		/*$categoriesMap = ProductCategoriesMap::GetInstance();
    		$categoriesMap->MapCategories();
     	$data->productCategories = $categoriesMap->GetTreeList(0);
     	if(is_array($data->productCategories)){
@@ -128,7 +128,7 @@ class Home extends AdminController
     	}
     	else{
     		$this->FormatRow($data->productCategories, $categoriesMap);
-    	}
+    	}*/
 		//echo '<pre>'; print_r($data); echo '</pre>'; die;
 
 		$data->PageTitle = $this->webpage->PageTitle;
@@ -201,7 +201,7 @@ class Home extends AdminController
 			//get only active, separate meniu categories => status = 1 ; display_separate_status = 1
 			return $productCategories=null;
 		}
-		if ($productCategories->DirectChildrenCount > 0 && $productCategories->display_separate_status > 0 && $row->status > 0) 
+		if ($productCategories->DirectChildrenCount > 0 && $productCategories->display_separate_status > 0 && $productCategories->status > 0)
 		//get only active, separate meniu categories => status = 1 ; display_separate_status = 1
 		{
 			$categoryChildrenList = $categoriesMap->GetCategoryChildrenList($productCategories->id);
