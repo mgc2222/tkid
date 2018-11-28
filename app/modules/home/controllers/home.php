@@ -70,13 +70,14 @@ class Home extends AdminController
 	    );
 
 		array_push($this->webpage->ScriptsFooter,
-			'theme/javascript.js',
-		    'theme/jquery.form.min.js',
-		    'theme/content/53cf86c741e21951c726ebe800a3241e.js',
-		    'theme/scripts.js',
+		    //'theme/jquery.form.min.js',
+
+		    //'theme/scripts.js',
 		    //'theme/dtbaker-woocommerce-slider.js',
-		    'theme/jquery.blockUI.min.js',
-		    'theme/woocommerce.min.js',
+		    //'theme/jquery.blockUI.min.js',
+		    //'theme/woocommerce.min.js',
+            //'theme/system/wp-embed.min.js',
+            'theme/content/53cf86c741e21951c726ebe800a3241e.js',
 		    'theme/jquery.cookie.min.js',
 		    'theme/system/core.min.js',
 		    'theme/javascript.js',
@@ -84,11 +85,10 @@ class Home extends AdminController
 		    'theme/skip-link-focus-fix.js',
 		    'theme/jquery.prettyPhoto.min.js',
 		    'theme/jquery.prettyPhoto.init.min.js',
-		    'theme/system/wp-embed.min.js',
 		    'theme/slick.min.js',
 		    'theme/waypoints.min.js',
 		    'theme/frontend.min.js',
-
+			//'app.js',
 			//'lib/validator/jquery.validate.min.js',
 			//'lib/wrappers/validator/validator.js',
 			//'lib/toastr/toastr.min.js', 
