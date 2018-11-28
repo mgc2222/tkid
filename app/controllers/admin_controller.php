@@ -55,10 +55,11 @@ class AdminController extends AbstractController
 		$this->webpage->PageLayout = _APPLICATION_FOLDER.'layouts/default_layout.php';
 		$this->webpage->BodyClasses = '';
 		
-		$this->webpage->StyleSheets = Array(
-		//'bootstrap/bootstrap.css',
-		'fonts/font-awesome/css/font-awesome.min.css'); 
-		//, 'admin/admin.css');
+		/*$this->webpage->StyleSheets = Array(
+		'bootstrap/bootstrap.css',
+		'fonts/font-awesome/css/font-awesome.min.css',
+		'admin/admin.css');*/
+        $this->webpage->StyleSheets = Array();
 		$this->webpage->ScriptsFooter = Array(
 			'lib/strings/strings.js',
 			'lib/htmlcontrols/htmlcontrols.js',

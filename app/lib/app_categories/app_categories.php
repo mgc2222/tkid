@@ -31,8 +31,8 @@ class AppCategories
 		if ($rows == null) {
 			return;
 		}
-		//$filePath = _SITE_ADMIN_URL.'render_app_image/';
-		$filePath = _SITE_ADMIN_URL.'files/app/';
+		$filePath = _SITE_ADMIN_URL.'render_app_image/';
+		//$filePath = _SITE_ADMIN_URL.'files/app/';
 		foreach ($rows as &$row) {
 			$row->imagePath = $filePath.$row->app_category_id.'/'.$row->file;
 		}
