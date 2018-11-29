@@ -30,12 +30,10 @@ gulp.task('pack-js', function () {
 gulp.task('pack-css', function () {	
 	return gulp.src([
          'style/theme/css/plugin/styles.css',
-         'style/theme/css/plugin/dtbaker-woocommerce.css',
-         'style/theme/css/plugin/woocommerce-layout.css',
-         'style/theme/css/plugin/woocommerce-smallscreen.css',
-         'style/theme/css/plugin/woocommerce.css',
-
-
+         //'style/theme/css/plugin/dtbaker-woocommerce.css',
+         //'style/theme/css/plugin/woocommerce-layout.css',
+         //'style/theme/css/plugin/woocommerce-smallscreen.css',
+        // 'style/theme/css/plugin/woocommerce.css',
          'style/theme/css/plugin/socicon.css',
          'style/theme/css/plugin/genericons.css',
          'style/theme/css/plugin/font-awesome.min.css',
@@ -66,7 +64,6 @@ gulp.task('pack-css', function () {
          'style/theme/css/theme/style.plugins.css',
          'style/theme/css/theme/style.cf7.css',
          'style/theme/css/theme/style.color.css',
-         'style/theme/css/theme/style.woocommerce.css',
          'style/theme/css/theme/style.layout.css',
          'style/theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'
     ])
