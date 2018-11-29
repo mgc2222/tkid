@@ -66,6 +66,7 @@ class Home extends AdminController
 	        'theme/css/theme/style.color.css',
 	        'theme/css/theme/style.woocommerce.css',
 	        'theme/css/theme/style.layout.css',
+			'theme/css/theme/style.back_to_top.css',
 	        'theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'*/
 	        'theme/css/stylesheet.css'
 	    );
@@ -81,14 +82,15 @@ class Home extends AdminController
             'theme/content/53cf86c741e21951c726ebe800a3241e.js',
 		    'theme/jquery.cookie.min.js',
 		    'theme/system/core.min.js',
-		    'theme/javascript.js',
+		    //'theme/javascript.js',
 		    'theme/navigation.js',
 		    'theme/skip-link-focus-fix.js',
 		    'theme/jquery.prettyPhoto.min.js',
 		    'theme/jquery.prettyPhoto.init.min.js',
 		    'theme/slick.min.js',
-		    'theme/waypoints.min.js',
+		    //'theme/waypoints.min.js',
 		    'theme/frontend.min.js',
+		    'theme/custom.js',
 			//'app.js',
 			//'lib/validator/jquery.validate.min.js',
 			//'lib/wrappers/validator/validator.js',

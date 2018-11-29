@@ -14,7 +14,7 @@
                     <div class="elementor-widget-wrap">
                         <div data-id="wxuopus" class="elementor-element elementor-element-wxuopus dtb-heading-none elementor-widget elementor-widget-heading" data-settings="[]" data-element_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-large talign-center" id="section-contact">
+                                <h2 class="elementor-heading-title elementor-size-large talign-center page-section" id="section-contact">
                                     <?php echo $trans['location.section_title'];?>
                                 </h2>
                             </div>

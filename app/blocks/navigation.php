@@ -3,11 +3,11 @@
 <!-- Start Navigation Menu -->
 <div class="menu-main-menu-container">
     <ul id="primary-menu" class="menu">
-        <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-20 current_page_item menu-item-has-children menu-item-30 menu-item-for-page-20">
-            <a href="/"><?php echo $trans['navigation.home'];?></a>
+        <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-20 menu-item-has-children menu-item-30 menu-item-for-page-20">
+            <a href="#section-home"><?php echo $trans['navigation.home'];?></a>
         </li>
         <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28 menu-item-for-page-2">
-            <a href="sample-page.html">Pages</a>
+            <a href="#section-events">Pages</a>
             <?php if(false){?>
             <ul class="sub-menu">
                 <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133 menu-item-for-page-2"> <a href="sample-page.html">Typography</a> </li>

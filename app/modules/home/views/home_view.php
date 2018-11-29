@@ -4,6 +4,7 @@ include(_APPLICATION_FOLDER.'blocks/about.php');
 include(_APPLICATION_FOLDER.'blocks/events_calendar.php');
 include(_APPLICATION_FOLDER.'blocks/gallery.php');
 include(_APPLICATION_FOLDER.'blocks/google_map.php');
+include(_APPLICATION_FOLDER.'blocks/back_to_top.php');
 //include(dirname(__FILE__).'/../'.'blocks/section_master_town.php');
 //include(dirname(__FILE__).'/../'.'blocks/section_our_story.php'); 
 //include(dirname(__FILE__).'/../'.'blocks/section_upcoming_events.php'); 

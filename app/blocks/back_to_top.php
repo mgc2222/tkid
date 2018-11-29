@@ -1,1 +1,1 @@
-<a href="#0" class="cd-top cd-is-visible"></a>
+<a href="#home" class="cd-top cd-is-visible"></a>

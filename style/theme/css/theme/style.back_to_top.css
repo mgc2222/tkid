@@ -1,0 +1,30 @@
+.cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 0.5;
+}
+.cd-top.cd-is-visible:hover{opacity:1;}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+
+}
+.cd-top {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    position: fixed;
+    bottom: 20px;
+    right: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    background:url(../../../images/theme/back-top.png) no-repeat center 50%;
+    background-color: #11bfab !important;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+    border-radius: 6px;
+    z-index: 10000;
+}

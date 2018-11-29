@@ -15,6 +15,7 @@
             .main-navigation a:hover{
                 color: #11bfab !important;
                 opacity: 1;
+                font-weight: 600;
             }
 
             .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,

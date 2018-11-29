@@ -14,7 +14,7 @@
                     <div class="elementor-widget-wrap">
                         <div data-id="jetgboh" class="elementor-element elementor-element-jetgboh dtb-heading-line elementor-widget elementor-widget-heading" data-settings="[]" data-element_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-large" id="section-events">
+                                <h2 class="elementor-heading-title elementor-size-large page-section" id="section-events">
                                     <?php echo $trans['events.section_title'];?>
                                 </h2>
                             </div>

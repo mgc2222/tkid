@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'eicon';
-  src: url("../../../theme/fonts/plugin/eicons.eot?2.0");
-  src: url("../../../theme/fonts/plugin/eicons.eot?2.0#iefix") format("embedded-opentype"), url("../../../theme/fonts/plugin/eicons.woff2?2.0") format("woff2"), url("../../../theme/fonts/plugin/eicons.woff?2.0") format("woff"), url("../../../theme/fonts/plugin/eicons.ttf?2.0") format("truetype"), url("../../../theme/fonts/plugin/eicons.svg?2.0#eicon") format("svg");
+  src: url("../../../style/theme/fonts/plugin/eicons.eot?2.0");
+  src: url("../../../style/theme/fonts/plugin/eicons.eot?2.0#iefix") format("embedded-opentype"), url("../../../style/theme/fonts/plugin/eicons.woff2?2.0") format("woff2"), url("../../../style/theme/fonts/plugin/eicons.woff?2.0") format("woff"), url("../../../style/theme/fonts/plugin/eicons.ttf?2.0") format("truetype"), url("../../../style/theme/fonts/plugin/eicons.svg?2.0#eicon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="eicon-"],

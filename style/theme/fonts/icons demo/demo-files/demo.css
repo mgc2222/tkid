@@ -19,7 +19,10 @@ a {
 	text-decoration: none;
 }
 a:hover, a:focus {
-	box-shadow: 0 1px #e74c3c;
+	//box-shadow: 0 1px #e74c3c;
+}
+a.dtbaker-social_icons-list__link:hover{
+	box-shadow: 0 1px #11bfab;
 }
 .bshadow0, input {
 	box-shadow: inset 0 -2px #e7e7e7;
