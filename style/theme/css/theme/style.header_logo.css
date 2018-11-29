@@ -90,7 +90,8 @@
 }
 @media screen and (max-width: 1200px) {
   .site-header .site-branding div > a {
-    margin-left: 18%;
+    margin-left: 1%;
+    width: 40%;
   }
 }
 
