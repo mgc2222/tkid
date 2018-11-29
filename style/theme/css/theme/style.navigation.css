@@ -104,7 +104,11 @@ a:active {
 }
 @media screen and (max-width: 1200px) {
   .home header.site-header {
-    margin: 0 30px;
+    //margin: 0 30px;
+    margin: 0 10px;
+  }
+  div.elementor-widget {
+    padding: 10px;
   }
 }
 .main

@@ -31,6 +31,7 @@ class Home extends AdminController
 	       	'theme/css/plugin/woocommerce-layout.css',
 	        'theme/css/plugin/woocommerce-smallscreen.css',
 	        'theme/css/plugin/woocommerce.css',
+			'theme/fonts/icons demo/demo-files/demo.css',
 	        
 
 	        'theme/css/plugin/socicon.css',
