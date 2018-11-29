@@ -45,6 +45,7 @@
 .custom-logo-3 {
   display: block;
   margin-top: 5%;
+  margin-left: 0%;
 }
 #logo{
   display: inline-block;
@@ -92,6 +93,9 @@
   .site-header .site-branding div > a {
     margin-left: 1%;
     width: 40%;
+  }
+  img.custom-logo-3 {
+    margin-left: 11%;
   }
 }
 
