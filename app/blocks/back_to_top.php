@@ -1,1 +1,1 @@
-<a href="#home" class="cd-top cd-is-visible"></a>
+<a href="#section-home" class="cd-top cd-is-visible"></a>
