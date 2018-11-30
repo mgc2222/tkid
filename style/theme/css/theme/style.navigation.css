@@ -107,7 +107,7 @@ a:active {
   #main-navigation-wrap {
     position: fixed;
     right: 0;
-    top: 220px;
+    top: 5px;
     z-index: 999;
   }
   .menu-main-menu-container{
