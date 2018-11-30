@@ -209,6 +209,7 @@ aside.widget-area .widget .widget-title-wrap .widget-title:after {
   }
   .foliageblog-slider-pretty .foliageblog-slider-caption > div > div div {
     font-size: 20px;
+    font-weight: 500;
   }
 }
 /** slider decoration **/

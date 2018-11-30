@@ -22,7 +22,14 @@
                         <div data-id="" class="elementor-element elementor-element-mewjspa elementor-widget elementor-widget-text-editor" data-settings="[]" data-element_type="text-editor.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-text-editor elementor-clearfix">
-                                    <p>A garden is a planned space, usually outdoors, set aside for the display, cultivation and enjoyment of plants and other forms of nature. The garden can incorporate both natural and man-made materials. The most common form today is known as a residential garden, but the term garden has traditionally been a more general one. </p>
+                                    <h4>
+                                        „Jocul este forma cea mai inalta a cercetarii". Spunea Albert Einstein
+                                    </h4>
+                                    <p>
+                                        In perioada rece organizam in spatiul interior zilnic ateliere pentru copii de toate varstele, intre orele 16.00-20.00 (la cerere putem organiza si ateliere in prima parte a zilei pentru cei mai mici dintre copii 1-4 ani), iar pe perioada calda, atelierele au loc in gradina, va rugam consultati mereu Calendarul .
+                                        Propunem Ateliere  Montessori cu personal acreditat, ateliere de creatie tematice, desen, pictura, kraft, dezvoltare personala, dans, zumba, etc.
+                                        Fiecare atelier are inclus in program si o ora "liber la joaca" in intreaga locatie dupa finalizarea atelierul care dureaza o ora.
+                                    </p>
                                 </div>
                             </div>
                         </div>

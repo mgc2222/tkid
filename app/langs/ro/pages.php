@@ -21,7 +21,7 @@ $trans['events.section_title'] = 'Evenimente';
 
 $trans['gallery.section_title'] = 'Galerie Foto';
 
-$trans['about.section_title'] = 'Povestea noastra';
+$trans['about.section_title'] = 'Despre noi';
 
 $trans['location.section_title'] = 'Locatia';
 

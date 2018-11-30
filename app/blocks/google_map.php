@@ -12,17 +12,20 @@
             <div data-id="yfzeqiw" class="elementor-element elementor-element-yfzeqiw elementor-column elementor-col-100 elementor-top-column" data-settings="[]" data-element_type="column">
                 <div class="elementor-column-wrap elementor-element-populated">
                     <div class="elementor-widget-wrap">
-                        <div data-id="wxuopus" class="elementor-element elementor-element-wxuopus dtb-heading-none elementor-widget elementor-widget-heading" data-settings="[]" data-element_type="heading.default">
+                        <div data-id="wxuopus" class="elementor-element elementor-element-wxuopus dtb-heading-none elementor-widget elementor-widget-heading p0" data-settings="[]" data-element_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h2 class="elementor-heading-title elementor-size-large talign-center page-section" id="section-contact">
-                                    <?php echo $trans['location.section_title'];?>
+                                    <?php echo $trans['location.section_title'].':';?>
+                                    <div>
+                                        <h6>Str. Varful Berivoiul Mare, nr 72A , sector 1, Bucuresti.....suntem usor de recunoscut , vezi Gardul cu steguletele TheKid :)</h6>
+                                    </div>
                                 </h2>
                             </div>
                         </div>
-                        <div data-id="hpollqw" class="elementor-element elementor-element-hpollqw elementor-widget elementor-widget-dtbaker-google-map" data-settings="[]" data-element_type="dtbaker-google-map.default">
-                            <div class="elementor-widget-container">
+                        <div data-id="hpollqw" class="elementor-element elementor-element-hpollqw elementor-widget elementor-widget-dtbaker-google-map p0" data-settings="[]" data-element_type="dtbaker-google-map.default">
+                            <div class="elementor-widget-container p0">
                                 <div id="googlemap1" class="googlemap" style="height:400px;">
-                                    <iframe   width="100%"  height="100%"  frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=<?php echo _GOOGLE_API_KEY;?>&q=Space+Needle,Seattle+WA" allowfullscreen></iframe>
+                                    <iframe   width="100%"  height="100%"  frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=<?php echo _GOOGLE_API_KEY;?>&q=Drumul+Vârful+Berivoiul+Mare+72a, București+Sector+1&zoom=15" allowfullscreen></iframe>
                                 </div>
                                 <div class="clear"></div>
                                 <!--<div class="map_buttons"> <a href="http://maps.google.com/maps?q=Melbourne%2C+Australia" class="dtbaker_button" target="_blank">Enlarge Map</a> <a href="https://maps.google.com?daddr=Melbourne%2C+Australia" class="dtbaker_button" target="_blank">Get Directions</a> </div>-->
