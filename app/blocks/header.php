@@ -18,6 +18,9 @@
             <div><a href="/" rel="home">The Kid</a></div>
         </div>
     </div>
+    <div id="motto">
+        <quote><i>In spatele fiecarui Copil Lumina e un Parinte Soare...</i></quote>
+    </div>
     <!-- .site-branding -->
     <!-- Template Section End: template-parts/header-logo -->
     <!-- Template Section Start: template-parts/header-menu -->
