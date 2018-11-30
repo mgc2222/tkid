@@ -35,8 +35,8 @@
 }
 .site-header .site-branding a {
   display: block;
-  width: 31%;
-  margin-left: 31%;
+  width: 27%;
+  margin-left: 29%;
   margin-top: 2%;
 }
 .site-header .site-branding img{
@@ -49,13 +49,13 @@
 }
 #logo{
   display: inline-block;
-  width: 60%;
+  width: 55%;
   margin-left: 0;
 }
 #logo-aside{
   display:inline-table;
   vertical-align: top;
-  width: 35%;
+  width: 37%;
 }
 .foliageblog_header_header1bottomlgpng .site-header .site-branding {
   padding: 51px 0 0 0;
@@ -63,6 +63,10 @@
 }
 .site-header .site-branding img {
   vertical-align: middle;
+}
+#logo .custom-logo, #logo .custom-logo-2{
+  display: block;
+  margin: 0 auto;
 }
 .site-header .site-branding .site-title {
   vertical-align: middle;
