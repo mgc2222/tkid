@@ -96,8 +96,8 @@ p {
 	margin-right: 1.5em;
 }
 .mhmm {
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: 1em!important;
+	margin-right: 1em!important;
 }
 .mls {
 	margin-left: .25em;

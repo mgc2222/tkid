@@ -42,7 +42,7 @@
     </section>
     <div id="main-navigation-wrap" class="">
         <nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span id="hamburger-bars"><i class="fa fa-bars"></i></span></button>
             
 
 <?php 

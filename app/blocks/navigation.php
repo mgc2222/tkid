@@ -1,7 +1,7 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');?>
 						        
 <!-- Start Navigation Menu -->
-<div class="menu-main-menu-container">
+<div class="menu-main-menu-container" id="main-menu-container">
     <ul id="primary-menu" class="menu">
         <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-20 menu-item-has-children menu-item-30 menu-item-for-page-20">
             <a href="#section-home"><?php echo $trans['navigation.home'];?></a>

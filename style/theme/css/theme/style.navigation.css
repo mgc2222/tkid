@@ -102,13 +102,35 @@ a:active {
     margin: 0 0 0 -6px;
   }
 }
+
 @media screen and (max-width: 1200px) {
+  #main-navigation-wrap {
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 999;
+  }
+  .menu-main-menu-container{
+    position: fixed;
+    right: 0;
+    margin-top: 42px;
+  }
+  #menu-home-title{
+    display: none;
+  }
+  #hamburger-bars{
+    color: #11bfab;
+  }
+  .menu-toggle {
+    position: fixed;
+    right: 0;
+  }
   .home header.site-header {
     //margin: 0 30px;
-    margin: 0 10px;
+    margin: 0;
   }
   div.elementor-widget {
-    padding: 10px;
+    padding: 0;
   }
 }
 .main
