@@ -135,8 +135,87 @@ $trans['languages.column_abbreviation'] = 'Abreviere';
 $trans['languages.items_list'] = 'Lista Limbi Vorbite';
 $trans['languages.save_success'] = 'Limba a fost salvata cu success';
 
-$trans['events.title'] = 'Events';
-$trans['gallery.title'] = 'Gallery';
+
+//	===================================================== //
+//		Front Page Sections
+//	===================================================== //
+
+$trans['home.page_title'] = 'The Kid';
+
+$trans['events.section_title'] = 'Events';
+
+$trans['gallery.section_title'] = 'Gallery';
+
 $trans['about.section_title'] = 'Our Story';
+
 $trans['location.section_title'] = 'Our Location';
+
+//	===================================================== //
+//		Front Navigation Menu
+//	===================================================== //
+
+$trans['navigation.home'] = 'Home';
+
+$trans['navigation.events'] = 'Events';
+
+$trans['navigation.about'] = 'About Us';
+
+$trans['navigation.gallery'] = 'Photo Gallery';
+
+$trans['navigation.contact'] = 'Contact';
+
+//	===================================================== //
+//		Front Page Meta Description Content
+//	===================================================== //
+
+$trans['meta.description'] ='"The Kid" is a unique space in Bucharest that combines "quality play" with the creation and fun of children with the relaxation of their parents.';
+
+//	===================================================== //
+//		Front Page Sections Content
+//	===================================================== //
+
+$trans['header.motto_content'] = '<quote><i>Behind each Light Child is a Sun Father...</i></quote>';
+
+$trans['events.section_content'] = '<h4>
+                                        "The game is the highest form of research," said Albert Einstein
+                                    </h4>
+                                    <p>
+                                        During the cold period we organize daily workshops for children of all ages between 16.00 and 20.00 (on request we can also organize workshops in the first part of the day for the youngest children 1-4 years old) and during the warm season, the workshops take place in the garden, please always check the calendar.
+                                        We propose Montessori Workshops with accredited staff, thematic creation workshops, drawing, painting, kraft, personal development, dancing, zumba, etc.
+                                        Each workshop has included in the program and a "free play" hour in the whole location after the completion of the one-hour workshop.
+                                    </p>';
+
+$trans['about.section_content'] = '<h4>
+                                        "When you are free, you can play, and when you play, you get free!" 
+                                        <br><span style="display:block;text-align:right">Heidi Kaduson</span>
+                                    </h4>
+
+                                    <p>The Kid is a unique space in Bucharest that combines "quality play" with the creation and fun of children with the relaxation of their parents.</p>
+
+                                    <p>For you beautiful child, for you dear parent, for YOU whoever you are and want to feel joy, relaxation and positive energy ...</p>
+
+                                    <p>Where? Near Baneasa Forest, in a garden of 1000 square meters full of greenery, trees and multicolored flowers and in an interior space of 150 square meters for play and workshops, specially created for children!</p>
+
+                                    <p>
+                                        Why do I say "unique" ?! Because it\'s created by a junior mother who has not found anything here anywhere.
+                                        We have created a complex space where you can sit for a tea, a cake and a good book, and have your child have a nicely 
+                                        arranged place with quality, educational and creative toys with carefully designed spaces for him to feel at ease and to be happy.
+                                        You can leave your child alone at age-based workshops and when we leave, we want to hear him say, Mommy, Daddy, when we return to this wonderful place? ... 
+                                        You can always join the workshops and create together beautiful things.
+                                    </p>
+
+                                    <p>
+                                        The KID is divided into 2 spaces: the outdoor one, where outdoor / outdoor parties (adults and children) are organized near the beautiful Baneasa Forest, with outdoor playground for children, dining places, relaxation areas for parents.
+                                        The interior space has a common place for parents and children for parties and other individual rooms where workshops specially designed for children will be held (painting, drawing, collage, clay / kinetic sand, fashion design, personal development,
+                                        Montessori workshops with accredited staff, Learn with music, Lego room, theater, children\'s cinema, dance, zumba, adding new workshops permanently).
+                                    </p>
+
+
+                                    <h4>"The best thing you can spend on your children is your time.” <br><span style="display:block;text-align:right">Louise Hart</span></h4>
+
+                                        <p>Dearfully,</p>
+                                    <p>Alina</p>';
+
+$trans['location.section_content'] = '<h6>Street Varful Berivoiul Mare, 72A, sector 1, Bucharest.....we are easy to recognize, see The Kid flags :)</h6>';
+
 ?>

@@ -17,7 +17,7 @@
                                 <h2 class="elementor-heading-title elementor-size-large talign-center page-section" id="section-contact">
                                     <?php echo $trans['location.section_title'].':';?>
                                     <div>
-                                        <h6>Str. Varful Berivoiul Mare, nr 72A , sector 1, Bucuresti.....suntem usor de recunoscut , vezi Gardul cu steguletele TheKid :)</h6>
+                                        <?php echo $trans['location.section_content'].':';?>
                                     </div>
                                 </h2>
                             </div>

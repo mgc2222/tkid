@@ -19,7 +19,7 @@
         </div>
     </div>
     <div id="motto">
-        <quote><i>In spatele fiecarui Copil Lumina e un Parinte Soare...</i></quote>
+        <?php echo $trans['header.motto_content'];?>
     </div>
     <!-- .site-branding -->
     <!-- Template Section End: template-parts/header-logo -->

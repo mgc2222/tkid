@@ -19,28 +19,7 @@
 											<div data-id="p13nvpq" class="elementor-element elementor-element-p13nvpq elementor-widget elementor-widget-text-editor" data-settings="[]" data-element_type="text-editor.default">
 												<div class="elementor-widget-container">
 													<div class="elementor-text-editor elementor-clearfix">
-                                                        <h4>„Atunci cand esti liber, te poti juca, iar cand te joci, devii liber!" <br><span style="display:block;text-align:right">Heidi Kaduson</span></h4>
-
-                                                        <p>theKID este un spatiu unic in Bucuresti, care imbina "joaca de calitate" cu creatia si distractia copiilor cu relaxarea parintilor.</p>
-
-                                                        <p>Pentru tine-COPIL frumos, pentru tine- PARINTE drag, pentru TINE- oricine ai fi si vrei sa simti bucurie, relaxare si energie pozitiva...</p>
-
-                                                        <p>Unde? Langa Padurea Baneasa, intr-o gradina de 1000 mp plina de verdeata, pomi si flori multicolore si intr-un spatiu interior de 150 mp pentru joaca si ateliere, special creat pentru copii!</p>
-
-                                                        <p>De ce spun “unic”?! Pentru ca este creat de o mama de junior care nu a gasit nicaieri tot ceea ce se regaseste aici.
-
-                                                        Am creat un spatiu complex , unde sa vii sa stai la un ceai, o prajitura si o carte buna, iar copilul tau sa aiba parte de un loc frumos amenajat, cu jucarii de calitate ,educative si creative,cu spatii atent create pentru ca el sa se simta in largul lui si sa fie fericit.
-                                                            Poti sa iti lasi singur copilul la ateliere in functie de varsta , iar la plecare ne dorim sa il auzim zicand: mami, tati, cand ne reintoarcem in acest minunat  loc?...Poti oricand sa te alaturi si tu atelierelor si sa creati impreuna lucruri frumoase.</p>
-
-                                                        <p>theKID este impartit in 2 spatii: cel exterior , unde se organizeaza aniversari/petreceri (adulti si copii) in aer liber langa superba Padure Baneasa, cu loc de joaca exterior pentru copii, locuri de luat masa , spatii de relaxare pentru parinti.
-                                                            Spatiul interior beneficiaza de un loc comun pentru parinti si copii pentru petreceri si alte camere individuale, unde vor avea loc atelierele special concepute pentru copii ( pictura, desen, colaj, modelaj in lut/nisip kinetic, design vestimentar, dezvoltare personala,
-                                                            ateliere Montessori cu personal acreditat, Learn with music, Lego room, teatru, cinema pentru copii, dans, zumba, adaugand ateliere noi in permanenta).</p>
-
-
-                                                        <h4>"Cel mai bun lucru pe care poti sa-l cheltuiesti pentru copiii tai este timpul tau.” <br><span style="display:block;text-align:right">Louise Hart</span></h4>
-
-                                                            <p>Va astept cu drag,</p>
-                                                        <p>Alina</p>
+                                                        <?php echo $trans['about.section_content'];?>
 													</div>
 												</div>
 											</div>

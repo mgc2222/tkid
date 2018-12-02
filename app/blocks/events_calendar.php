@@ -22,14 +22,7 @@
                         <div data-id="" class="elementor-element elementor-element-mewjspa elementor-widget elementor-widget-text-editor" data-settings="[]" data-element_type="text-editor.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-text-editor elementor-clearfix">
-                                    <h4>
-                                        „Jocul este forma cea mai inalta a cercetarii". Spunea Albert Einstein
-                                    </h4>
-                                    <p>
-                                        In perioada rece organizam in spatiul interior zilnic ateliere pentru copii de toate varstele, intre orele 16.00-20.00 (la cerere putem organiza si ateliere in prima parte a zilei pentru cei mai mici dintre copii 1-4 ani), iar pe perioada calda, atelierele au loc in gradina, va rugam consultati mereu Calendarul .
-                                        Propunem Ateliere  Montessori cu personal acreditat, ateliere de creatie tematice, desen, pictura, kraft, dezvoltare personala, dans, zumba, etc.
-                                        Fiecare atelier are inclus in program si o ora "liber la joaca" in intreaga locatie dupa finalizarea atelierul care dureaza o ora.
-                                    </p>
+                                    <?php echo $trans['events.section_content'];?>
                                 </div>
                             </div>
                         </div>
