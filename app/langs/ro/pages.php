@@ -44,6 +44,12 @@ $trans['meta.keywords'] ='The Kid, Bucuresti, joaca, creatie, distractie, copii,
 //	===================================================== //
 $trans['header.motto_content'] = 'In spatele fiecarui Copil Lumina e un Parinte Soare...';
 
+$trans['header.section_contact_hidden_heading'] = 'Intra in contact cu noi';
+
+$trans['gallery.section_content_hidden_heading'] = 'Poze din galeria foto';
+
+$trans['footer.section_copyright_hidden_heading'] = 'Drepturi de autor';
+
 $trans['events.section_content_quote_1'] = '„Jocul este forma cea mai inalta a cercetarii". Spunea Albert Einstein';
 
 $trans['events.section_content_p_1'] = 'In perioada rece organizam in spatiul interior zilnic ateliere pentru copii de toate varstele, intre orele 16.00-20.00 (la cerere putem organiza

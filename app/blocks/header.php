@@ -26,6 +26,9 @@
     <!-- Template Section End: template-parts/header-logo -->
     <!-- Template Section Start: template-parts/header-menu -->
     <section id="dtbaker-social-icons-widget-2" class="widget dtbaker-social-icons-widget vergeblog_widget vergeblog_widget_count_1">
+        <h4 class="elementor-heading-title elementor-size-large page-section hidden-true">
+            <?php echo $trans['header.section_contact_hidden_heading'];?>
+        </h4>
         <ul class="dtbaker-social-icons-list dtbaker-social-icons-list--without-canvas dtbaker-social-icons-list--rounded dtbaker-social-icons-list--no-labels">
             <li class="dtbaker-social_icons-list__item">
                 <a class="dtbaker-social_icons-list__link" href="https://www.facebook.com/theKIDplayground" target="_blank"> <span class="socicon socicon-facebook" style="color:#b2b2b2"></span> </a>
@@ -46,7 +49,7 @@
     </section>
     <div id="main-navigation-wrap" class="">
         <nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span id="hamburger-bars"><i class="fa fa-bars"></i></span></button>
+            <button class="menu-toggle" type=button aria-controls="primary-menu" aria-expanded="false"><span id="hamburger-bars"><i class="fa fa-bars"></i></span></button>
             
 
 <?php 

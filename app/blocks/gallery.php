@@ -39,6 +39,9 @@
                     </section>
                     <?php } ?>
                     <section data-id="fvoruiy" class="elementor-element elementor-element-fvoruiy elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;shape_divider_top&quot;:&quot;&quot;,&quot;shape_divider_bottom&quot;:&quot;&quot;}" data-element_type="section">
+                        <h4 class="elementor-heading-title elementor-size-large page-section hidden-true">
+                            <?php echo $trans['gallery.section_content_hidden_heading'];?>
+                        </h4>
                         <div class="elementor-container elementor-column-gap-default">
                             <div class="elementor-row">
                                 <div data-id="1af8f09" class="elementor-element elementor-element-1af8f09 elementor-column elementor-col-100 elementor-top-column" data-settings="[]" data-element_type="column">

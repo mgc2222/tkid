@@ -180,6 +180,12 @@ $trans['meta.keywords'] ='The Kid, Bucharest, play, creation, fun, children, rel
 
 $trans['header.motto_content'] = 'Behind each Light Child is a Sun Father...';
 
+$trans['header.section_contact_hidden_heading'] = 'Get in touch with us';
+
+$trans['gallery.section_content_hidden_heading'] = 'Pictures from the photo gallery';
+
+$trans['footer.section_copyright_hidden_heading'] = 'Copyright';
+
 $trans['events.section_content_quote_1'] = '"The game is the highest form of research," said Albert Einstein';
 
 $trans['events.section_content_p_1'] = 'During the cold period we organize daily workshops for children of all ages between 16.00 and 20.00 (on request we can also organize workshops
