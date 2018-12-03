@@ -178,7 +178,7 @@ $trans['meta.keywords'] ='The Kid, Bucharest, play, creation, fun, children, rel
 //		Front Page Sections Content
 //	===================================================== //
 
-$trans['header.motto_content'] = '<quote><i>Behind each Light Child is a Sun Father...</i></quote>';
+$trans['header.motto_content'] = '<i>Behind each Light Child is a Sun Father...</i>';
 
 $trans['events.section_content'] = '<h4>
                                         "The game is the highest form of research," said Albert Einstein

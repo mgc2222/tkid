@@ -42,7 +42,7 @@ $trans['meta.keywords'] ='The Kid, Bucuresti, joaca, creatie, distractie, copii,
 //	===================================================== //
 //		Front Page Sections Content
 //	===================================================== //
-$trans['header.motto_content'] = '<quote><i>In spatele fiecarui Copil Lumina e un Parinte Soare...</i></quote>';
+$trans['header.motto_content'] = '<i>In spatele fiecarui Copil Lumina e un Parinte Soare...</i>';
 
 $trans['events.section_content'] = '<h4>
                                         „Jocul este forma cea mai inalta a cercetarii". Spunea Albert Einstein
