@@ -101,6 +101,7 @@ class Home extends AdminController
 		$this->webpage->SearchBlock = $this->GetGeneralBlockPath('search_block');
 		$this->webpage->PageDescription = $this->trans['meta.description'];
 		$this->webpage->PageKeywords = $this->trans['meta.keywords'];
+		$this->webpage->FormAction = 'change_language';
 
 		// if search
 		//$this->webpage->RedirectPostToGet($this->webpage->PageUrl, 'actionSearch', '1', array('txtSearch'), array('search'));

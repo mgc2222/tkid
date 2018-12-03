@@ -3,7 +3,7 @@
 <?php include(_APPLICATION_FOLDER.'blocks/html_head_block.php'); ?>
 <body class="<?php echo $webpage->BodyClasses?>">
 <div id="page" class="">
-    <form id="mainForm" method="post" action="" <?php echo $webpage->FormAttributes?>>
+    <form id="mainForm" method="post" action="<?php echo $webpage->FormAction?>" <?php echo $webpage->FormAttributes?>>
         <div id="header-content" class="">
             <div id="header-content-inner">
                 <?php include(_APPLICATION_FOLDER.'blocks/header.php'); ?>

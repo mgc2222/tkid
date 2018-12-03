@@ -56,8 +56,9 @@ class AdminController extends AbstractController
 	function SetDefaultData()
 	{
 		$this->webpage->HeaderTitle = 'Panou de administrare';
-		$this->webpage->PageLayout = _APPLICATION_FOLDER.'layouts/default_layout.php';
+		$this->webpage->PageLayout = _APPLICATION_FOLDER.'layouts/default_layout_form.php';
 		$this->webpage->BodyClasses = '';
+		$this->webpage->FormAction = '';
 
 		/*$this->webpage->StyleSheets = Array(
 		'bootstrap/bootstrap.css',

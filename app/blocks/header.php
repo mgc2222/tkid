@@ -4,15 +4,15 @@
     <div class="site-branding page-section" id="section-home">
         <!-- Start Logo Area -->
         <div id="logo">
-            <a href="/" class="custom-logo-link" rel="home" itemprop="url">
-                <img width="292" height="131" src="images/content/logo.png" class="custom-logo" alt="" itemprop="logo" />
-                <img width="200" height="156" src="images/content/rocking-horse.png" class="custom-logo-2" alt="" itemprop="logo" />
+            <a href="/" class="custom-logo-link" rel="home">
+                <img width="292" height="131" src="images/content/logo.png" class="custom-logo" alt="" />
+                <img width="200" height="156" src="images/content/rocking-horse.png" class="custom-logo-2" alt="" />
             </a>
 
         </div>
         <!-- End Logo Area -->
         <div id="logo-aside">
-            <img src="images/content/dreamcatcher.png" class="custom-logo-3" alt="" itemprop="logo" />
+            <img src="images/content/dreamcatcher.png" class="custom-logo-3" alt="" />
         </div>
         <div class="site-title">
             <div><a href="/" rel="home">The Kid</a></div>

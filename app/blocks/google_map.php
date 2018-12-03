@@ -16,16 +16,15 @@
                             <div class="elementor-widget-container">
                                 <h2 class="elementor-heading-title elementor-size-large talign-center page-section" id="section-contact">
                                     <?php echo $trans['location.section_title'].':';?>
-                                    <div>
-                                        <?php echo $trans['location.section_content'].':';?>
-                                    </div>
+
+                                    <?php echo $trans['location.section_content'].':';?>
                                 </h2>
                             </div>
                         </div>
                         <div data-id="hpollqw" class="elementor-element elementor-element-hpollqw elementor-widget elementor-widget-dtbaker-google-map p0" data-settings="[]" data-element_type="dtbaker-google-map.default">
                             <div class="elementor-widget-container p0">
                                 <div id="googlemap1" class="googlemap" style="height:400px;">
-                                    <iframe   width="100%"  height="100%"  frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=<?php echo _GOOGLE_API_KEY;?>&q=Drumul+Vârful+Berivoiul+Mare+72a, București+Sector+1&zoom=15" allowfullscreen></iframe>
+                                    <iframe  style="border:0;height:100%;width:100%" src="https://www.google.com/maps/embed/v1/place?key=<?php echo _GOOGLE_API_KEY;?>&q=Drumul+Vârful+Berivoiul+Mare+72a, București+Sector+1&zoom=15" allowfullscreen></iframe>
                                 </div>
                                 <div class="clear"></div>
                                 <!--<div class="map_buttons"> <a href="http://maps.google.com/maps?q=Melbourne%2C+Australia" class="dtbaker_button" target="_blank">Enlarge Map</a> <a href="https://maps.google.com?daddr=Melbourne%2C+Australia" class="dtbaker_button" target="_blank">Get Directions</a> </div>-->
