@@ -38,7 +38,8 @@ class AppCategories
 			$row->imagePath = $filePath.$row->app_category_id.'/'.$row->file;
             $fileNameNoExtension =  substr($row->file,  0, -(strlen($row->extension) + 1));
             $row->thumb = $filePathThumb.$row->app_category_id.'/'.$fileNameNoExtension.'-120x120.'.$row->extension;
-            $row->thumb_med = $filePathThumb.$row->app_category_id.'/'.$fileNameNoExtension.'-300x200.'.$row->extension;
+            $row->thumb_gallery = $filePathThumb.$row->app_category_id.'/'.$fileNameNoExtension.'-300x200.'.$row->extension;
+            $row->thumb_slider = $filePathThumb.$row->app_category_id.'/'.$fileNameNoExtension.'-1080x480.'.$row->extension;
 
 		}
 	}
