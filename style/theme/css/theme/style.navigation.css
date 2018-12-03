@@ -48,11 +48,16 @@ a:active {
   position: relative;
 }
 #motto{
-  font-family: 'Give You Glory';
+  font-family: 'Cedarville Cursive';
   font-weight: 600;
   color: #11bfab;
   font-size: 18px;
   opacity: 0.9;
+  font-size: 25px;
+}
+.quotes{
+  font-family: 'Cedarville Cursive';
+  font-size: 30px;
 }
 @media screen and (min-width: 37.5em) {
   .main-navigation > div > ul > li:after {

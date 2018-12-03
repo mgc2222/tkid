@@ -24,12 +24,12 @@
                                                 <div class="foliageblog-slider-caption">
                                                     <div class="inner-content-width">
                                                         <div>
-                                                            <h3>
+                                                            <h3 class="quotes">
                                                                 <?php /*echo $row->image_caption;*/?>
+                                                                <?php echo (isset($trans[$row->image_caption]))? $trans[$row->image_caption]:$row->image_description;?>
                                                             </h3>
                                                             <div>
                                                                 <?php /*echo $row->image_description*/?>
-                                                                <?php echo (isset($trans[$row->image_caption]))? $trans[$row->image_caption]:$row->image_description;?>
                                                             </div>
                                                         </div>
                                                     </div>
