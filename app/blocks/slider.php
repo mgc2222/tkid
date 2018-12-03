@@ -24,9 +24,12 @@
                                                     <div class="inner-content-width">
                                                         <div>
                                                             <h3>
-                                                                <?php echo $row->image_caption;?>
+                                                                <?php /*echo $row->image_caption;*/?>
                                                             </h3>
-                                                            <div><?php echo $row->image_description?></div>
+                                                            <div>
+                                                                <?php /*echo $row->image_description*/?>
+                                                                <?php echo (isset($trans[$row->image_caption]))?:$row->image_description;?>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

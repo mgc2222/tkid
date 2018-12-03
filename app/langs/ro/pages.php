@@ -79,4 +79,16 @@ $trans['about.section_content'] = ' <h4>„Atunci cand esti liber, te poti juca,
                                     <p>Alina</p>';
 
 $trans['location.section_content'] = '<h6>Str. Varful Berivoiul Mare, nr 72A , sector 1, Bucuresti.....suntem usor de recunoscut , vezi Gardul cu steguletele The Kid :)</h6>';
+
+$trans['quotes.henry_ward_beecher'] = '„Copiii sunt mainile cu ajutorul carora atingem cerurile." Henry Ward Beecher';
+
+$trans['quotes.samuel_johnson'] = '„Permiteti-le copiilor sa fie fericiti in felul lor, caci ce alta modalitate mai buna vor gasi?” Samuel Johnson';
+
+$trans['quotes.louise_hart'] = '„Cel mai bun lucru pe care poti sa-l cheltuiesti pentru copiii tai este timpul tau.” Louise Hart';
+
+$trans['quotes.stephen_sondheim'] = '„Ramai copil atata timp cat poti sa fii copil." Stephen Sondheim';
+
+$trans['quotes.lucian_blaga'] = '„Copilaria este inima tuturor varstelor.” Lucian Blaga';
+
+$trans['quotes.heidi_kaduson'] = '„Atunci cand esti liber, te poti juca, iar cand te joci, devii liber". Heidi Kaduson';
 ?>

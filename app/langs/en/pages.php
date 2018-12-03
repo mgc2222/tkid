@@ -222,4 +222,16 @@ $trans['about.section_content'] = '<h4>
 
 $trans['location.section_content'] = '<h6>Street Varful Berivoiul Mare, 72A, sector 1, Bucharest.....we are easy to recognize, see The Kid flags :)</h6>';
 
+$trans['quotes.henry_ward_beecher'] = '"Children are the hands with which we reach the heavens." Henry Ward Beecher';
+
+$trans['quotes.samuel_johnson'] = '"Allow the children to be happy in their own way, because what better way they will find?" Samuel Johnson';
+
+$trans['quotes.louise_hart'] = '"The best thing you can spend on your children is your time." Louise Hart';
+
+$trans['quotes.stephen_sondheim'] = '"You remain a child as long as you can be a child." Stephen Sondheim';
+
+$trans['quotes.lucian_blaga'] = '"Childhood is the heart of all ages." Lucian Blaga';
+
+$trans['quotes.heidi_kaduson'] = '"When you are free, you can play, and when you play, you become free." Heidi Kaduson';
+
 ?>
