@@ -14,6 +14,7 @@
                                 if ($dataView->slider->rows != null)
                                 {
                                     $index = 1;
+
                                     foreach ($dataView->slider->rows as &$row)
                                     {
                                         //echo $row->image_caption;
@@ -28,7 +29,7 @@
                                                             </h3>
                                                             <div>
                                                                 <?php /*echo $row->image_description*/?>
-                                                                <?php echo (isset($trans[$row->image_caption]))?:$row->image_description;?>
+                                                                <?php echo (isset($trans[$row->image_caption]))? $trans[$row->image_caption]:$row->image_description;?>
                                                             </div>
                                                         </div>
                                                     </div>
