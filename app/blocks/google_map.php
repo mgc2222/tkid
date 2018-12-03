@@ -16,9 +16,10 @@
                             <div class="elementor-widget-container">
                                 <h2 class="elementor-heading-title elementor-size-large talign-center page-section" id="section-contact">
                                     <?php echo $trans['location.section_title'].':';?>
-
-                                    <?php echo $trans['location.section_content'].':';?>
                                 </h2>
+                                <h6 class="elementor-heading-title talign-center">
+                                    <?php echo $trans['location.section_content'];?>
+                                </h6>
                             </div>
                         </div>
                         <div data-id="hpollqw" class="elementor-element elementor-element-hpollqw elementor-widget elementor-widget-dtbaker-google-map p0" data-settings="[]" data-element_type="dtbaker-google-map.default">

@@ -22,7 +22,10 @@
                         <div data-id="" class="elementor-element elementor-element-mewjspa elementor-widget elementor-widget-text-editor" data-settings="[]" data-element_type="text-editor.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-text-editor elementor-clearfix">
-                                    <?php echo $trans['events.section_content'];?>
+                                    <h4 class="elementor-heading-title elementor-size-large">
+                                        <?php echo $trans['events.section_content_quote_1'];?>
+                                    </h4>
+                                    <p><?php echo $trans['events.section_content_p_1'];?></p>
                                 </div>
                             </div>
                         </div>

@@ -19,7 +19,7 @@
         </div>
     </div>
     <div id="motto">
-        <?php echo $trans['header.motto_content'];?>
+        <i><?php echo $trans['header.motto_content'];?></i>
         <?php /*echo '<pre>';print_r($webpage);die();*/?>
     </div>
     <!-- .site-branding -->
