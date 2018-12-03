@@ -39,7 +39,9 @@ class LanguagesModel extends AbstractModel
 			$cond .= " AND name LIKE '%{$dataSearch->search}%'";
 		if (isset($dataSearch->abbreviation) && $dataSearch->abbreviation != '')
 			$cond .= " AND abbreviation = {$dataSearch->abbreviation}";
-			
+
+        if (isset($dataSearch->id) && $dataSearch->id != '')
+            $cond .= " AND id IN ({$dataSearch->id})";
 		return $cond;
 	}
 	
@@ -75,7 +77,7 @@ class LanguagesModel extends AbstractModel
 		$cond = $this->GetSqlCondition($dataSearch);
 		$orderBy = ($orderBy != null)?' ORDER BY '.$orderBy:'';
 		$sql = "SELECT id, name, abbreviation FROM {$this->table}	{$cond} {$orderBy}";
-		
+
 		return $this->dbo->GetRows($sql);
 	}
 		

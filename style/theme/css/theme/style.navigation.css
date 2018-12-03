@@ -73,12 +73,28 @@ a:active {
   display: block;
   position: relative;
 }
-.main-navigation a {
+.main-navigation a, .main-navigation #translate-text {
   display: block;
   text-decoration: none;
   padding: 5px 25px;
   background-color: #fff;
   opacity: 0.8;
+}
+.main-navigation #translate-text:hover{
+  color: #11bfab !important;
+  cursor: pointer;
+  opacity: 1;
+  font-weight: 600;
+}
+.main-navigation ul li#translate-menu{
+  opacity: 0.8;
+  background-color: #fff;
+}
+.main-navigation ul li#translate-menu:hover{
+  opacity: 1;
+}
+.main-navigation ul li#translate-menu:hover>ul {
+  left: 0;
 }
 .main-navigation ul ul {
   background: #fff;
@@ -138,6 +154,15 @@ a:active {
   }
   div.elementor-widget {
     padding: 0;
+  }
+  .main-navigation ul ul {
+    float: left;
+    position: absolute;
+    top: 48px;
+    left: -999em;
+    text-align: left;
+    font-size: 0.9em;
+    margin: 0 0 0 -6px;
   }
 }
 .main

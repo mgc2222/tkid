@@ -21,6 +21,8 @@ $trans['location.section_title'] = 'Locatia';
 
 $trans['navigation.home'] = 'Acasa';
 
+$trans['navigation.select_language'] = 'Selecteaza Limba';
+
 $trans['navigation.events'] = 'Evenimente';
 
 $trans['navigation.about'] = 'Despre noi';
@@ -33,7 +35,9 @@ $trans['navigation.contact'] = 'Contact';
 //		Front Page Meta Description Content
 //	===================================================== //
 
-$trans['meta.description'] ='"The Kid" este un spatiu unic in Bucuresti, care imbina "joaca de calitate" creatia si distractia copiilor cu relaxarea parintilor.';
+$trans['meta.description'] ='The Kid este un spatiu unic in Bucuresti, care imbina joaca de calitate, creatia si distractia copiilor cu relaxarea parintilor.';
+
+$trans['meta.keywords'] ='The Kid, Bucuresti, joaca, creatie, distractie, copii, relaxare, parinti.';
 
 //	===================================================== //
 //		Front Page Sections Content

@@ -33,6 +33,8 @@ class WebPage
 	var $PageKeywords;
 	
 	var $SearchLabel;
+
+    var $languageAbb; // language abbreviation
 	
 	function __construct()
 	{

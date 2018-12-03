@@ -18,13 +18,17 @@ class AdminController extends AbstractController
 		// PreloadImages::WriteContent();
 		$this->auth = new Auth();
 		$this->webpage = new WebPage();
-		
+        $laguageModel = $this->LoadModel('languages', 'languages');
+        $dataSearch = new StdClass();
+        $dataSearch->id = '1,2';
 		$this->defaultLanguageId = $this->GetDefaultLanguageId();
 		$this->SetSelectedLanguage();
 		$selectedLanguage = $this->GetSelectedLanguage();
 		
 		if ($selectedLanguage == null) die('No language exists');
 		$this->languageId = $selectedLanguage->id;
+        $this->webpage->languageAbb = $selectedLanguage->abbreviation;
+        $this->webpage->languageDdl = $laguageModel->GetRecordsForDropdown($dataSearch, 'id');
 		$this->LoadLang($selectedLanguage->abbreviation);
 		$this->GetSessionMessage();
 		$this->SetDefaultData();
@@ -54,7 +58,7 @@ class AdminController extends AbstractController
 		$this->webpage->HeaderTitle = 'Panou de administrare';
 		$this->webpage->PageLayout = _APPLICATION_FOLDER.'layouts/default_layout.php';
 		$this->webpage->BodyClasses = '';
-		
+
 		/*$this->webpage->StyleSheets = Array(
 		'bootstrap/bootstrap.css',
 		'fonts/font-awesome/css/font-awesome.min.css',

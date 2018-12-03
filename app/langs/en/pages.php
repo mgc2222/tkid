@@ -156,6 +156,8 @@ $trans['location.section_title'] = 'Our Location';
 
 $trans['navigation.home'] = 'Home';
 
+$trans['navigation.select_language'] = 'Select Language';
+
 $trans['navigation.events'] = 'Events';
 
 $trans['navigation.about'] = 'About Us';
@@ -168,7 +170,9 @@ $trans['navigation.contact'] = 'Contact';
 //		Front Page Meta Description Content
 //	===================================================== //
 
-$trans['meta.description'] ='"The Kid" is a unique space in Bucharest that combines "quality play" with the creation and fun of children with the relaxation of their parents.';
+$trans['meta.description'] ='The Kid is a unique space in Bucharest that combines quality play, creation and fun of children with the relaxation of their parents.';
+
+$trans['meta.keywords'] ='The Kid, Bucharest, play, creation, fun, children, relaxation, parents.';
 
 //	===================================================== //
 //		Front Page Sections Content

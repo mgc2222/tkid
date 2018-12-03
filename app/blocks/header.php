@@ -20,6 +20,7 @@
     </div>
     <div id="motto">
         <?php echo $trans['header.motto_content'];?>
+        <?php /*echo '<pre>';print_r($webpage);die();*/?>
     </div>
     <!-- .site-branding -->
     <!-- Template Section End: template-parts/header-logo -->

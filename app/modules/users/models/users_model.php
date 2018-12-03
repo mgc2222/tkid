@@ -165,13 +165,13 @@ class UsersModel extends AbstractModel
 	
 	function CreateAdminUser()
 	{
-		$userId = $this->dbo->SelectValue($this->table, 'id', array('email'=>'adi.uta@gmail.com'));
+		$userId = $this->dbo->SelectValue($this->table, 'id', array('email'=>'alina.timniu@gmail.com'));
 		
 		$password = md5('admin'._SALT_STRING);
 		if ($userId == null)
 		{
 			$roleId = $this->AddWebmasterRole();
-			$this->dbo->InsertRow($this->table, array('username'=>'webmaster','email'=>'adi.uta@gmail.com','password'=>$password,'status'=>1, 'date_added'=>'[NOW()]', 'role'=>$roleId));
+			$this->dbo->InsertRow($this->table, array('username'=>'webmaster','email'=>'alina.timniu@gmail.com','password'=>$password,'status'=>1, 'date_added'=>'[NOW()]', 'role'=>$roleId));
 		}
 		else
 		{
