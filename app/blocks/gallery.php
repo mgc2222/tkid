@@ -58,10 +58,10 @@
                                                 ?>
                                                             <figure class='gallery-item'>
                                                                 <div class='gallery-icon landscape'>
-                                                                    <a href='<?php echo $row->imagePath?>' data-rel="prettyPhoto[gallery]">
+                                                                    <a href='<?php echo $row->imagePath /*$row->thumb_med*/?>' data-rel="prettyPhoto[gallery]">
                                                                         <img
                                                                             width="300" height="200"
-                                                                            src="<?php echo $row->imagePath?>"
+                                                                            src="<?php echo /*$row->imagePath*/ $row->thumb_med?>"
                                                                             class="attachment-medium size-medium"
                                                                             alt="<?php echo $row->image_alt?>"
                                                                             style="object-fit:cover; min-height: 200px; max-height: 200px"

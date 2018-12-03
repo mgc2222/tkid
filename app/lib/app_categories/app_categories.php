@@ -31,10 +31,15 @@ class AppCategories
 		if ($rows == null) {
 			return;
 		}
+		$filePathThumb = _SITE_ADMIN_URL.'app_thumb/';
 		$filePath = _SITE_ADMIN_URL.'render_app_image/';
-		//$filePath = _SITE_ADMIN_URL.'files/app/';
+
 		foreach ($rows as &$row) {
 			$row->imagePath = $filePath.$row->app_category_id.'/'.$row->file;
+            $fileNameNoExtension =  substr($row->file,  0, -(strlen($row->extension) + 1));
+            $row->thumb = $filePathThumb.$row->app_category_id.'/'.$fileNameNoExtension.'-120x120.'.$row->extension;
+            $row->thumb_med = $filePathThumb.$row->app_category_id.'/'.$fileNameNoExtension.'-300x200.'.$row->extension;
+
 		}
 	}
 
