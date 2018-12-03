@@ -10,8 +10,8 @@ class ChangeLanguage extends AdminController
             	$_SESSION['language_id'] = (int)$_POST['language'];
 			}
 		}
-		$headers = getallheaders();
-		$this->webpage->Redirect((isset($headers['Reffer']))?:'/');
+		$this->RedirectBack();
 	}
+
 }
 ?>

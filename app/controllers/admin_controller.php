@@ -288,5 +288,10 @@ class AdminController extends AbstractController
 		}
 		return $ret;
 	}
+
+    function RedirectBack(){
+        $headers = getallheaders();
+        $this->webpage->Redirect((isset($headers['Reffer']))?:'/');
+    }
 }
 ?>
