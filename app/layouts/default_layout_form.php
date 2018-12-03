@@ -1,5 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?php if(false){?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="<?php echo $webpage->languageAbb?>" lang="<?php echo $webpage->languageAbb?>><?php }?>
+<!DOCTYPE html>
+<html xml:lang="<?php echo $webpage->languageAbb?>" lang="<?php echo $webpage->languageAbb?>>
 <?php include(_APPLICATION_FOLDER.'blocks/html_head_block.php'); ?>
 <body class="<?php echo $webpage->BodyClasses?>">
 <div id="page" class="">
