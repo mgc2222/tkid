@@ -15,7 +15,7 @@
             <img src="images/content/dreamcatcher.png" class="custom-logo-3" alt="" />
         </div>
         <div class="site-title">
-            <div><a href="/" rel="home">The Kid</a></div>
+            <div><h1><a href="/" rel="home">The Kid</a></h1></div>
         </div>
     </div>
     <div id="motto">
