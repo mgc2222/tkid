@@ -134,7 +134,7 @@ a:active {
   #main-navigation-wrap {
     top: 0!important;
     bottom: 20px;
-    overflow-y: scroll!important;
+    overflow-y: scroll;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -143,7 +143,6 @@ a:active {
     right: 0;
     top: 80px;
     z-index: 999;
-    overflow-y: hidden;
   }
   .menu-main-menu-container{
    /* position: fixed;
