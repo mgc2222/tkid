@@ -68,7 +68,8 @@ class Home extends AdminController
 	        'theme/css/theme/style.layout.css',
 			'theme/css/theme/style.back_to_top.css',
 	        'theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'*/
-	        'theme/css/stylesheet.css'
+	        'theme/css/stylesheet.css',
+	        'theme/css/google-place-card.min.css'
 	    );
 
 		array_push($this->webpage->ScriptsFooter,
@@ -91,6 +92,8 @@ class Home extends AdminController
 		    //'theme/waypoints.min.js',
 		    'theme/frontend.min.js',
 		    'theme/custom.js',
+		    'theme/initMap.js',
+		    'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->languageAbb.'&callback=initMap',
 			//'app.js',
 			//'lib/validator/jquery.validate.min.js',
 			//'lib/wrappers/validator/validator.js',

@@ -67,6 +67,7 @@ gulp.task('pack-css', function () {
          'style/theme/css/theme/style.color.css',
          'style/theme/css/theme/style.layout.css',
          'style/theme/css/theme/style.back_to_top.css',
+         'styke/theme/css/theme/google-place-card.css',
          'style/theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'
     ])
 		.pipe(concat('stylesheet.css'))

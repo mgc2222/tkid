@@ -262,8 +262,9 @@ class AdminController extends AbstractController
 			'var SCRIPTS = "'.implode('|', $this->webpage->ScriptsFooter).'";'.$endLine.
 			"var SITE_RELATIVE_URL = '"._SITE_RELATIVE_URL."';".$endLine.
 			"var SCRIPTS_URL = '"._SITE_URL."js/';".$endLine.
-			"var auth = { UserId: '{$userIdJs}' };".$endLine;
-		
+			"var auth = { UserId: '{$userIdJs}' };".$endLine.
+			"var gmapApiKey = '"._GOOGLE_API_KEY."';".$endLine;
+
 		$this->webpage->JsPageContent .= $js;
 		
 		if ($this->webpage->JsMessage != null)	
