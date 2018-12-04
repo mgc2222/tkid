@@ -130,7 +130,13 @@ a:active {
     margin: 0 0 0 -6px;
   }
 }
-
+@media (orientation: landscape) and (max-width: 1200px){
+  #main-navigation-wrap {
+    top: 0px;
+    min-height: 500px;
+    overflow: scroll;
+  }
+}
 @media screen and (max-width: 1200px) {
   #main-navigation-wrap {
     position: fixed;
