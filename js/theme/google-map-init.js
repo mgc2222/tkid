@@ -27,7 +27,7 @@
         var mapElement = document.getElementById('googlemap1');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-    ['The Kid', 'Varful Berivoiul Mare, nr 72A, Bucharest, Romania', phone, 'contact@tkid.ro', 'www.tkid.ro', latitude, longitude, 'https://wahabali.com/themeforest_images/pearl-map.png']
+    ['The Kid', 'Varful Berivoiul Mare, nr 72A, Bucharest, Romania', phone, 'contact@tkid.ro', 'www.tkid.ro', latitude, longitude, '/images/content/pearl-map.png']
         ];
         for (i = 0; i < locations.length; i++) {
       if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
