@@ -8,5 +8,10 @@ define('_APP_CACHE_IMAGES_PATH', 'files/app_cache/');
 define('_PRODUCT_CACHE_IMAGES_PATH', 'files/products_cache/');
 define('_THUMBS_PATH', 'thumbs/');
 
+
+define('_LOCATION_LATITUDE', 44.518283);
+define('_LOCATION_LONGITUDE', 26.043392);
+define('_LOCATION_PHONE', '+40 729 577 854');
+
 define('_SALT_STRING', '5treat*&ing-!x');
 ?>

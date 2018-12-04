@@ -263,7 +263,11 @@ class AdminController extends AbstractController
 			"var SITE_RELATIVE_URL = '"._SITE_RELATIVE_URL."';".$endLine.
 			"var SCRIPTS_URL = '"._SITE_URL."js/';".$endLine.
 			"var auth = { UserId: '{$userIdJs}' };".$endLine.
-			"var gmapApiKey = '"._GOOGLE_API_KEY."';".$endLine;
+			"var gmapApiKey = '"._GOOGLE_API_KEY."';".$endLine.
+			"var language = '".$this->webpage->languageAbb."';".$endLine.
+			"var latitude = '"._LOCATION_LATITUDE."';".$endLine.
+			"var longitude = '"._LOCATION_LONGITUDE."';".$endLine.
+			"var phone = '"._LOCATION_PHONE."';".$endLine;
 
 		$this->webpage->JsPageContent .= $js;
 		
