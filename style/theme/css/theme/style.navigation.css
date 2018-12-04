@@ -135,13 +135,13 @@ a:active {
   #main-navigation-wrap {
     position: fixed;
     right: 0;
-    top: 150px;
+    top: 80px;
     z-index: 999;
   }
   .menu-main-menu-container{
     position: fixed;
     right: 0;
-    margin-top: 42px;
+    margin-top: 44px;
   }
   #menu-home-title{
     display: none;
@@ -152,9 +152,10 @@ a:active {
   .menu-toggle {
     position: fixed;
     right: 0;
+    margin: 0;
   }
   .home header.site-header {
-    //margin: 0 30px;
+    /*margin: 0 30px;*/
     margin: 0;
   }
   div.elementor-widget {
@@ -197,7 +198,7 @@ a:active {
   display: block;
 }
 .menu-toggle {
-  margin: 0 auto 30px;
+  /*margin: 0 auto 30px;*/
 }
 @media screen and (min-width: 1200px) {
   .menu-toggle {

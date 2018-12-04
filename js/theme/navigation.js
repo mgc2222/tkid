@@ -38,10 +38,13 @@
             container.className = container.className.replace(' toggled', '');
             button.setAttribute('aria-expanded', 'false');
             menu.setAttribute('aria-expanded', 'false');
+            document.getElementById('hamburger-bars').getElementsByTagName('i')[0].className='fa fa-bars';
+
         } else {
             container.className += ' toggled';
             button.setAttribute('aria-expanded', 'true');
             menu.setAttribute('aria-expanded', 'true');
+            document.getElementById('hamburger-bars').getElementsByTagName('i')[0].className='fa fa-times';
         }
     };
 
