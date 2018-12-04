@@ -33,20 +33,39 @@
         menu.className += ' nav-menu';
     }
 
-    button.onclick = function () {
+    button.onclick = function (e) {
+        e.stopImmediatePropagation();
         if (-1 !== container.className.indexOf('toggled')) {
-            container.className = container.className.replace(' toggled', '');
-            button.setAttribute('aria-expanded', 'false');
-            menu.setAttribute('aria-expanded', 'false');
-            document.getElementById('hamburger-bars').getElementsByTagName('i')[0].className='fa fa-bars';
+            closeMenu();
 
         } else {
-            container.className += ' toggled';
-            button.setAttribute('aria-expanded', 'true');
-            menu.setAttribute('aria-expanded', 'true');
-            document.getElementById('hamburger-bars').getElementsByTagName('i')[0].className='fa fa-times';
+            openMenu();
         }
     };
+
+    menu.onclick = function (e) {
+        e.stopImmediatePropagation();
+    };
+    document.getElementById('page').onclick = function () {
+        if(-1 !== container.className.indexOf('toggled')){
+            closeMenu();
+        }
+    };
+
+    function closeMenu() {
+        container.className = container.className.replace(' toggled', '');
+        button.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('aria-expanded', 'false');
+        document.getElementById('hamburger-bars').getElementsByTagName('i')[0].className='fa fa-bars';
+    }
+
+    function openMenu() {
+        container.className += ' toggled';
+        button.setAttribute('aria-expanded', 'true');
+        menu.setAttribute('aria-expanded', 'true');
+        document.getElementById('hamburger-bars').getElementsByTagName('i')[0].className='fa fa-times';
+    }
+
 
     // Get all the link elements within the menu.
     links = menu.getElementsByTagName('a');

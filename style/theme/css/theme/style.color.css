@@ -23,8 +23,6 @@ body.site_color_white #something:before {
 body.site_color_white #site-navigation {
   /*background: #FFFFFF;*/
   position: relative;
-  display: table;
-  margin: 0 auto;
 }
 @media screen and (min-width: 37.5em) {
   body.site_color_white .main-navigation ul ul {

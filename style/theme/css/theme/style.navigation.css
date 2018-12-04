@@ -130,11 +130,11 @@ a:active {
     margin: 0 0 0 -6px;
   }
 }
-@media (orientation: landscape) and (max-width: 1200px){
+@media (max-width: 600px) and (orientation: landscape) {
   #main-navigation-wrap {
     top: 0!important;
-    min-height: 500px;
-    overflow: scroll;
+    bottom: 20px;
+    overflow-y: scroll!important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -143,11 +143,12 @@ a:active {
     right: 0;
     top: 80px;
     z-index: 999;
+    overflow-y: hidden;
   }
   .menu-main-menu-container{
-    position: fixed;
+   /* position: fixed;
     right: 0;
-    margin-top: 44px;
+    margin-top: 44px;*/
   }
   #menu-home-title{
     display: none;
@@ -156,9 +157,11 @@ a:active {
     color: #11bfab;
   }
   .menu-toggle {
-    position: fixed;
+    margin-right: 0;
+    margin-left: auto;
+    /*position: fixed;
     right: 0;
-    margin: 0;
+    margin: 0;*/
   }
   .home header.site-header {
     /*margin: 0 30px;*/
@@ -166,6 +169,12 @@ a:active {
   }
   div.elementor-widget {
     padding: 0;
+  }
+  #site-navigation {
+    margin-bottom: 0!important;
+    padding: 0!important;
+    margin-right: 0!important;
+    margin-left: auto!important;
   }
   .main-navigation ul ul {
     float: left;
@@ -206,6 +215,10 @@ a:active {
 .menu-toggle {
   /*margin: 0 auto 30px;*/
 }
+#site-navigation {
+  display: table;
+  margin: 0 auto;
+}
 @media screen and (min-width: 1200px) {
   .menu-toggle {
     display: none;
@@ -213,9 +226,6 @@ a:active {
   .main-navigation {
     margin-bottom: -9px;
     width: auto;
-  }
-  .home .main-navigation {
-    margin-bottom: 0;
   }
   .main-navigation ul {
     display: block;
