@@ -130,7 +130,7 @@ a:active {
     margin: 0 0 0 -6px;
   }
 }
-@media (max-width: 600px) and (orientation: landscape) {
+@media (max-width: 800px) and (orientation: landscape) {
   #main-navigation-wrap {
     top: 0!important;
     bottom: 20px;
