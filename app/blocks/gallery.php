@@ -7,7 +7,7 @@
  */
 ?>
 <article id="post-16" class="post-16 page type-page status-publish hentry">
-    <header class="entry-header">
+    <header class="entry-header mhmm">
         <h2 class="elementor-heading-title elementor-size-large entry-title page-section" id="section-gallery">
             <?php echo $trans['gallery.section_title'];?>
         </h2>

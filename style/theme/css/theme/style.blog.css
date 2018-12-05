@@ -256,7 +256,7 @@ article.blog-summary .entry-header {
   }
 }
 article.blog-summary .blog-entry-content {
-  padding: 0 10px;
+  padding: 0;
 }
 @media screen and (min-width: 37.5em) {
   article.blog-summary .blog-entry-content {
