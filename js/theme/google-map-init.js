@@ -23,11 +23,11 @@
                 opened: false,
             },
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-        }
+        };
         var mapElement = document.getElementById('googlemap1');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-    ['The Kid', 'Varful Berivoiul Mare, nr 72A, Bucharest, Romania', phone, 'contact@tkid.ro', 'www.tkid.ro', latitude, longitude, '/images/content/pearl-map.png']
+    ['The Kid', 'Varful Berivoiul Mare, nr 72A, Bucharest, Romania', phone, 'contact@tkid.ro', 'www.tkid.ro', latitude, longitude/*, '/images/content/pearl-map.png'*/]
         ];
         for (i = 0; i < locations.length; i++) {
       if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
@@ -82,7 +82,7 @@
           $(".gm-style").append(content);
       }
   });
-    var content = '<div style="position: absolute; left: 0px; top: 100px;">\n' +
+    var content = '<div style="position: absolute; left: 0px; top: 85px; right:80%">\n' +
       '    <div style="background-color: white; margin: 10px; padding: 1px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;">\n' +
       '        <div jstcache="0" style="">\n' +
       '            <div jstcache="119" class="place-card place-card-large">\n' +
@@ -92,7 +92,7 @@
       '                </div>\n' +
       '                <div jstcache="38" class="navigate">\n' +
       '                    <div jsaction="placeCard.directions" class="navigate">\n' +
-      '                        <a target="_blank" jstcache="53" href="https://maps.google.com/maps?ll='+latitude+','+longitude+'&amp;z=15&amp;daddr=Drumul%20V%C3%A2rful%20Berivoiul%20Mare%20Bucure%C8%99ti@44.5182825,26.0433924" class="navigate-link">\n' +
+      '                        <a target="_blank" jstcache="53" href="https://maps.google.com/maps?q=Drumul+Vârful+Berivoiul+Mare+72a+București+Sector+1" class="navigate-link">\n' +
       '                            <div class="icon navigate-icon"></div>\n' +
       '                            <div jstcache="54" class="navigate-text">Directions</div>\n' +
       '                        </a>\n' +
@@ -107,7 +107,7 @@
       '                </div>\n' +
       '                <div jstcache="45" class="saved-from-source-link" style="display:none"></div>\n' +
       '                <div class="bottom-actions">\n' +
-      '                    <div class="google-maps-link"> <a target="_blank" jstcache="46" href="https://maps.google.com/maps?ll='+latitude+','+longitude+'&amp;z=15&amp;q=Drumul%20V%C3%A2rful%20Berivoiul%20Mare%20Bucure%C8%99ti" jsaction="mouseup:placeCard.largerMap">View larger map</a> </div>\n' +
+      '                    <div class="google-maps-link"> <a target="_blank" jstcache="46" href="https://maps.google.com/maps?q=Drumul+Vârful+Berivoiul+Mare+72a+București+Sector+1" jsaction="mouseup:placeCard.largerMap">View larger map</a> </div>\n' +
       '                    <a target="_blank" jstcache="47" class="send-to-device-button" style="display:none"></a>\n' +
       '                </div>\n' +
       '            </div>\n' +

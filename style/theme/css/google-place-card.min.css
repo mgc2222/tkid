@@ -2,4 +2,7 @@
 .gm-style-iw * {display: block;width: 270px !important;overflow: hidden;}
 .gm-style-iw h4{ margin: 0; padding: 0; font-size:26px; margin:0 0 6px 0;}
 .gm-style-iw p { margin: 0; padding: 0;}
-.gm-style-iw a { color: #4272db; }
+.gm-style-iw a { color: #4272db!important; text-decoration: underline!important;}
+.gm-style .place-card .navigate-text{ margin: 0 auto!important;text-align: center!important; }
+.gm-style .navigate {display: block!important;}
+.gm-style .bottom-actions .google-maps-link {display: block!important;text-align: center!important;}
