@@ -135,6 +135,25 @@ $trans['languages.column_abbreviation'] = 'Abreviere';
 $trans['languages.items_list'] = 'Lista Limbi Vorbite';
 $trans['languages.save_success'] = 'Limba a fost salvata cu success';
 
+//	===================================================== //
+//		Front Page Cookies Content
+//	===================================================== //
+
+$trans['cookies.header'] = 'Cookies used on the website!';
+
+$trans['cookies.message'] = 'This site uses cookies, but all of these are strictly required to run the application. None of these cookies store personal user data. You can view their content by accessing the settings in the browser you are using.';
+
+$trans['cookies.dismiss_button_message'] = 'Got it!';
+
+$trans['cookies.link_message'] = 'Learn More';
+
+$trans['cookies.link_href'] = 'http://cookiesandyou.com';
+
+$trans['cookies.allow_button_message'] = 'Allow cookies';
+
+$trans['cookies.decline_button_message'] = 'Decline';
+
+$trans['cookies.policy_button_message'] = 'Cookie Policy';
 
 //	===================================================== //
 //		Front Page Sections

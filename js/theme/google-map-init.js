@@ -1,5 +1,5 @@
 //google.maps.event.addDomListener(window, 'load', init);
-  var map;
+//var map;
   function initMap() {
         var mapOptions = {
             center: new google.maps.LatLng(latitude,longitude),

@@ -2,6 +2,27 @@
 $trans = array();
 
 //	===================================================== //
+//		Front Page Cookies Content
+//	===================================================== //
+
+$trans['cookies.header'] = 'Cookie-urile folosite pe site!';
+
+$trans['cookies.message'] = 'Acest site foloseste cookie-uri, insa toate acestea sunt strict necesare functionarii aplicatiei. Niciunul din aceste cookie-uri nu stocheaza date personale despre utilizator. Puteti vizualiza continutul lor accesand setarile din browser-ul pe care il utilizati..';
+
+$trans['cookies.dismiss_button_message'] = 'Am inteles!';
+
+$trans['cookies.link_message'] = 'Afla mai multe';
+
+$trans['cookies.link_href'] = 'http://cookiesandyou.com';
+
+$trans['cookies.allow_button_message'] = 'Permite cookie-uri';
+
+$trans['cookies.decline_button_message'] = 'Refuza';
+
+$trans['cookies.policy_button_message'] = 'Politica Cookie';
+
+
+//	===================================================== //
 //		Front Page Sections
 //	===================================================== //
 

@@ -26,10 +26,10 @@
                                                         <p><?php echo $trans['about.section_content_p_2'];?></p>
                                                         <p><?php echo $trans['about.section_content_p_3'];?></p>
                                                         <p><?php echo $trans['about.section_content_p_4'];?></p>
-                                                        <p><?php echo $trans['about.section_content_p_5'];?></p>
                                                         <h4 class="elementor-heading-title elementor-size-large">
                                                             <?php echo $trans['about.section_content_quote_2'];?>
                                                         </h4>
+                                                        <p><?php echo $trans['about.section_content_p_5'];?></p>
                                                         <p><?php echo $trans['about.section_content_p_6'];?></p>
                                                         <p><?php echo $trans['about.section_content_p_7'];?></p>
 													</div>

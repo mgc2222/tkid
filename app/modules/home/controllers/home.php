@@ -26,6 +26,7 @@ class Home extends AdminController
 		// page initializations
 
 		array_push($this->webpage->StyleSheets,
+			'cookieconsent/cookieconsent.min.css',
 			/*'theme/css/plugin/styles.css',
 	        'theme/css/plugin/dtbaker-woocommerce.css',
 	       	'theme/css/plugin/woocommerce-layout.css',
@@ -98,7 +99,7 @@ class Home extends AdminController
 			//'app.js',
 			//'lib/validator/jquery.validate.min.js',
 			//'lib/wrappers/validator/validator.js',
-			//'lib/toastr/toastr.min.js', 
+			//'lib/toastr/toastr.min.js',
 			_JS_APPLICATION_FOLDER.'default_init.js');
 			//_JS_APPLICATION_FOLDER.'contact/contact_form.js');
 		parent::SetWebpageData($this->pageId);
@@ -106,6 +107,9 @@ class Home extends AdminController
 		$this->webpage->PageDescription = $this->trans['meta.description'];
 		$this->webpage->PageKeywords = $this->trans['meta.keywords'];
 		$this->webpage->FormAction = 'change_language';
+		$this->webpage->ScriptsHeader = array(
+			'lib/cookieconsent/cookieconsent.min.js',
+            'theme/cookie-consent-init.js');
 
 		// if search
 		//$this->webpage->RedirectPostToGet($this->webpage->PageUrl, 'actionSearch', '1', array('txtSearch'), array('search'));

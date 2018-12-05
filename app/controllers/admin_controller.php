@@ -267,7 +267,15 @@ class AdminController extends AbstractController
 			"var language = '".$this->webpage->languageAbb."';".$endLine.
 			"var latitude = '"._LOCATION_LATITUDE."';".$endLine.
 			"var longitude = '"._LOCATION_LONGITUDE."';".$endLine.
-			"var phone = '"._LOCATION_PHONE."';".$endLine;
+			"var phone = '"._LOCATION_PHONE."';".$endLine.
+			"var cookiesHeader = '".$this->trans['cookies.header']."';".$endLine.
+			"var cookiesMessage = '".$this->trans['cookies.message']."';".$endLine.
+			"var cookiesDismissButtonMessage = '".$this->trans['cookies.dismiss_button_message']."';".$endLine.
+			"var cookiesLinkMessage = '".$this->trans['cookies.link_message']."';".$endLine.
+			"var cookiesLinkHref = '".$this->trans['cookies.link_href']."';".$endLine.
+			"var cookiesAllowButtonMessage = '".$this->trans['cookies.allow_button_message']."';".$endLine.
+			"var cookiesDeclineButtonMessage = '".$this->trans['cookies.decline_button_message']."';".$endLine.
+			"var cookiesPolicyButtonMessage = '".$this->trans['cookies.policy_button_message']."';".$endLine;
 
 		$this->webpage->JsPageContent .= $js;
 		
