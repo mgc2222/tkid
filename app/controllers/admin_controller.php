@@ -69,7 +69,7 @@ class AdminController extends AbstractController
 			'lib/strings/strings.js',
 			'lib/htmlcontrols/htmlcontrols.js',
 			'lib/form/form.js',
-			'lib/jquery/jquery-2.0.3.min.js',
+			'lib/jquery/jquery-3.3.1.min.js',
 			//'lib/bootstrap/bootstrap.min.js',
 			'lib/lodash/lodash.min.js');
 		$this->AutoLoadJavascript();
