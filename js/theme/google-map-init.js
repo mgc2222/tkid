@@ -82,7 +82,7 @@
           $(".gm-style").append(content);
       }
   });
-    var content = '<div style="position: absolute; left: 0px; top: 85px;">\n' +
+    var content = '<div style="position: absolute; left: 0px; bottom: 25px;">\n' +
       '    <div style="background-color: white; margin: 10px; padding: 1px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;">\n' +
       '        <div jstcache="0" style="">\n' +
       '            <div jstcache="119" class="place-card place-card-large">\n' +
