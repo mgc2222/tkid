@@ -401,7 +401,7 @@ class HtmlControls
 		$ret = '';
 		if ($fax != '')
 		{
-			$ret = $fax.' <a href="'._SITE_RELATIVE_URL.'/fax/send/fax='.$fax.'" title="Trimite fax" target="_blank"><i class="fa fa-fax"></i></a>';
+			$ret = $fax.' <a href="'._SITE_RELATIVE_URL.'/fax/send/fax='.$fax.'" title="Trimite fax" target="_blank" rel="noopener”><i class="fa fa-fax"></i></a>';
 		}
 		return $ret;
 	}
@@ -411,7 +411,7 @@ class HtmlControls
 		$ret = '';
 		if ($email != '')
 		{
-			$ret = $email.' <a href="'._SITE_RELATIVE_URL.'editable_email/target=email&email='.$email.'" title="Trimite email" target="_blank"><i class="fa fa-comment"></i></a>';
+			$ret = $email.' <a href="'._SITE_RELATIVE_URL.'editable_email/target=email&email='.$email.'" title="Trimite email" target="_blank" rel="noopener”><i class="fa fa-comment"></i></a>';
 		}
 		return $ret;
 	}
@@ -421,7 +421,7 @@ class HtmlControls
 		$ret = '';
 		if ($email != '')
 		{
-			$ret = $email.' <a href="'._SITE_RELATIVE_URL.'editable_email/target=email&email='.$email.'" title="Trimite email" target="_blank"><i class="fa fa-comment"></i></a>';
+			$ret = $email.' <a href="'._SITE_RELATIVE_URL.'editable_email/target=email&email='.$email.'" title="Trimite email" target="_blank" rel="noopener”><i class="fa fa-comment"></i></a>';
 			$attr = ($checked)?' checked="checked" ':'';
 			$ret .= '<input type="checkbox" name="chkEmailElement_'.$elementIndex.'" id="chkEmailElement_'.$elementIndex.'" '.$attr.' value="'.$email.'" />';
 		}
