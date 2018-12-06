@@ -165,7 +165,7 @@ aside.widget-area .widget .widget-title-wrap .widget-title:after {
     bottom: 0px;
     left: 0;
     right: 0;
-    padding: 45px 20px 20px;
+    padding: 10pxs;
     background: rgba(255, 255, 255, 0.63);
     color: #000;
     text-align: center;
@@ -180,29 +180,29 @@ aside.widget-area .widget .widget-title-wrap .widget-title:after {
   .foliageblog-slider-pretty .foliageblog-slider-caption > div > div {
     display: inline-block;
     position: relative;
-    border-left: 1px solid #FFFFFF;
-    border-right: 1px solid #FFFFFF;
-    padding: 5px 16px;
+    /*border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;*/
+    /*padding: 5px 16px;*/
   }
   .foliageblog-slider-pretty .foliageblog-slider-caption > div > div:before {
-    content: '';
+    /*content: '';
     position: absolute;
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
     height: 4px;
     right: 100%;
     top: 50%;
-    width: 1000px;
+    width: 1000px;*/
   }
   .foliageblog-slider-pretty .foliageblog-slider-caption > div > div:after {
-    content: '';
+    /*content: '';
     position: absolute;
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
     height: 4px;
     left: 100%;
     top: 50%;
-    width: 1000px;
+    width: 1000px;*/
   }
   .foliageblog-slider-pretty .foliageblog-slider-caption > div > div h3 {
     margin: 0;
