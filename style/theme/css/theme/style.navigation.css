@@ -177,8 +177,8 @@ a:active {
   }
   .main-navigation ul ul {
     float: left;
-    position: absolute;
-    top: 48px;
+    position: relative;
+    /*top: 48px;*/
     left: -999em;
     text-align: left;
     font-size: 0.9em;
