@@ -205,7 +205,7 @@ $trans['gallery.section_content_hidden_heading'] = 'Pictures from the photo gall
 
 $trans['footer.section_copyright_hidden_heading'] = 'Copyright';
 
-$trans['events.section_content_quote_1'] = '"The game is the highest form of research," said Albert Einstein';
+$trans['events.section_content_quote_1'] = '"The game is the highest form of research," <br><span style="display:block;text-align:right">said Albert Einstein</span>';
 
 $trans['events.section_content_p_1'] = 'During the cold period we organize daily workshops for children of all ages between 16.00 and 20.00 (on request we can also organize workshops
                                         in the first part of the day for the youngest children 1-4 years old) and during the warm season, the workshops take place in the garden, please 
@@ -257,4 +257,3 @@ $trans['quotes.lucian_blaga'] = '"Childhood is the heart of all ages." Lucian Bl
 
 $trans['quotes.heidi_kaduson'] = '"When you are free, you can play, and when you play, you become free." Heidi Kaduson';
 
-?>

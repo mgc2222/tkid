@@ -71,7 +71,7 @@ $trans['gallery.section_content_hidden_heading'] = 'Poze din galeria foto';
 
 $trans['footer.section_copyright_hidden_heading'] = 'Drepturi de autor';
 
-$trans['events.section_content_quote_1'] = '„Jocul este forma cea mai inalta a cercetarii". Spunea Albert Einstein';
+$trans['events.section_content_quote_1'] = '„Jocul este forma cea mai inalta a cercetarii", <br><span style="display:block;text-align:right">spunea Albert Einstein</span>';
 
 $trans['events.section_content_p_1'] = 'In perioada rece organizam in spatiul interior zilnic ateliere pentru copii de toate varstele, intre orele 16.00-20.00 (la cerere putem organiza
                                         si ateliere in prima parte a zilei pentru cei mai mici dintre copii 1-4 ani), iar pe perioada calda, atelierele au loc in gradina, 
@@ -121,4 +121,4 @@ $trans['quotes.stephen_sondheim'] = '„Ramai copil atata timp cat poti sa fii c
 $trans['quotes.lucian_blaga'] = '„Copilaria este inima tuturor varstelor.” Lucian Blaga';
 
 $trans['quotes.heidi_kaduson'] = '„Atunci cand esti liber, te poti juca, iar cand te joci, devii liber". Heidi Kaduson';
-?>
+
