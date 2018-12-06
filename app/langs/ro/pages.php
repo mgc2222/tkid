@@ -26,6 +26,8 @@ $trans['cookies.policy_button_message'] = 'Politica Cookie';
 //		Front Page Sections
 //	===================================================== //
 
+$trans['javascript.disabled_message'] = 'Vă rugăm să activați JavaScript pentru a vizualiza corect această pagină.';
+
 $trans['home.page_title'] = 'The Kid';
 
 $trans['events.section_title'] = 'Evenimente';

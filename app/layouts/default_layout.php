@@ -2,6 +2,7 @@
 <html lang="<?php echo $webpage->languageAbb?>">
 <?php include(_APPLICATION_FOLDER.'blocks/html_head_block.php'); ?>
 <body class="<?php echo $webpage->BodyClasses?>">
+<noscript><div class="talign-center"><strong><?php echo $trans['javascript.disabled_message'];?></strong></div></noscript>
 <div id="page" class="">
     <div id="header-content" class="">
         <div id="header-content-inner">
