@@ -185,7 +185,7 @@ class Products extends AdminController
 		
 		foreach ($rows as &$row)
 		{
-			$row->imageLink = '<a href="'.$row->default_image.'" target="_blank" rel="noopener”>'.$row->default_image.'</a>';
+			$row->imageLink = '<a href="'.$row->default_image.'" target="_blank" rel="noopener">'.$row->default_image.'</a>';
 			// $row->currency = CurrencyItems::GetName($row->currency_id, $this->translation, 'currency.');
 			//echo'<pre>';print_r($productsCategories);echo'</pre>';die;
 			$row->categories = '';

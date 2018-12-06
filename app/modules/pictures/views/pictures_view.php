@@ -10,7 +10,7 @@
 	?>
 		<li class="ui-state-default"><img src="<?php echo $row->thumb.'?id='.time();?>" data-image="<?php echo $row->thumb_med?>" class="image-tooltip-target" />
 			<a href="javascript:;" class="delete" data="<?php echo $row->id;?>">Sterge</a> | 
-			<a style="margin-top:10px" target="_blank" rel="noopener” href="crop/id=<?php echo $row->id;?>"><strong>Crop</strong></a>
+			<a style="margin-top:10px" target="_blank" rel="noopener" href="crop/id=<?php echo $row->id;?>"><strong>Crop</strong></a>
 			<input type="hidden" id="hidImageId_<?php echo $row->id?>" value="<?php echo $row->id?>" />
 		</li>
 	<?php 

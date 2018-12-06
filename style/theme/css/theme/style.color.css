@@ -167,7 +167,7 @@ body.site_color_white.woocommerce span.onsale {
   background-color: #11bfab;
 }
 body.site_color_white footer#footer {
-  color: #999999;
+  color: #333;
   /*input[type="text"], input[type="email"] {
         background: @color_background;
         border: 1px solid #d2d2d2;

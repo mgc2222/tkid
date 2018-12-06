@@ -50,7 +50,7 @@
                                                 <!-- Template Section Start: template-parts/blog-widget -->
                                                 <div class="blog-widget">
                                                     <div class="blog-widget-inner">
-                                                        <a href="2017-01-11-how-to-save-money-while-travelling.html" class="blog_date">
+                                                        <a href="2017-01-11-how-to-save-money-while-travelling.html" class="blog_date" aria-labelledby="event-<?php echo $row->id;?>">
                                                             <span class="day">11</span> <span class="month">Jan</span> <span class="year">2017</span>
                                                             <div></div>
                                                         </a>
@@ -59,7 +59,7 @@
                                                 <!-- Template Section End: template-parts/blog-widget -->
                                                 <div class="dtbaker_photo_border">
                                                     <div>
-                                                        <a href="2017-01-11-how-to-save-money-while-travelling.html" rel="bookmark">
+                                                        <a href="2017-01-11-how-to-save-money-while-travelling.html" rel="bookmark" aria-labelledby="event-<?php echo $row->id;?>">
                                                             <img width="800" height="410" src="images/content/thumbs/photo-1470163395405-d2b80e7450ed-800x410.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />
                                                         </a>
                                                     </div>
@@ -68,7 +68,7 @@
                                             <header class="entry-header">
                                                 <div class="blog-title">
                                                     <h2 class="entry-title">
-                                                        <a href="2017-01-11-how-to-save-money-while-travelling.html" rel="bookmark">How to save money while travelling</a>
+                                                        <a href="2017-01-11-how-to-save-money-while-travelling.html" rel="bookmark" aria-labelledby="event-<?php echo $row->id;?>">How to save money while travelling</a>
                                                     </h2>
                                                 </div>
                                             </header>
@@ -79,7 +79,7 @@
                                             <!-- .entry-content -->
                                             <footer class="entry-footer">
                                                 <div class="blog_links">
-                                                    <span class="the-date"> <i class="fa fa-calendar"></i> <a href="2017-01-11-how-to-save-money-while-travelling.html" title="5:38 am" rel="bookmark">January 11, 2017</a> </span>
+                                                    <span class="the-date"> <i class="fa fa-calendar"></i> <a href="2017-01-11-how-to-save-money-while-travelling.html" title="5:38 am" rel="bookmark" aria-labelledby="event-<?php echo $row->id;?>">January 11, 2017</a> </span>
                                                     <span class="blog_links_sep">/</span>
                                                     <span class="by-author">
                                                         <i class="fa fa-user"></i>
@@ -87,12 +87,12 @@
                                                     </span>
                                                     <span class="blog_links_sep">/</span>
                                                     <span class="comment-wrap">
-                                                        <a href="2017-01-11-how-to-save-money-while-travelling.html">
+                                                        <a href="2017-01-11-how-to-save-money-while-travelling.html" aria-labelledby="event-<?php echo $row->id;?>">
                                                             <span class="leave-comment"><i class="fa fa-comment-o"></i> 0 Comments</span>
                                                         </a>
                                                     </span>
                                                     <span class="blog_links_sep">/</span>
-                                                    <span class="entry-utility-prep entry-utility-prep-cat-links"><i class="fa fa-files-o"></i> <a href="category-life.html" rel="category tag">Life</a>, <a href="category-photography.html" rel="category tag">Photography</a></span>
+                                                    <span class="entry-utility-prep entry-utility-prep-cat-links"><i class="fa fa-files-o"></i> <a href="category-life.html" rel="tag">Life</a>, <a href="category-photography.html" rel="tag" aria-labelledby="event-<?php echo $row->id;?>">Photography</a></span>
                                                     <span class="blog_links_sep">/</span>
                                                     <span class="entry-utility-prep entry-utility-prep-tag-links"><i class="fa fa-tags"></i> <a href="#" rel="tag">Saving Money</a>, <a href="#" rel="tag">travel</a></span>
                                                 </div>

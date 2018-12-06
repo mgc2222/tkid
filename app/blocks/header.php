@@ -4,7 +4,7 @@
     <div class="site-branding page-section" id="section-home">
         <!-- Start Logo Area -->
         <div id="logo">
-            <a href="/" class="custom-logo-link" rel="home">
+            <a href="/" class="custom-logo-link" role="banner" aria-labelledby="masthead">
                 <img width="292" height="131" src="images/content/logo.png" class="custom-logo" alt="" />
                 <img width="200" height="156" src="images/content/rocking-horse.png" class="custom-logo-2" alt="" />
             </a>
@@ -15,7 +15,7 @@
             <img src="images/content/dreamcatcher.png" class="custom-logo-3" alt="" />
         </div>
         <div class="site-title">
-            <div><h1><a href="/" rel="home">The Kid</a></h1></div>
+            <div><h1><a href="/" role="heading">The Kid</a></h1></div>
         </div>
     </div>
     <div id="motto">
@@ -26,30 +26,30 @@
     <!-- Template Section End: template-parts/header-logo -->
     <!-- Template Section Start: template-parts/header-menu -->
     <section id="dtbaker-social-icons-widget-2" class="widget dtbaker-social-icons-widget vergeblog_widget vergeblog_widget_count_1">
-        <h4 class="elementor-heading-title elementor-size-large page-section hidden-true">
+        <h4 class="elementor-heading-title elementor-size-large page-section hidden-true" id="social-heading">
             <?php echo $trans['header.section_contact_hidden_heading'];?>
         </h4>
         <ul class="dtbaker-social-icons-list dtbaker-social-icons-list--without-canvas dtbaker-social-icons-list--rounded dtbaker-social-icons-list--no-labels">
             <li class="dtbaker-social_icons-list__item">
-                <a class="dtbaker-social_icons-list__link" href="https://www.facebook.com/theKIDplayground" target="_blank" rel=”noreferrer noopener”> <span class="socicon socicon-facebook" style="color:#b2b2b2"></span> </a>
+                <a class="dtbaker-social_icons-list__link" href="https://www.facebook.com/theKIDplayground" target="_blank" rel="noopener" aria-labelledby="social-heading"> <span class="socicon socicon-facebook" style="color:#b2b2b2"></span> </a>
             </li>
             <!--<li class="dtbaker-social_icons-list__item">
-                <a class="dtbaker-social_icons-list__link" href="https://tweeter.com/" target="_blank" rel=”noreferrer noopener”> <span class="socicon socicon-twitter" style="color:#b2b2b2"></span> </a>
+                <a class="dtbaker-social_icons-list__link" href="https://tweeter.com/" target="_blank" rel="noopener" aria-labelledby="social-heading"> <span class="socicon socicon-twitter" style="color:#b2b2b2"></span> </a>
             </li>
             <li class="dtbaker-social_icons-list__item">
-                <a class="dtbaker-social_icons-list__link" href="https://www.instagram.com/" target="_blank" rel=”noreferrer noopener”> <span class="socicon socicon-instagram" style="color:#b2b2b2"></span> </a>
+                <a class="dtbaker-social_icons-list__link" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-labelledby="social-heading"> <span class="socicon socicon-instagram" style="color:#b2b2b2"></span> </a>
             </li>-->
             <li class="dtbaker-social_icons-list__item">
-                <a class="dtbaker-social_icons-list__link" href="mailto:contact@tkid.ro" target="_blank"> <span class="fa fa-envelope" style="color:#b2b2b2"></span> </a>
+                <a class="dtbaker-social_icons-list__link" href="mailto:contact@tkid.ro" target="_blank" rel="noopener" aria-labelledby="social-heading"> <span class="fa fa-envelope" style="color:#b2b2b2"></span> </a>
             </li>
             <li class="dtbaker-social_icons-list__item">
-                <a class="dtbaker-social_icons-list__link" href="tel:+40729577854" target="_blank" rel=”noreferrer noopener”> <span class="fa fa-phone" style="color:#b2b2b2"></span> </a>
+                <a class="dtbaker-social_icons-list__link" href="tel:+40729577854" target="_blank" rel="noopener" aria-labelledby="social-heading"> <span class="fa fa-phone" style="color:#b2b2b2"></span> </a>
             </li>
         </ul>
     </section>
-    <div id="main-navigation-wrap" class="">
+    <div id="main-navigation-wrap">
         <nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" type=button aria-controls="primary-menu" aria-expanded="false"><span id="hamburger-bars"><i class="fa fa-bars"></i></span></button>
+            <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" aria-labelledby="primary-menu"><span id="hamburger-bars"><i class="fa fa-bars"></i></span></button>
             
 
 <?php 

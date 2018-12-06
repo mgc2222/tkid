@@ -13,14 +13,14 @@
                             <?php 
                                 if ($dataView->slider->rows != null)
                                 {
-                                    $index = 1;
+                                    $index = 0;
 
                                     foreach ($dataView->slider->rows as &$row)
                                     {
                                         //echo $row->image_caption;
                             ?>
                                         <div class="slick-slide">
-                                            <figure class="slick-slide-inner">
+                                            <figure class="slick-slide-inner" id="slick-slide0<?php echo $index?>">
                                                 <div class="foliageblog-slider-caption">
                                                     <div class="inner-content-width">
                                                         <div>
