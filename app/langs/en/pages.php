@@ -245,7 +245,7 @@ $trans['about.section_content_p_6'] ='Dearfully';
 $trans['about.section_content_p_7'] ='Alina';
 
 
-$trans['location.section_content'] = 'Street Varful Berivoiul Mare, 72A, sector 1, Bucharest.....we are easy to recognize, see The Kid flags :)';
+$trans['location.section_content'] = 'Street Varful Berivoiul Mare, 72A, sector 1, Bucharest';/*...we are easy to recognize, see The Kid flags :)';*/
 
 $trans['quotes.henry_ward_beecher'] = '"Children are the hands with which we reach the heavens." Henry Ward Beecher';
 

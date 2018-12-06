@@ -110,7 +110,7 @@ $trans['about.section_content_p_6'] ='Va astept cu drag,';
 
 $trans['about.section_content_p_7'] ='Alina';
 
-$trans['location.section_content'] = 'Str. Varful Berivoiul Mare, nr 72A , sector 1, Bucuresti.....suntem usor de recunoscut , vezi Gardul cu steguletele The Kid :)';
+$trans['location.section_content'] = 'Str. Varful Berivoiul Mare, nr 72A , sector 1, Bucuresti';/* ...suntem usor de recunoscut , vezi Gardul cu steguletele The Kid :)';*/
 
 $trans['quotes.henry_ward_beecher'] = '„Copiii sunt mainile cu ajutorul carora atingem cerurile." Henry Ward Beecher';
 
