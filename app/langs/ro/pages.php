@@ -143,6 +143,9 @@ $trans['title_attribute.indoor_playroom'] = 'Camera de joaca in interior';
 $trans['alt_attribute.indoor_fun_room'] = 'Camera de distractie in interior';
 $trans['title_attribute.indoor_fun_room'] = 'Camera de distractie in interior';
 
+$trans['alt_attribute.kinder_toys_room'] = 'Camera pentru jucarii';
+$trans['title_attribute.kinder_toys_room'] = 'Camera pentru jucarii';
+
 $trans['alt_attribute.kids_toy'] = 'Jucarie pentru copii';
 $trans['title_attribute.kids_toy'] = 'Jucarie pentru copii';
 

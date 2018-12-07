@@ -281,8 +281,8 @@ $trans['title_attribute.indoor_fun_room'] = 'Indoor Fun Room';
 $trans['alt_attribute.kids_toy'] = 'Kids Toy';
 $trans['title_attribute.kids_toy'] = 'Kids Toy';
 
-$trans['alt_attribute.kinder_toys_room'] = 'Camera pentru jucarii';
-$trans['title_attribute.kinder_toys_room'] = 'Camera pentru jucarii';
+$trans['alt_attribute.kinder_toys_room'] = 'Kinder Toys Room';
+$trans['title_attribute.kinder_toys_room'] = 'Kinder Toys Room';
 
 $trans['alt_attribute.kids_playroom'] = 'Kids Playroom';
 $trans['title_attribute.kids_playroom'] = 'Kids Playroom';
