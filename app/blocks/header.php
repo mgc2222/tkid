@@ -5,7 +5,7 @@
         <!-- Start Logo Area -->
         <div id="logo">
             <a href="/" class="custom-logo-link" role="banner" aria-labelledby="masthead">
-                <img width="292" height="131" src="images/content/logo.png" class="custom-logo" alt="logo" />
+                <img width="292" height="131" src="images/content/logo.png" class="custom-logo" alt="the kid logo" />
                 <img width="200" height="156" src="images/content/rocking-horse.png" class="custom-logo-2" alt="rocking-horse banner" />
             </a>
 
