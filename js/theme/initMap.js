@@ -26,7 +26,7 @@ var content = '<div style="position: absolute; left: 0px; top: 100px;">\n' +
 '                </div>\n' +
 '                <div jstcache="38" class="navigate">\n' +
 '                    <div jsaction="placeCard.directions" class="navigate">\n' +
-'                        <a target="_blank" rel="noopener" jstcache="53" href="https://maps.google.com/maps?ll=44.518283,26.043392&amp;z=15&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=embed&amp;daddr=Drumul%20V%C3%A2rful%20Berivoiul%20Mare%20Bucure%C8%99ti@44.5182825,26.0433924" class="navigate-link">\n' +
+'                        <a target="_blank" rel="noopener noreferrer" jstcache="53" href="https://maps.google.com/maps?ll=44.518283,26.043392&amp;z=15&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=embed&amp;daddr=Drumul%20V%C3%A2rful%20Berivoiul%20Mare%20Bucure%C8%99ti@44.5182825,26.0433924" class="navigate-link">\n' +
 '                            <div class="icon navigate-icon"></div>\n' +
 '                            <div jstcache="54" class="navigate-text">Directions</div>\n' +
 '                        </a>\n' +
@@ -50,8 +50,8 @@ var content = '<div style="position: absolute; left: 0px; top: 100px;">\n' +
 '                </div>\n' +
 '                <div jstcache="45" class="saved-from-source-link" style="display:none"></div>\n' +
 '                <div class="bottom-actions">\n' +
-'                    <div class="google-maps-link"> <a target="_blank" rel="noopener" jstcache="46" href="https://maps.google.com/maps?ll=44.518283,26.043392&amp;z=15&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=embed&amp;q=Drumul%20V%C3%A2rful%20Berivoiul%20Mare%20Bucure%C8%99ti" jsaction="mouseup:placeCard.largerMap">View larger map</a> </div>\n' +
-'                    <a target="_blank" rel="noopener" jstcache="47" class="send-to-device-button" style="display:none"></a>\n' +
+'                    <div class="google-maps-link"> <a target="_blank" rel="noopener noreferrer" jstcache="46" href="https://maps.google.com/maps?ll=44.518283,26.043392&amp;z=15&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=embed&amp;q=Drumul%20V%C3%A2rful%20Berivoiul%20Mare%20Bucure%C8%99ti" jsaction="mouseup:placeCard.largerMap">View larger map</a> </div>\n' +
+'                    <a target="_blank" rel="noopener noreferrer" jstcache="47" class="send-to-device-button" style="display:none"></a>\n' +
 '                </div>\n' +
 '            </div>\n' +
 '        </div>\n' +
