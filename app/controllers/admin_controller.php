@@ -59,6 +59,7 @@ class AdminController extends AbstractController
 		$this->webpage->PageLayout = _APPLICATION_FOLDER.'layouts/default_layout_form.php';
 		$this->webpage->BodyClasses = '';
 		$this->webpage->FormAction = '';
+        $this->webpage->PageRoute = '';
 
 		/*$this->webpage->StyleSheets = Array(
 		'bootstrap/bootstrap.css',
@@ -85,7 +86,7 @@ class AdminController extends AbstractController
 	// pageId : id of the page 
 	// parentId : parent of the page, used for selecting the menu, in case the selected menu does not have a correspondent to the current page
 	// fileName : fileName, in case that pageId is different than the file name
-	function SetWebpageData($pageId, $parentId = '', $translationPrefix = '', $fileName = '')
+	function SetWebpageData($pageId, $parentId = '', $translationPrefix = '', $fileName = '', $pageRoute='')
 	{
 		$isEditPage = strpos($pageId, '_edit') > 0;
 			
@@ -105,7 +106,8 @@ class AdminController extends AbstractController
 		$this->webpage->PageReturnUrl = _SITE_RELATIVE_URL.$parentId;
 		$this->webpage->PageTitle = $this->trans[$translationPrefix.'.page_title'];
 		$this->webpage->PageHeadTitle = $this->webpage->PageTitle;
-		
+		$this->webpage->PageRoute = $pageRoute;
+
 		if (strpos($pageId, '_edit') > 0)
 			$this->webpage->ContentInclude = Array(_APPLICATION_FOLDER.'modules/'.$this->module.'/views/'.$pageId.'.php');
 		else

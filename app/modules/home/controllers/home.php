@@ -102,7 +102,7 @@ class Home extends AdminController
 			//'lib/toastr/toastr.min.js',
 			_JS_APPLICATION_FOLDER.'default_init.js');
 			//_JS_APPLICATION_FOLDER.'contact/contact_form.js');
-		parent::SetWebpageData($this->pageId);
+		parent::SetWebpageData($this->pageId, '', '','','');
 		$this->webpage->SearchBlock = $this->GetGeneralBlockPath('search_block');
 		$this->webpage->PageDescription = $this->trans['meta.description'];
 		$this->webpage->PageKeywords = $this->trans['meta.keywords'];

@@ -124,3 +124,41 @@ $trans['quotes.lucian_blaga'] = '„Copilaria este inima tuturor varstelor.” L
 
 $trans['quotes.heidi_kaduson'] = '„Atunci cand esti liber, te poti juca, iar cand te joci, devii liber". Heidi Kaduson';
 
+//	===================================================== //
+//		Images Alt and Title Attributes
+//	===================================================== //
+
+$trans['alt_attribute.lobby'] = 'Hol';
+$trans['title_attribute.lobby'] = 'Hol';
+
+$trans['alt_attribute.welcome_room'] = 'Camera de intrare';
+$trans['title_attribute.welcome_room'] = 'Camera de intrare';
+
+$trans['alt_attribute.turtle_toy'] = 'Broasca testoasa de jucarie';
+$trans['title_attribute.turtle_toy'] = 'Broasca testoasa de jucarie';
+
+$trans['alt_attribute.indoor_playroom'] = 'Camera de joaca in interior';
+$trans['title_attribute.indoor_playroom'] = 'Camera de joaca in interior';
+
+$trans['alt_attribute.indoor_fun_room'] = 'Camera de distractie in interior';
+$trans['title_attribute.indoor_fun_room'] = 'Camera de distractie in interior';
+
+$trans['alt_attribute.kids_toy'] = 'Jucarie pentru copii';
+$trans['title_attribute.kids_toy'] = 'Jucarie pentru copii';
+
+$trans['alt_attribute.kids_playroom'] = 'Sala de joaca pentru copii';
+$trans['title_attribute.kids_playroom'] = 'Sala de joaca pentru copii';
+
+$trans['alt_attribute.indoor_playground'] = 'Loc de joaca in interior';
+$trans['title_attribute.indoor_playground'] = 'Loc de joaca in interior';
+
+$trans['alt_attribute.sitting_chair_for_outside'] = 'Scaun de sedere pentru exterior';
+$trans['title_attribute.sitting_chair_for_outside'] = 'Scaun de sedere pentru exterior';
+
+$trans['alt_attribute.kinder_slide'] = 'Topogan pentru copii';
+$trans['title_attribute.kinder_slide'] = 'Topogan pentru copii';
+
+$trans['alt_attribute.kindergarten'] = 'Gradinita';
+$trans['title_attribute.kindergarten'] = 'Gradinita';
+
+
