@@ -92,7 +92,7 @@
       '                </div>\n' +
       '                <div jstcache="38" class="navigate">\n' +
       '                    <div jsaction="placeCard.directions" class="navigate">\n' +
-      '                        <a target="_blank" rel="noopener" jstcache="53" href="https://maps.google.com/maps?q=Drumul+Vârful+Berivoiul+Mare+72a+București+Sector+1" class="navigate-link">\n' +
+      '                        <a target="_blank" rel="noopener" jstcache="53" href="https://maps.google.com/maps?q=Drumul+Vârful+Berivoiul+Mare+72a+București+Sector+1@'+latitude+','+longitude+'" class="navigate-link">\n' +
       '                            <div class="icon navigate-icon"></div>\n' +
       '                            <div jstcache="54" class="navigate-text">Directions</div>\n' +
       '                        </a>\n' +
@@ -107,7 +107,7 @@
       '                </div>\n' +
       '                <div jstcache="45" class="saved-from-source-link" style="display:none"></div>\n' +
       '                <div class="bottom-actions">\n' +
-      '                    <div class="google-maps-link"> <a target="_blank" rel="noopener" jstcache="46" href="https://maps.google.com/maps?q=Drumul+Vârful+Berivoiul+Mare+72a+București+Sector+1" jsaction="mouseup:placeCard.largerMap">View larger map</a> </div>\n' +
+      '                    <div class="google-maps-link"> <a target="_blank" rel="noopener" jstcache="46" href="https://maps.google.com/maps?q=Drumul+Vârful+Berivoiul+Mare+72a+București+Sector+1@'+latitude+','+longitude+'" jsaction="mouseup:placeCard.largerMap">View larger map</a> </div>\n' +
       '                    <a target="_blank" rel="noopener" jstcache="47" class="send-to-device-button" style="display:none"></a>\n' +
       '                </div>\n' +
       '            </div>\n' +
