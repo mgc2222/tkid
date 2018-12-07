@@ -259,3 +259,40 @@ $trans['quotes.lucian_blaga'] = '"Childhood is the heart of all ages." Lucian Bl
 
 $trans['quotes.heidi_kaduson'] = '"When you are free, you can play, and when you play, you become free." Heidi Kaduson';
 
+//	===================================================== //
+//		Images Alt and Title Attributes
+//	===================================================== //
+
+$trans['alt_attribute.lobby'] = 'Lobby';
+$trans['title_attribute.lobby'] = 'Lobby';
+
+$trans['alt_attribute.welcome_room'] = 'Welcome Room';
+$trans['title_attribute.welcome_room'] = 'Welcome Room';
+
+$trans['alt_attribute.turtle_toy'] = 'Turtle Toy';
+$trans['title_attribute.turtle_toy'] = 'Turtle Toy';
+
+$trans['alt_attribute.indoor_playroom'] = 'Indoor Playroom';
+$trans['title_attribute.indoor_playroom'] = 'Indoor Playroom';
+
+$trans['alt_attribute.indoor_fun_room'] = 'Indoor Fun Room';
+$trans['title_attribute.indoor_fun_room'] = 'Indoor Fun Room';
+
+$trans['alt_attribute.kids_toy'] = 'Kids Toy';
+$trans['title_attribute.kids_toy'] = 'Kids Toy';
+
+$trans['alt_attribute.kids_playroom'] = 'Kids Playroom';
+$trans['title_attribute.kids_playroom'] = 'Kids Playroom';
+
+$trans['alt_attribute.indoor_playground'] = 'Indoor Playground';
+$trans['title_attribute.indoor_playground'] = 'Indoor Playground';
+
+$trans['alt_attribute.sitting_chair_for_outside'] = 'Sitting Chair For Outside';
+$trans['title_attribute.sitting_chair_for_outside'] = 'Sitting Chair For Outside';
+
+$trans['alt_attribute.kinder_slide'] = 'Kinder Slide';
+$trans['title_attribute.kinder_slide'] = 'Kinder Slide';
+
+$trans['alt_attribute.kindergarten'] = 'Kindergarten';
+$trans['title_attribute.kindergarten'] = 'Kindergarten';
+
