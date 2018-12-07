@@ -161,4 +161,7 @@ $trans['title_attribute.kinder_slide'] = 'Topogan pentru copii';
 $trans['alt_attribute.kindergarten'] = 'Gradinita';
 $trans['title_attribute.kindergarten'] = 'Gradinita';
 
+$trans['alt_attribute.house_toy'] = 'Casa de jucarie';
+$trans['title_attribute.house_toy'] = 'Casa de jucarie';
+
 

@@ -296,3 +296,6 @@ $trans['title_attribute.kinder_slide'] = 'Kinder Slide';
 $trans['alt_attribute.kindergarten'] = 'Kindergarten';
 $trans['title_attribute.kindergarten'] = 'Kindergarten';
 
+$trans['alt_attribute.house_toy'] = 'House Toy';
+$trans['title_attribute.house_toy'] = 'House Toy';
+
