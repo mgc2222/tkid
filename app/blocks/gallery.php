@@ -66,8 +66,8 @@
                                                                             width="300" height="200"
                                                                             src="<?php echo /*$row->imagePath*/ $row->thumb_gallery?>"
                                                                             class="attachment-medium size-medium"
-                                                                            alt="<?php echo $row->image_alt?>"
-                                                                            title="<?php echo $row->image_title?>"
+                                                                            alt="<?php echo $trans[$row->image_alt]?>"
+                                                                            title="<?php echo $trans[$row->image_title]?>"
                                                                             style="object-fit:cover; min-height: 200px; max-height: 200px"
                                                                             aria-describedby="gallery-1-<?php echo $row->id;?>"
                                                                         />
