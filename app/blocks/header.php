@@ -31,7 +31,7 @@
         </h4>
         <ul class="dtbaker-social-icons-list dtbaker-social-icons-list--without-canvas dtbaker-social-icons-list--rounded dtbaker-social-icons-list--no-labels">
             <li class="dtbaker-social_icons-list__item">
-                <a class="dtbaker-social_icons-list__link" href="https://www.facebook.com/theKIDplayground" target="_blank" rel="noopener noreferrer" aria-labelledby="social-heading"> <span class="socicon socicon-facebook" style="color:#b2b2b2"></span> </a>
+                <a class="dtbaker-social_icons-list__link" href="https://www.facebook.com/theKIDplayground" target="_blank" rel="noopener noreferrer" aria-labelledby="social-heading"> <span class="socicon socicon-facebook" style="color:#00c13c"></span> </a>
             </li>
             <!--<li class="dtbaker-social_icons-list__item">
                 <a class="dtbaker-social_icons-list__link" href="https://tweeter.com/" target="_blank" rel="noopener noreferrer" aria-labelledby="social-heading"> <span class="socicon socicon-twitter" style="color:#b2b2b2"></span> </a>
@@ -40,10 +40,10 @@
                 <a class="dtbaker-social_icons-list__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-labelledby="social-heading"> <span class="socicon socicon-instagram" style="color:#b2b2b2"></span> </a>
             </li>-->
             <li class="dtbaker-social_icons-list__item">
-                <a class="dtbaker-social_icons-list__link" href="mailto:contact@tkid.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="social-heading"> <span class="fa fa-envelope" style="color:#b2b2b2"></span> </a>
+                <a class="dtbaker-social_icons-list__link" href="mailto:contact@tkid.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="social-heading" title="contact@tkid.ro"> <span class="fa fa-envelope" style="color:#00c2ef"></span> </a>
             </li>
             <li class="dtbaker-social_icons-list__item">
-                <a class="dtbaker-social_icons-list__link" href="tel:+40729577854" target="_blank" rel="noopener noreferrer" aria-labelledby="social-heading"> <span class="fa fa-phone" style="color:#b2b2b2"></span> </a>
+                <a class="dtbaker-social_icons-list__link" href="tel:+40729577854" target="_blank" rel="noopener noreferrer" aria-labelledby="social-heading" title="+40729577854"> <span class="fa fa-phone" style="color:#165090"></span> </a>
             </li>
         </ul>
     </section>
