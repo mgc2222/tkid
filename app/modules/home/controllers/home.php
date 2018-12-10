@@ -27,6 +27,9 @@ class Home extends AdminController
 
 		array_push($this->webpage->StyleSheets,
 			'cookieconsent/cookieconsent.min.css',
+			//'bootstrap/bootstrap-2.3.2.css',
+			//'bootstrap/bootstrap-responsive-2.3.2.css',
+			'bootstrap/bootstrap.min.css',
 			/*'theme/css/plugin/styles.css',
 	        'theme/css/plugin/dtbaker-woocommerce.css',
 	       	'theme/css/plugin/woocommerce-layout.css',
@@ -76,7 +79,7 @@ class Home extends AdminController
 
 		array_push($this->webpage->ScriptsFooter,
 		    //'theme/jquery.form.min.js',
-
+			//'lib/bootstrap/bootstrap-2.3.2.min.js',
 		    //'theme/scripts.js',
 		    //'theme/dtbaker-woocommerce-slider.js',
 		    //'theme/jquery.blockUI.min.js',

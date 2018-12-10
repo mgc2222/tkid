@@ -1154,6 +1154,7 @@ if(!String.prototype.formatNum) {
 			var start = this.options.position.start.getFullYear() + '-' + this.options.position.start.getMonthFormatted() + '-';
 			self.context.find('.cal-month-box .cal-row-fluid')
 				.on('mouseenter', function() {
+					console.log('mouseenter')
 					var p = new Date(self.options.position.start);
 					var child = $('.cal-cell1:first-child .cal-month-day', this);
 					var day = (child.hasClass('cal-month-first-row') ? 1 : $('[data-cal-date]', child).text());

@@ -129,10 +129,9 @@
   width: 100%;
 }
 #cal-week-box {
-  position: absolute;
-  width: 70px;
-  left: -71px;
-  top: -1px;
+  position: relative;
+  width: 70%;
+  height: 100%;
   padding: 8px 5px;
   cursor: pointer;
 }
@@ -389,7 +388,7 @@
 }
 .cal-year-box .row-fluid:hover,
 .cal-row-fluid:hover {
-  background-color: #fafafa;
+  background-color: #d0f4f0;
 }
 .cal-month-day {
   height: 100px;
@@ -468,8 +467,8 @@ span[data-cal-date]:hover {
   border: 1px solid #e1e1e1;
   border-right: 0px;
   border-radius: 5px 0 0 5px;
-  background-color: #fafafa;
-  text-align: right;
+  background-color: #d0f4f0;
+  text-align: center;
 }
 #cal-day-tick {
   border: 1px solid #e1e1e1;
