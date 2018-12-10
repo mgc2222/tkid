@@ -4,9 +4,9 @@
 
 		<div class="pull-right form-inline text-center">
 			<div class="btn-group">
-				<button type="button" class="btn <!--btn-primary-->" style="background-color:#00c2ef" data-calendar-nav="prev"><< Prev</button>
+				<button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="prev"><< Prev</button>
 				<button type="button" class="btn" data-calendar-nav="today">Today</button>
-				<button type="button" class="btn <!--btn-primary-->" style="background-color:#00c2ef" data-calendar-nav="next">Next >></button>
+				<button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="next">Next >></button>
 			</div>
 			<div class="btn-group">
 				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="year">Year</button>
