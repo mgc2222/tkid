@@ -61,18 +61,20 @@ class AdminController extends AbstractController
 		$this->webpage->FormAction = '';
         $this->webpage->PageRoute = '';
 
-		/*$this->webpage->StyleSheets = Array(
+		$this->webpage->StyleSheets = Array(
 		'bootstrap/bootstrap.css',
-		'fonts/font-awesome/css/font-awesome.min.css',
-		'admin/admin.css');*/
+		//'fonts/font-awesome/css/font-awesome.min.css',
+		//'admin/admin.css',
+		);
         $this->webpage->StyleSheets = Array();
 		$this->webpage->ScriptsFooter = Array(
 			'lib/strings/strings.js',
 			'lib/htmlcontrols/htmlcontrols.js',
 			'lib/form/form.js',
 			'lib/jquery/jquery-3.3.1.min.js',
-			//'lib/bootstrap/bootstrap.min.js',
-			'lib/lodash/lodash.min.js');
+			'lib/bootstrap/bootstrap.min.js',
+			//'lib/lodash/lodash.min.js'
+        );
 		$this->AutoLoadJavascript();
 	}
 	
