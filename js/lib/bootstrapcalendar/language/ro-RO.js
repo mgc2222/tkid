@@ -84,6 +84,7 @@ window.calendar_languages['ro'] = {
 		'26-10':  	 "Sfântul Mare Mucenic Dimitrie, Izvorâtorul de Mir",
 		'27-10':  	 "Cuviosul Dimitrie cel Nou din Basarabi",
 		'08-11':  	 "Soborul Sfinţilor Arhangheli Mihail şi Gavriil",
+		'30-11':  	 "Sărbătoarea Sfântului Apostol Andrei, cel Întâi chemat, Ocrotitorul României",
 		'01-12':  	 "Ziua Naţională a României",
 		'25-12':  	 "Naşterea Domnului Nostru Iisus Hristos – Crăciunul",
 		'26-12':  	 "A doua zi de Crăciun; Soborul Maicii",
