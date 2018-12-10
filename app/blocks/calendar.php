@@ -2,22 +2,22 @@
 
 	<div class="page-header">
 
-		<div class="pull-right form-inline">
+		<div class="pull-right form-inline text-center">
 			<div class="btn-group">
-				<button class="btn btn-primary" data-calendar-nav="prev"><< Prev</button>
-				<button class="btn" data-calendar-nav="today">Today</button>
-				<button class="btn btn-primary" data-calendar-nav="next">Next >></button>
+				<button type="button" class="btn <!--btn-primary-->" style="background-color:#00c2ef" data-calendar-nav="prev"><< Prev</button>
+				<button type="button" class="btn" data-calendar-nav="today">Today</button>
+				<button type="button" class="btn <!--btn-primary-->" style="background-color:#00c2ef" data-calendar-nav="next">Next >></button>
 			</div>
 			<div class="btn-group">
-				<button class="btn btn-warning" data-calendar-view="year">Year</button>
-				<button class="btn btn-warning active" data-calendar-view="month">Month</button>
-				<button class="btn btn-warning" data-calendar-view="week">Week</button>
-				<button class="btn btn-warning" data-calendar-view="day">Day</button>
+				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="year">Year</button>
+				<button type="button" class="btn <!--btn-warning--> active" style="background-color:#e8fde7" data-calendar-view="month">Month</button>
+				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="week">Week</button>
+				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="day">Day</button>
 			</div>
 		</div>
 
-		<h3></h3>
-		<small>To see example with events navigate to march 2013</small>
+		<h3 class="text-center"></h3>
+		<div class="text-center"><small>To see example with events navigate to march 2013</small></div>
 	</div>
 
 	<div class="row">
