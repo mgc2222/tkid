@@ -1016,17 +1016,26 @@ if(!String.prototype.formatNum) {
 		if(this.options.templates[name]) {
 			return;
 		}
-		var self = this;
-		$.ajax({
-			url: self._templatePath(name),
-			dataType: 'html',
-			type: 'GET',
-			async: false,
-			cache: this.options.tmpl_cache
-		}).done(function(html) {
-			self.options.templates[name] = _.template(html);
-		});
+		this._ajaxLoadTemplate(name).then().catch();
 	};
+
+    Calendar.prototype._ajaxLoadTemplate = function(name) {
+        var self = this;
+    	return new Promise((resolve, reject)=>{
+            $.ajax({
+                url: self._templatePath(name),
+                dataType: 'html',
+                type: 'GET',
+                cache: this.options.tmpl_cache
+            }).done((response)=> {
+                resolve(response);
+                this.options.templates[name] = _.template(response)
+            }).fail((error)=>{
+            	reject(error);
+			});
+		});
+
+    };
 
 	Calendar.prototype._update = function() {
 		var self = this;
