@@ -9,9 +9,15 @@
 			<div class="span11 col-xs-11">
 				<% _.each(all_day, function(event){ %>
 					<div class="day-highlight dh-<%= event['class'] %>">
-						<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
-						   data-event-class="<%= event['class'] %>" class="event-item">
-							<%= event.title %></a>
+						<% if (event.url) { %>
+							<a href="<%= event.url %>" data-event-id="<%= event.id %>"
+							   data-event-class="<%= event['class'] %>" class="event-item">
+								<%= event.title %></a>
+						<% } else{ %>
+							<a role="button" data-event-id="<%= event.id %>"
+							   data-event-class="<%= event['class'] %>" class="event-item">
+								<%= event.title %></a>
+						<% } %>
 					</div>
 				<% }); %>
 			</div>
@@ -24,9 +30,15 @@
 				<% _.each(before_time, function(event){ %>
 					<div class="day-highlight dh-<%= event['class'] %>">
 						<span class="cal-hours pull-right"><%= event.end_hour %></span>
-						<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
-						   data-event-class="<%= event['class'] %>" class="event-item">
-							<%= event.title %></a>
+						<% if (event.url) { %>
+							<a href="<%= event.url %>" data-event-id="<%= event.id %>"
+							   data-event-class="<%= event['class'] %>" class="event-item">
+								<%= event.title %></a>
+						<% } else{ %>
+							<a role="buton" data-event-id="<%= event.id %>"
+							   data-event-class="<%= event['class'] %>" class="event-item">
+								<%= event.title %></a>
+						<% } %>
 					</div>
 				<% }); %>
 			</div>
@@ -47,11 +59,17 @@
 		</div>
 		
 		<% _.each(by_hour, function(event){ %>
-			<div class="pull-left day-event day-highlight dh-<%= event['class'] %>" style="margin-top: <%= (event.top * 30) %>px; height: <%= (event.lines * 30) %>px">
+			<div class="pull-left day-event day-highlight dh-<%= event['class'] %>" style="margin-top: <%= (event.top * 30) %>px; /*height: <%= (event.lines * 30) %>px*/">
 				<span class="cal-hours"><%= event.start_hour %> - <%= event.end_hour %></span>
-				<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
-				   data-event-class="<%= event['class'] %>" class="event-item">
-					<%= event.title %></a>
+				<% if (event.url) { %>
+					<a href="<%= event.url %>" data-event-id="<%= event.id %>"
+					   data-event-class="<%= event['class'] %>" class="event-item">
+						<%= event.title %></a>
+				<% } else{ %>
+					<a role="button" data-event-id="<%= event.id %>"
+					   data-event-class="<%= event['class'] %>" class="event-item">
+						<%= event.title %></a>
+				<% } %>
 			</div>
 		<% }); %>
 	</div>
@@ -62,9 +80,15 @@
 			<% _.each(after_time, function(event){ %>
 			<div class="day-highlight dh-<%= event['class'] %>">
 				<span class="cal-hours"><%= event.start_hour %></span>
-				<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
-				   data-event-class="<%= event['class'] %>" class="event-item">
-					<%= event.title %></a>
+				<% if (event.url) { %>
+					<a href="<%= event.url %>" data-event-id="<%= event.id %>"
+					   data-event-class="<%= event['class'] %>" class="event-item">
+						<%= event.title %></a>
+				<% } else{ %>
+					<a role="button" data-event-id="<%= event.id %>"
+					   data-event-class="<%= event['class'] %>" class="event-item">
+						<%= event.title %></a>
+				<% } %>
 			</div>
 			<% }); %>
 		</div>

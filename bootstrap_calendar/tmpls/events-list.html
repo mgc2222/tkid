@@ -3,10 +3,16 @@
 	<ul class="unstyled list-unstyled">
 		<% _.each(events, function(event) { %>
 			<li>
-				<span class="pull-left event <%= event['class'] %>"></span>&nbsp;
-				<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
-					data-event-class="<%= event['class'] %>" class="event-item">
+				<span class="pull-left event <%= event['class'] %>"></span>
+				<% if (event.url) { %>&nbsp;
+					<a href="<%= event.url %>" data-event-id="<%= event.id %>"
+						data-event-class="<%= event['class'] %>" class="event-item">
+						<%= event.title %></a>
+				<% } else{ %>
+				<a role="button" data-event-id="<%= event.id %>"
+				   data-event-class="<%= event['class'] %>" class="event-item">
 					<%= event.title %></a>
+				<% } %>
 			</li>
 		<% }) %>
 	</ul>

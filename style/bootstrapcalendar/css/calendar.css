@@ -208,7 +208,7 @@
 }
 .cal-week-box [data-event-class] {
   white-space: nowrap;
-  height: 30px;
+  /*height: 30px;*/
   margin: 1px 1px;
   line-height: 30px;
   text-overflow: ellipsis;
@@ -484,7 +484,7 @@ span[data-cal-date]:hover {
 #cal-slide-content {
   padding: 20px;
   color: #ffffff;
-  background-image: url("../img/dark_wood.png");
+  background-image: url("../img/wood-tile-green.jpg");
   -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
@@ -495,7 +495,7 @@ span[data-cal-date]:hover {
   background-color: transparent;
 }
 #cal-slide-content a.event-item {
-  color: #ffffff;
+  color: #165090;
   font-weight: normal;
   line-height: 22px;
 }

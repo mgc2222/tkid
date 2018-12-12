@@ -17,7 +17,7 @@
 		</div>
 
 		<h3 class="text-center"></h3>
-		<div class="text-center"><small>To see example with events navigate to march 2013</small></div>
+		<div class="text-center hidden"><small>To see example with events navigate to march 2013</small></div>
 	</div>
 
 	<div class="row">

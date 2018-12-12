@@ -4,8 +4,7 @@
 
 	var options = {
 		events_source: 'events',
-		view: 'month',
-		tmpl_promise:'',
+		view: 'week',
 		tmpl_path: 'tmpls/',
 		tmpl_cache: false,
 		day: 'now',
