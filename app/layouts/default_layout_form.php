@@ -7,7 +7,7 @@
     <form id="mainForm" method="post" action="<?php echo $webpage->FormAction?>" <?php echo $webpage->FormAttributes?>>
         <div id="header-content" class="">
             <div id="header-content-inner">
-                <?php include(_APPLICATION_FOLDER.'blocks/header.php'); ?>
+                <?php //include(_APPLICATION_FOLDER.'blocks/header.php'); ?>
                 <main id="main-wrapper">
 
                         <div id="main-content" class="site-content-full inner-content-width">

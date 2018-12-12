@@ -5,6 +5,7 @@
 	var options = {
 		events_source: 'events',
 		view: 'month',
+		tmpl_promise:'',
 		tmpl_path: 'tmpls/',
 		tmpl_cache: false,
 		day: 'now',
