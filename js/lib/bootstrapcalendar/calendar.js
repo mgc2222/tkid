@@ -424,42 +424,47 @@ if(!String.prototype.formatNum) {
 
 	Calendar.prototype._render = function() {
 		this.context.html('');
-		this._loadTemplate(this.options.view);
-		this.stop_cycling = false;
+		var self = this;
+		var promise = this._loadTemplate(self.options.view);
+		debugger;
+		promise.then(function (response) {
+			debugger; self._setTemplate(self.options.view, response);
+            self.stop_cycling = false;
 
-		var data = {};
-		data.cal = this;
-		data.day = 1;
+            var data = {};
+            data.cal = self;
+            data.day = 1;
 
-		// Getting list of days in a week in correct order. Works for month and week views
-		if(getExtentedOption(this, 'first_day') == 1) {
-			data.days_name = [this.locale.d1, this.locale.d2, this.locale.d3, this.locale.d4, this.locale.d5, this.locale.d6, this.locale.d0]
-		} else {
-			data.days_name = [this.locale.d0, this.locale.d1, this.locale.d2, this.locale.d3, this.locale.d4, this.locale.d5, this.locale.d6]
-		}
+            // Getting list of days in a week in correct order. Works for month and week views
+            if(getExtentedOption(self, 'first_day') == 1) {
+                data.days_name = [self.locale.d1, self.locale.d2, self.locale.d3, self.locale.d4, self.locale.d5, self.locale.d6, self.locale.d0]
+            } else {
+                data.days_name = [self.locale.d0, self.locale.d1, self.locale.d2, self.locale.d3, self.locale.d4, self.locale.d5, self.locale.d6]
+            }
 
-		// Get all events between start and end
-		var start = parseInt(this.options.position.start.getTime());
-		var end = parseInt(this.options.position.end.getTime());
+            // Get all events between start and end
+            var start = parseInt(self.options.position.start.getTime());
+            var end = parseInt(self.options.position.end.getTime());
 
-		data.events = this.getEventsBetween(start, end);
+            data.events = self.getEventsBetween(start, end);
 
-		switch(this.options.view) {
-			case 'month':
-				break;
-			case 'week':
-				this._calculate_hour_minutes(data);
-				break;
-			case 'day':
-				this._calculate_hour_minutes(data);
-				break;
-		}
+            switch(self.options.view) {
+                case 'month':
+                    break;
+                case 'week':
+                    self._calculate_hour_minutes(data);
+                    break;
+                case 'day':
+                    self._calculate_hour_minutes(data);
+                    break;
+            }
 
-		data.start = new Date(this.options.position.start.getTime());
-		data.lang = this.locale;
-
-		this.context.append(this.options.templates[this.options.view](data));
-		this._update();
+            data.start = new Date(self.options.position.start.getTime());
+            data.lang = self.locale;
+            debugger;
+            self.context.append(self.options.templates[self.options.view](data));
+            self._update();
+		});
 	};
 
 	Calendar.prototype._format_hour = function(str_hour, leadingZero) {
@@ -609,116 +614,131 @@ if(!String.prototype.formatNum) {
 	};
 
 	Calendar.prototype._week = function(event) {
-		this._loadTemplate('week-days');
+        var self = this;
+        var promise = this._loadTemplate('week-days');d
+		debugger;
+        promise.then(function (response) {
+            var t = {};
+            var start = parseInt(self.options.position.start.getTime());
+            var end = parseInt(self.options.position.end.getTime());
+            var events = [];
+            var self = self;
+            var first_day = getExtentedOption(self, 'first_day');
 
-		var t = {};
-		var start = parseInt(this.options.position.start.getTime());
-		var end = parseInt(this.options.position.end.getTime());
-		var events = [];
-		var self = this;
-		var first_day = getExtentedOption(this, 'first_day');
+            $.each(self.getEventsBetween(start, end), function(k, event) {
+                var eventStart  = new Date(parseInt(event.start));
+                eventStart.setHours(0,0,0,0);
+                var eventEnd    = new Date(parseInt(event.end));
 
-		$.each(this.getEventsBetween(start, end), function(k, event) {
-			var eventStart  = new Date(parseInt(event.start));
-			eventStart.setHours(0,0,0,0);
-			var eventEnd    = new Date(parseInt(event.end));
+                event.start_day = new Date(parseInt(eventStart.getTime())).getDay();
+                if(first_day == 1) {
+                    event.start_day = (event.start_day + 6) % 7;
+                }
+                if((eventEnd.getTime() - eventStart.getTime()) <= 86400000) {
+                    event.days = 1;
+                } else {
+                    event.days = ((eventEnd.getTime() - eventStart.getTime()) / 86400000);
+                }
 
-			event.start_day = new Date(parseInt(eventStart.getTime())).getDay();
-			if(first_day == 1) {
-				event.start_day = (event.start_day + 6) % 7;
-			}
-			if((eventEnd.getTime() - eventStart.getTime()) <= 86400000) {
-				event.days = 1;
-			} else {
-				event.days = ((eventEnd.getTime() - eventStart.getTime()) / 86400000);
-			}
+                if(eventStart.getTime() < start) {
 
-			if(eventStart.getTime() < start) {
+                    event.days = event.days - ((start - eventStart.getTime()) / 86400000);
+                    event.start_day = 0;
+                }
 
-				event.days = event.days - ((start - eventStart.getTime()) / 86400000);
-				event.start_day = 0;
-			}
+                event.days = Math.ceil(event.days);
 
-			event.days = Math.ceil(event.days);
+                if(event.start_day + event.days > 7) {
+                    event.days = 7 - (event.start_day);
+                }
 
-			if(event.start_day + event.days > 7) {
-				event.days = 7 - (event.start_day);
-			}
-
-			events.push(event);
+                events.push(event);
+            });
+            t.events = events;
+            t.cal = self;
+            return self.options.templates['week-days'](t);
 		});
-		t.events = events;
-		t.cal = this;
-		return self.options.templates['week-days'](t);
+
+
 	}
 
 	Calendar.prototype._month = function(month) {
-		this._loadTemplate('year-month');
+		var self = this;
+		var promise = this._loadTemplate('year-month');
+		promise.then(function(response){
+            self._setTemplate('year-month', response);
+            var t = {cal: self};
+            var newmonth = month + 1;
+            t.data_day = self.options.position.start.getFullYear() + '-' + (newmonth < 10 ? '0' + newmonth : newmonth) + '-' + '01';
+            t.month_name = self.locale['m' + month];
 
-		var t = {cal: this};
-		var newmonth = month + 1;
-		t.data_day = this.options.position.start.getFullYear() + '-' + (newmonth < 10 ? '0' + newmonth : newmonth) + '-' + '01';
-		t.month_name = this.locale['m' + month];
-
-		var curdate = new Date(this.options.position.start.getFullYear(), month, 1, 0, 0, 0);
-		t.start = parseInt(curdate.getTime());
-		t.end = parseInt(new Date(this.options.position.start.getFullYear(), month + 1, 1, 0, 0, 0).getTime());
-		t.events = this.getEventsBetween(t.start, t.end);
-		return this.options.templates['year-month'](t);
+            var curdate = new Date(self.options.position.start.getFullYear(), month, 1, 0, 0, 0);
+            t.start = parseInt(curdate.getTime());
+            t.end = parseInt(new Date(self.options.position.start.getFullYear(), month + 1, 1, 0, 0, 0).getTime());
+            t.events = self.getEventsBetween(t.start, t.end);
+            return self.options.templates['year-month'](t);
+		});
 	}
 
 	Calendar.prototype._day = function(week, day) {
-		this._loadTemplate('month-day');
+        var self = this;
+		var promise = this._loadTemplate('month-day');
+		debugger;
+		promise.then(function (response) {
+            self._setTemplate('month-day', response);
+            var t = {tooltip: '', cal: self};
+            var cls = self.options.classes.months.outmonth;
 
-		var t = {tooltip: '', cal: this};
-		var cls = this.options.classes.months.outmonth;
+            var firstday = self.options.position.start.getDay();
+            if(getExtentedOption(self, 'first_day') == 2) {
+                firstday++;
+            } else {
+                firstday = (firstday == 0 ? 7 : firstday);
+            }
 
-		var firstday = this.options.position.start.getDay();
-		if(getExtentedOption(this, 'first_day') == 2) {
-			firstday++;
-		} else {
-			firstday = (firstday == 0 ? 7 : firstday);
-		}
+            day = (day - firstday) + 1;
+            var curdate = new Date(self.options.position.start.getFullYear(), self.options.position.start.getMonth(), day, 0, 0, 0);
 
-		day = (day - firstday) + 1;
-		var curdate = new Date(this.options.position.start.getFullYear(), this.options.position.start.getMonth(), day, 0, 0, 0);
+            // if day of the current month
+            if(day > 0) {
+                cls = self.options.classes.months.inmonth;
+            }
+            // stop cycling table rows;
+            var daysinmonth = (new Date(self.options.position.end.getTime() - 1)).getDate();
+            if((day + 1) > daysinmonth) {
+                self.stop_cycling = true;
+            }
+            // if day of the next month
+            if(day > daysinmonth) {
+                day = day - daysinmonth;
+                cls = self.options.classes.months.outmonth;
+            }
 
-		// if day of the current month
-		if(day > 0) {
-			cls = this.options.classes.months.inmonth;
-		}
-		// stop cycling table rows;
-		var daysinmonth = (new Date(this.options.position.end.getTime() - 1)).getDate();
-		if((day + 1) > daysinmonth) {
-			this.stop_cycling = true;
-		}
-		// if day of the next month
-		if(day > daysinmonth) {
-			day = day - daysinmonth;
-			cls = this.options.classes.months.outmonth;
-		}
+            cls = $.trim(cls + " " + self._getDayClass("months", curdate));
 
-		cls = $.trim(cls + " " + this._getDayClass("months", curdate));
+            if(day <= 0) {
+                var daysinprevmonth = (new Date(self.options.position.start.getFullYear(), self.options.position.start.getMonth(), 0)).getDate();
+                day = daysinprevmonth - Math.abs(day);
+                cls += ' cal-month-first-row';
+            }
 
-		if(day <= 0) {
-			var daysinprevmonth = (new Date(this.options.position.start.getFullYear(), this.options.position.start.getMonth(), 0)).getDate();
-			day = daysinprevmonth - Math.abs(day);
-			cls += ' cal-month-first-row';
-		}
+            var holiday = self._getHoliday(curdate);
+            if(holiday !== false) {
+                t.tooltip = holiday;
+            }
 
-		var holiday = this._getHoliday(curdate);
-		if(holiday !== false) {
-			t.tooltip = holiday;
-		}
+            t.data_day = curdate.getFullYear() + '-' + curdate.getMonthFormatted() + '-' + (day < 10 ? '0' + day : day);
+            t.cls = cls;
+            t.day = day;
 
-		t.data_day = curdate.getFullYear() + '-' + curdate.getMonthFormatted() + '-' + (day < 10 ? '0' + day : day);
-		t.cls = cls;
-		t.day = day;
+            t.start = parseInt(curdate.getTime());
+            t.end = parseInt(t.start + 86400000);
+            t.events = self.getEventsBetween(t.start, t.end);
+            return self.options.templates['month-day'](t);
 
-		t.start = parseInt(curdate.getTime());
-		t.end = parseInt(t.start + 86400000);
-		t.events = this.getEventsBetween(t.start, t.end);
-		return this.options.templates['month-day'](t);
+		});
+
+
 	}
 
 	Calendar.prototype._getHoliday = function(date) {
@@ -1014,27 +1034,20 @@ if(!String.prototype.formatNum) {
 
 	Calendar.prototype._loadTemplate = function(name) {
 		if(this.options.templates[name]) {
+			debugger;
 			return;
 		}
-		this._ajaxLoadTemplate(name).then().catch();
-	};
-
-    Calendar.prototype._ajaxLoadTemplate = function(name) {
         var self = this;
-    	return new Promise((resolve, reject)=>{
-            $.ajax({
+        return $.ajax({
                 url: self._templatePath(name),
                 dataType: 'html',
                 type: 'GET',
                 cache: this.options.tmpl_cache
-            }).done((response)=> {
-                resolve(response);
-                this.options.templates[name] = _.template(response)
-            }).fail((error)=>{
-            	reject(error);
-			});
-		});
+            });
+	};
 
+    Calendar.prototype._setTemplate = function(tmpl, content) {
+        this.options.templates[tmpl] = _.template(content)
     };
 
 	Calendar.prototype._update = function() {
@@ -1111,18 +1124,24 @@ if(!String.prototype.formatNum) {
 								break;
 
 							case "ajax":
-								$.ajax({
-									url: url, dataType: "html", async: false, success: function(data) {
-										modal_body.html(data);
-									}
+								var promise1 = $.ajax({
+									url: url,
+									dataType: "html",
+									//async: false,
+								});
+								promise1.then(function (response){
+                                    modal_body.html(response);
 								});
 								break;
 
 							case "template":
-								self._loadTemplate("modal");
-								//	also serve calendar instance to underscore template to be able to access current language strings
-								modal_body.html(self.options.templates["modal"]({"event": event, "calendar": self}))
-								break;
+								var promise2 = self._loadTemplate("modal");
+								promise2.then(function (response){
+									self._setTemplate("modal", response);
+                                    //	also serve calendar instance to underscore template to be able to access current language strings
+                                    modal_body.html(self.options.templates["modal"]({"event": event, "calendar": self}));
+                                    break;
+								});
 						}
 
 						//	set the title of the bootstrap modal
@@ -1228,11 +1247,13 @@ if(!String.prototype.formatNum) {
 			event.stopPropagation();
 		});
 
-		this._loadTemplate('events-list');
-
-		downbox.click(function(event) {
-			showEventsList(event, $(this), slider, self);
-		});
+		var promise = this._loadTemplate('events-list');
+		 promise.then(function (response){
+             self._setTemplate("events-list", response);
+			 downbox.click(function(event) {
+				 showEventsList(event, $(self), slider, self);
+			 });
+		 });
 	};
 
 	Calendar.prototype.getEventsBetween = function(start, end) {
