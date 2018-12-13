@@ -74,7 +74,8 @@ class Home extends AdminController
 	        'theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'*/
 	        'theme/css/stylesheet.css',
 	        'bootstrapcalendar/css/calendar.css',
-	        'theme/css/google-place-card.min.css'
+	        'theme/css/google-place-card.min.css',
+	        'popper/popper.css'
 	    );
 
 		array_push($this->webpage->ScriptsFooter,
@@ -94,6 +95,8 @@ class Home extends AdminController
 			'lib/bootstrapcalendar/language/ro-Ro.js',
 			'lib/bootstrapcalendar/calendar.js',
 			'lib/bootstrapcalendar/app.js',
+			'lib/popper/popper.min.js',
+		    'theme/popper-init.js',
 		    /*'theme/navigation.js',
 		    'theme/skip-link-focus-fix.js',
 		    'theme/jquery.prettyPhoto.min.js',

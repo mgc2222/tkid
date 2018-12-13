@@ -1,6 +1,6 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');  ?>
 
-	<div class="page-header">
+	<div class="page-header" id="calendar-page-header">
 
 		<div class="pull-right form-inline text-center">
 			<div class="btn-group">
@@ -12,7 +12,7 @@
 				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="year">Year</button>
 				<button type="button" class="btn <!--btn-warning--> active" style="background-color:#e8fde7" data-calendar-view="month">Month</button>
 				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="week">Week</button>
-				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="day">Day</button>
+				<button type="button" class="btn hidden <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="day">Day</button>
 			</div>
 		</div>
 

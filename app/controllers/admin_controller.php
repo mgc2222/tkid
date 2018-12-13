@@ -62,6 +62,7 @@ class AdminController extends AbstractController
         $this->webpage->PageRoute = '';
 
 		$this->webpage->StyleSheets = Array(
+			'bootstrap/bootstrap.min.css',
 		//'bootstrap/bootstrap.css',
 		//'fonts/font-awesome/css/font-awesome.min.css',
 		//'admin/admin.css',

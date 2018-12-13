@@ -513,3 +513,9 @@ a.cal-event-week {
 .badge-important {
   background-color: #b94a48;
 }
+#calendar .col-xs-11 {
+  width: 91.67%;
+}
+#calendar-page-header {
+  border: none;
+}

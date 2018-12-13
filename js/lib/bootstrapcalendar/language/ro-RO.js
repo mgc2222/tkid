@@ -13,7 +13,7 @@ window.calendar_languages['ro'] = {
 
 	title_year: 	'{0}',
 	title_month: 	'{0} {1}',
-	title_week: 	'luna {0} din {1}',
+	title_week: 	'săptămâna {0} din {1}',
 	title_day: 		'{0} {1} {2}, {3}',
 
 	week:			'Săptămâna {0}',

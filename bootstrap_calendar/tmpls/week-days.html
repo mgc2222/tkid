@@ -8,5 +8,6 @@
 			<a role="button" data-event-id="<%= event.id %>" class="cal-event-week event<%= event.id %>"><%= event.title %></a>
 		<%} %>
 	</div>
+	<div class="cal-event-description popper" style="display:none" id="event-description-<%= event.id %>"><%=event.description %></div>
 </div>
 <% }); %>
