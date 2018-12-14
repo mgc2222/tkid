@@ -4,15 +4,15 @@
 
 		<div class="pull-right form-inline text-center">
 			<div class="btn-group">
-				<button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="prev"><< Prev</button>
-				<button type="button" class="btn" data-calendar-nav="today">Today</button>
-				<button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="next">Next >></button>
+				<button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="prev"><< <?php echo $trans['calendar.button_previous'] ?></button>
+				<button type="button" class="btn" data-calendar-nav="today"><?php echo $trans['calendar.button_today'] ?></button>
+				<button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="next"><?php echo $trans['calendar.button_next'] ?> >></button>
 			</div>
 			<div class="btn-group">
-				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="year">Year</button>
-				<button type="button" class="btn <!--btn-warning--> active" style="background-color:#e8fde7" data-calendar-view="month">Month</button>
-				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="week">Week</button>
-				<button type="button" class="btn hidden <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="day">Day</button>
+				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="year"><?php echo $trans['calendar.button_year'] ?></button>
+				<button type="button" class="btn <!--btn-warning--> active" style="background-color:#e8fde7" data-calendar-view="month"><?php echo $trans['calendar.button_month'] ?></button>
+				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="week"><?php echo $trans['calendar.button_week'] ?></button>
+				<button type="button" class="btn hidden <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="day"><?php echo $trans['calendar.button_day'] ?></button>
 			</div>
 		</div>
 

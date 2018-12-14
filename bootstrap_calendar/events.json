@@ -3,37 +3,39 @@
 	"result": [
 		{
 			"id": "293",
-			"title": "This is warning class event with very long title to check how it fits to evet in day view",
+			"title": "Atelier Felicitari hand made unicat",
 			"url": "",
 			"class": "event-warning",
-			"start": "1544735650000",
-			"end":   "1544735650000",
-			"description": "Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. "
+			"start": "1544774437000",
+			"end":   "1544781637000",
+			"description": "Hai sa confectionam felicitari unicat, ce pot fi oferite celor dragi cu ocazia sarbatorilor de iarna. Daca ti se pare ca sms-urile sunt impersonale si vrei sa-ti inveti copilul ca exista si alte optiuni, atunci foloseste una dintre felicitarile create chiar de voi , copii si parinti si urarile vor fi unele speciale!"
 		},
 		{
 			"id": "256",
-			"title": "TEST EVENT 2",
+			"title": "Petrecere privata",
 			"url": "",
 			"class": "event-warning",
-			"start": "1544464810000",
-			"end":   "1544464810000",
-			"description": "Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. "
+			"start": "1544860800000",
+			"end":   "1544875200000",
+			"description": "Petrecere privata"
 		},
 		{
 			"id": "276",
-			"title": "TEST EVENT 1",
+			"title": "Atelier decoratiuni pentru masa de Craciun",
 			"url": "",
 			"class": "event-success",
-			"start": "1547337600000",
-			"end":   "1547769600000"
+			"start": "1544875200000",
+			"end":   "1544882400000",
+			"description": "Vrei sa pregatesti impreuna cu copilul tau obiecte speciale, cu care poti decora masa de sarbatori sau pe care le poti oferi cadou celor dragi? Atunci alege acest atelier, in care vom lucra cu materiale minunante, creand obiecte de efect!"
 		},
 		{
 			"id": "294",
-			"title": "This is information class ",
-			"url": "http://www.example.com/",
+			"title": "Atelier creativ de modelaj şi pictură pe lut",
+			"url": "",
 			"class": "event-info",
 			"start": "1544735650000",
-			"end":   "1544735650000"
+			"end":   "1544735650000",
+			"description":"Modelam și pictam lut, creand figurine specifice sarbatorilor de iarna, pe care sa le asezam in brad, surprinzandu-i pe cei dragi cu dibacia voastra, copii dragi."
 		},
 		{
 			"id": "297",

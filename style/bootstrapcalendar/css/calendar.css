@@ -519,6 +519,12 @@ a.cal-event-week {
 #calendar-page-header {
   border: none;
 }
-.cal-cell{
+.calendar-event, #cal-slide-box{
   cursor: pointer;
+}
+.popover-title{
+  background-color: #d0f4f0;
+}
+.popover-content{
+  background-color: #fcf4a8;
 }

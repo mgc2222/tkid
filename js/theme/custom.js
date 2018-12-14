@@ -17,17 +17,24 @@ $(document).ready(function($) {
         }
     });
 
-    $('[data-toggle="popover"]').popover({
-        trigger:'click',
-        placement: 'bottom',
-        animation: true,
-    });
-    /*$('#calendar').on('click', function (e) {
-        //did not click a popover toggle or popover
-        if ($(e.target).data('toggle') !== 'popover'
-            && $(e.target).parents('.popover.in').length === 0) {
-            $('[data-toggle="popover"]').popover('hide');
+    var popOverSettings = {
+        placement: 'top',
+        container: 'body',
+        //html: true,
+        selector: '[data-toggle="popover"]', //Specify the selector here
+        /*content: function () {
+            return $('#popover-content').html();
+        }*/
+    };
+
+    $('#calendar').popover(popOverSettings);
+
+    $('body').on('click', function (e) {
+        var calendarCell = $('.calendar-event');
+        var popovers = $('.popover');
+        if (calendarCell.has(e.target).length === 0 && !calendarCell.is(e.target) && popovers.length) {
+            popovers.remove();
         }
-    });*/
+    });
 
 });

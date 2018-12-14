@@ -188,6 +188,18 @@ $trans['navigation.gallery'] = 'Photo Gallery';
 $trans['navigation.contact'] = 'Contact';
 
 //	===================================================== //
+//		Calendar Buttons
+//	===================================================== //
+
+$trans['calendar.button_previous'] = 'PREV';
+$trans['calendar.button_next'] = 'NEXT';
+$trans['calendar.button_year'] = 'YEAR';
+$trans['calendar.button_month'] = 'MONTH';
+$trans['calendar.button_week'] = 'WEEK';
+$trans['calendar.button_day'] = 'DAY';
+$trans['calendar.button_today'] = 'TODAY';
+
+//	===================================================== //
 //		Front Page Meta Description Content
 //	===================================================== //
 
@@ -301,4 +313,5 @@ $trans['title_attribute.kindergarten'] = 'Kindergarten';
 
 $trans['alt_attribute.house_toy'] = 'House Toy';
 $trans['title_attribute.house_toy'] = 'House Toy';
+
 
