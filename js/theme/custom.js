@@ -16,4 +16,18 @@ $(document).ready(function($) {
             $back_to_top.addClass('cd-fade-out');
         }
     });
+
+    $('[data-toggle="popover"]').popover({
+        trigger:'click',
+        placement: 'bottom',
+        animation: true,
+    });
+    /*$('#calendar').on('click', function (e) {
+        //did not click a popover toggle or popover
+        if ($(e.target).data('toggle') !== 'popover'
+            && $(e.target).parents('.popover.in').length === 0) {
+            $('[data-toggle="popover"]').popover('hide');
+        }
+    });*/
+
 });

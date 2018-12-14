@@ -5,7 +5,7 @@
 }
 .cal-row-fluid {
   width: 100%;
-  *zoom: 1;
+  zoom: 1;
 }
 .cal-row-fluid:before,
 .cal-row-fluid:after {
@@ -518,4 +518,7 @@ a.cal-event-week {
 }
 #calendar-page-header {
   border: none;
+}
+.cal-cell{
+  cursor: pointer;
 }

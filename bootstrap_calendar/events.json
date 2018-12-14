@@ -16,7 +16,8 @@
 			"url": "",
 			"class": "event-warning",
 			"start": "1544464810000",
-			"end":   "1544464810000"
+			"end":   "1544464810000",
+			"description": "Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. "
 		},
 		{
 			"id": "276",
@@ -31,22 +32,22 @@
 			"title": "This is information class ",
 			"url": "http://www.example.com/",
 			"class": "event-info",
-			"start": "1547251200000",
-			"end":   "1547251200000"
+			"start": "1544735650000",
+			"end":   "1544735650000"
 		},
 		{
 			"id": "297",
 			"title": "This is success event",
 			"url": "http://www.example.com/",
 			"class": "event-success",
-			"start": "1547251200000",
-			"end":   "1547251200000"
+			"start": "1544735650000",
+			"end":   "1544735650000"
 		},
 		{
 			"id": "54",
 			"title": "Test EVENT",
 			"url": "",
-			"class": "",
+			"class": "event-success",
 			"start": "1544392800000",
 			"end":   "1544392800000"
 		},

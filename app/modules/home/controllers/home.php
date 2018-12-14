@@ -74,8 +74,9 @@ class Home extends AdminController
 	        'theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'*/
 	        'theme/css/stylesheet.css',
 	        'bootstrapcalendar/css/calendar.css',
-	        'theme/css/google-place-card.min.css',
-	        'popper/popper.css'
+	        'theme/css/google-place-card.min.css'
+	        //'tippy/tippy.min.css'
+	        //'popper/popper.css'
 	    );
 
 		array_push($this->webpage->ScriptsFooter,
@@ -95,20 +96,21 @@ class Home extends AdminController
 			'lib/bootstrapcalendar/language/ro-Ro.js',
 			'lib/bootstrapcalendar/calendar.js',
 			'lib/bootstrapcalendar/app.js',
-			'lib/popper/popper.min.js',
-		    'theme/popper-init.js',
-		    /*'theme/navigation.js',
+            'theme/custom.js',
+			//'lib/tippy/tippy.min.js',
+			//'lib/popper/popper.min.js',
+		    //'theme/popper-init.js',
+		    'theme/navigation.js',
 		    'theme/skip-link-focus-fix.js',
 		    'theme/jquery.prettyPhoto.min.js',
 		    'theme/jquery.prettyPhoto.init.min.js',
-		    'theme/slick.min.js',*/
+		    'theme/slick.min.js',
 		    //'theme/waypoints.min.js',
-		    /*'theme/frontend.min.js',
-		    'theme/custom.js',
-		    'theme/initMap.js',
+		    'theme/frontend.min.js',
+
+		    /*'theme/initMap.js',
 		    'theme/google-map-init.js',
 		    'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->languageAbb.'&callback=initMap',*/
-			//'app.js',
 			//'lib/validator/jquery.validate.min.js',
 			//'lib/wrappers/validator/validator.js',
 			//'lib/toastr/toastr.min.js',

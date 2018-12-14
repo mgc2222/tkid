@@ -63,6 +63,9 @@ class AdminController extends AbstractController
 
 		$this->webpage->StyleSheets = Array(
 			'bootstrap/bootstrap.min.css',
+            //'bootstrap/bootstrap-2.3.2.css',
+			//'bootstrap/bootstrap3.3.7.min.css',
+			//'bootstrap/bootstrap4.0.min.css',
 		//'bootstrap/bootstrap.css',
 		//'fonts/font-awesome/css/font-awesome.min.css',
 		//'admin/admin.css',
@@ -73,7 +76,11 @@ class AdminController extends AbstractController
 			'lib/htmlcontrols/htmlcontrols.js',
 			'lib/form/form.js',
 			'lib/jquery/jquery-3.3.1.min.js',
+			//'lib/jquery/jquery-2.1.4.min.js',
 			'lib/bootstrap/bootstrap.min.js',
+			//'lib/bootstrap/bootstrap-2.3.2.min.js',
+			//'lib/bootstrap/bootstrap3.3.7.min.js',
+			//'lib/bootstrap/bootstrap.bundle.min.js',
 			//'lib/lodash/lodash.min.js'
         );
 		$this->AutoLoadJavascript();
