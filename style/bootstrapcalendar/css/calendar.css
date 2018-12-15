@@ -529,3 +529,6 @@ a.cal-event-week {
 .popover-content{
   background-color: #fcf4a8;
 }
+.popover{
+  max-width: 100%;
+}
