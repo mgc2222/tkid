@@ -404,7 +404,11 @@
   position: relative;
 }
 .cal-year-box [class*="span"] {
-  min-height: 60px;
+ /* min-height: 60px;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+  /*clear: both;*/
 }
 .cal-year-box .row-fluid [class*="span"]:last-child,
 .cal-month-box .cal-row-fluid [class*="cal-cell"]:last-child {
@@ -523,12 +527,19 @@ a.cal-event-week {
 .calendar-event, #cal-slide-box{
   cursor: pointer;
 }
+#calendar a>span.event{
+  display: inline-block;
+}
 .popover-title{
   background-color: #d0f4f0;
 }
-.popover-content{
+.tooltip-inner{
+  color: #333;
+  font-weight: 600;
+}
+.popover-content, .tooltip-inner{
   background-color: #fcf4a8;
 }
 .popover{
-  max-width: 100%;
+  max-width: 600px;
 }

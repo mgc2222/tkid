@@ -1151,26 +1151,28 @@ if(!String.prototype.formatNum) {
 		var self = this;
 
 		if(this.options.weekbox == true) {
-			var week = $(document.createElement('div')).attr('id', 'cal-week-box');
-			var start = this.options.position.start.getFullYear() + '-' + this.options.position.start.getMonthFormatted() + '-';
+			//var week = $(document.createElement('div')).attr('id', 'cal-week-box');
+			//var start = this.options.position.start.getFullYear() + '-' + this.options.position.start.getMonthFormatted() + '-';
 			self.context.find('.cal-month-box .cal-row-fluid')
-				.on('mouseenter', function() {
+				.on('mouseenter touchstart', function() {
 					var p = new Date(self.options.position.start);
 					var child = $('.cal-cell1:first-child .cal-month-day', this);
 					var day = (child.hasClass('cal-month-first-row') ? 1 : $('[data-cal-date]', child).text());
 					p.setDate(parseInt(day));
 					day = (day < 10 ? '0' + day : day);
-					week.html(self.locale.week.format(self.options.display_week_numbers == true ? p.getWeek(getExtentedOption(self, 'week_numbers_iso_8601')) : ''));
-					week.attr('data-cal-week', start + day).show().appendTo(child);
+					//week.html(self.locale.week.format(self.options.display_week_numbers == true ? p.getWeek(getExtentedOption(self, 'week_numbers_iso_8601')) : ''));
+					this.title = self.locale.week.format(self.options.display_week_numbers == true ? p.getWeek(getExtentedOption(self, 'week_numbers_iso_8601')) : '');
+                    this.setAttribute('data-toggle', 'tooltip');
+					//week.attr('data-cal-week', start + day).show().appendTo(child);
 				})
-				.on('mouseleave', function() {
+				/*.on('mouseleave touchend', function() {
 					week.hide();
 				});
 
 			week.click(function() {
 				self.options.day = $(this).data('cal-week');
 				self.view('week');
-			});
+			});*/
 		}
 
 
@@ -1216,6 +1218,7 @@ if(!String.prototype.formatNum) {
 
 		var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
 		slider.hide().click(function(event) {
+            $('#cal-slide-box').popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
 			event.stopPropagation();
 		});
 
