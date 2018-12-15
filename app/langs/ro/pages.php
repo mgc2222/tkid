@@ -54,6 +54,20 @@ $trans['navigation.gallery'] = 'Galerie Foto';
 
 $trans['navigation.contact'] = 'Contact';
 
+
+//	===================================================== //
+//		Calendar Buttons
+//	===================================================== //
+
+$trans['calendar.button_previous'] = 'INAPOI';
+$trans['calendar.button_next'] = 'INAINTE';
+$trans['calendar.button_year'] = 'AN';
+$trans['calendar.button_month'] = 'LUNA';
+$trans['calendar.button_week'] = 'SAPTAMANA';
+$trans['calendar.button_day'] = 'ZI';
+$trans['calendar.button_today'] = 'ASTAZI';
+
+
 //	===================================================== //
 //		Front Page Meta Description Content
 //	===================================================== //

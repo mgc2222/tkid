@@ -16,4 +16,25 @@ $(document).ready(function($) {
             $back_to_top.addClass('cd-fade-out');
         }
     });
+
+    var popOverSettings = {
+        placement: 'top',
+        container: 'body',
+        //html: true,
+        selector: '[data-toggle="popover"]', //Specify the selector here
+        /*content: function () {
+            return $('#popover-content').html();
+        }*/
+    };
+
+    $('#calendar').popover(popOverSettings);
+
+    $('body').on('click', function (e) {
+        var calendarCell = $('.calendar-event');
+        var popovers = $('.popover');
+        if (calendarCell.has(e.target).length === 0 && !calendarCell.is(e.target) && popovers.length) {
+            popovers.remove();
+        }
+    });
+
 });

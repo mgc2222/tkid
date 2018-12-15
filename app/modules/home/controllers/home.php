@@ -27,6 +27,9 @@ class Home extends AdminController
 
 		array_push($this->webpage->StyleSheets,
 			'cookieconsent/cookieconsent.min.css',
+			//'bootstrap/bootstrap-2.3.2.css',
+			//'bootstrap/bootstrap-responsive-2.3.2.css',
+			'bootstrap/bootstrap.min.css',
 			/*'theme/css/plugin/styles.css',
 	        'theme/css/plugin/dtbaker-woocommerce.css',
 	       	'theme/css/plugin/woocommerce-layout.css',
@@ -70,12 +73,15 @@ class Home extends AdminController
 			'theme/css/theme/style.back_to_top.css',
 	        'theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'*/
 	        'theme/css/stylesheet.css',
+	        'bootstrapcalendar/css/calendar.css',
 	        'theme/css/google-place-card.min.css'
+	        //'tippy/tippy.min.css'
+	        //'popper/popper.css'
 	    );
 
 		array_push($this->webpage->ScriptsFooter,
 		    //'theme/jquery.form.min.js',
-
+			//'lib/bootstrap/bootstrap-2.3.2.min.js',
 		    //'theme/scripts.js',
 		    //'theme/dtbaker-woocommerce-slider.js',
 		    //'theme/jquery.blockUI.min.js',
@@ -85,6 +91,15 @@ class Home extends AdminController
 		    //'theme/jquery.cookie.min.js',
 		    //'theme/system/core.min.js',
 		    //'theme/javascript.js',
+			'lib/underscore/underscore-min.js',
+            'lib/jstimezonedetect/jstz.min.js',
+			'lib/bootstrapcalendar/language/ro-Ro.js',
+			'lib/bootstrapcalendar/calendar.js',
+			'lib/bootstrapcalendar/app.js',
+            'theme/custom.js',
+			//'lib/tippy/tippy.min.js',
+			//'lib/popper/popper.min.js',
+		    //'theme/popper-init.js',
 		    'theme/navigation.js',
 		    'theme/skip-link-focus-fix.js',
 		    'theme/jquery.prettyPhoto.min.js',
@@ -92,11 +107,10 @@ class Home extends AdminController
 		    'theme/slick.min.js',
 		    //'theme/waypoints.min.js',
 		    'theme/frontend.min.js',
-		    'theme/custom.js',
-		    //'theme/initMap.js',
+
+		    /*'theme/initMap.js',
 		    'theme/google-map-init.js',
-		    'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->languageAbb.'&callback=initMap',
-			//'app.js',
+		    'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->languageAbb.'&callback=initMap',*/
 			//'lib/validator/jquery.validate.min.js',
 			//'lib/wrappers/validator/validator.js',
 			//'lib/toastr/toastr.min.js',
