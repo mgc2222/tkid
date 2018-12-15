@@ -1202,10 +1202,10 @@ if(!String.prototype.formatNum) {
 				}
 				downbox.show().appendTo(this);
 			})
-			.on('mouseleave touchend', function() {
+			.on('mouseleave', function() {
 				downbox.hide();
 			})
-			.on('click touchenter', function(event) {
+			.on('click touchstart', function(event) {
 				if($('.events-list', this).length == 0) {
 					return;
 				}
@@ -1213,11 +1213,10 @@ if(!String.prototype.formatNum) {
 					return;
 				}
 				showEventsList(event, downbox, slider, self);
-			})
-		;
+			});
 
 		var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
-		slider.hide().on('click touchenter',function(event) {
+		slider.hide().on('click touchstart',function(event) {
             slider.popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
 			event.stopPropagation();
 		});
