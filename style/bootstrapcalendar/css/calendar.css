@@ -501,8 +501,7 @@ span[data-cal-date]:hover {
 #cal-slide-content a.event-item {
   color: #165090;
   font-weight: normal;
-  line-height: 22px;
-  min-height: 30px;
+  line-height: 40px;
 }
 .events-list {
   max-height: 47px;

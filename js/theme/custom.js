@@ -29,6 +29,10 @@ $(document).ready(function($) {
 
     $('#calendar').popover(popOverSettings);
 
+    $('#calendar').on('show.bs.popover', function () {
+        $('.popover').remove();
+    })
+
     $('body').on('click', function (e) {
         var calendarCell = $('.calendar-event');
         var popovers = $('.popover');
