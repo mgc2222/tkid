@@ -1,7 +1,6 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');  ?>
-<div class="mhmm">
+<div class="" id="section-calendar">
 	<div class="page-header" id="calendar-page-header">
-
 		<div class="pull-right form-inline text-center">
 			<div class="btn-group">
 				<button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="prev"><< <?php echo $trans['calendar.button_previous'] ?></button>

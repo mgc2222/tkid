@@ -181,6 +181,8 @@ $trans['navigation.select_language'] = 'Select Language';
 
 $trans['navigation.events'] = 'Events';
 
+$trans['navigation.calendar'] = 'Calendar';
+
 $trans['navigation.about'] = 'About Us';
 
 $trans['navigation.gallery'] = 'Photo Gallery';

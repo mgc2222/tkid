@@ -48,6 +48,8 @@ $trans['navigation.select_language'] = 'Selecteaza Limba';
 
 $trans['navigation.events'] = 'Evenimente';
 
+$trans['navigation.calendar'] = 'Calendar';
+
 $trans['navigation.about'] = 'Despre noi';
 
 $trans['navigation.gallery'] = 'Galerie Foto';
