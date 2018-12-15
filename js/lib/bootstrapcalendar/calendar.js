@@ -1205,7 +1205,7 @@ if(!String.prototype.formatNum) {
 			.on('mouseleave touchend', function() {
 				downbox.hide();
 			})
-			.on('click touchstart', function(event) {
+			.on('click touchenter', function(event) {
 				if($('.events-list', this).length == 0) {
 					return;
 				}
