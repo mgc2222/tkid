@@ -502,6 +502,7 @@ span[data-cal-date]:hover {
   color: #165090;
   font-weight: normal;
   line-height: 22px;
+  min-height: 30px;
 }
 .events-list {
   max-height: 47px;
@@ -524,11 +525,14 @@ a.cal-event-week {
 #calendar-page-header {
   border: none;
 }
-.calendar-event, #cal-slide-box{
+.calendar-event, #cal-slide-box li a{
   cursor: pointer;
 }
 #calendar a>span.event{
   display: inline-block;
+}
+#calendar a:hover{
+  text-decoration: none;
 }
 .popover-title{
   background-color: #d0f4f0;

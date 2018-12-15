@@ -6,14 +6,14 @@
 				<% if (event.url) { %>&nbsp;
 					<a href="<%= event.url %>" data-event-id="<%= event.id %>"
 						data-event-class="<%= event['class'] %>" title="<%= event.title %>"
-					   data-toggle="popover"  data-content="<%=event.description %>" class="event-item">
+					   data-toggle="popover"  data-content="<%=event.description %>" class="calendar-event event-item">
 						<span class="event <%= event['class'] %>"></span>
 						<%= event.title %>
 					</a>
 				<% } else{ %>
 				<a role="button" data-event-id="<%= event.id %>"
 				   data-event-class="<%= event['class'] %>" title="<%= event.title %>"
-				   data-toggle="popover"  data-content="<%=event.description %>" class="event-item">
+				   data-toggle="popover"  data-content="<%=event.description %>" class="calendar-event event-item">
 					<span class="event <%= event['class'] %>"></span>
 					<%= event.title %>
 				</a>

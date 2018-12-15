@@ -1218,7 +1218,7 @@ if(!String.prototype.formatNum) {
 
 		var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
 		slider.hide().click(function(event) {
-            $('#cal-slide-box').popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
+            slider.popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
 			event.stopPropagation();
 		});
 
