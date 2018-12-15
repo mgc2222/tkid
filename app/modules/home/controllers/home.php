@@ -93,7 +93,7 @@ class Home extends AdminController
 		    //'theme/javascript.js',
 			'lib/underscore/underscore-min.js',
             'lib/jstimezonedetect/jstz.min.js',
-			'lib/bootstrapcalendar/language/ro-Ro.js',
+			'lib/bootstrapcalendar/language/ro-RO.js',
 			'lib/bootstrapcalendar/calendar.js',
 			'lib/bootstrapcalendar/app.js',
             'theme/custom.js',
