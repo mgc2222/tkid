@@ -43,7 +43,7 @@
   overflow: hidden;
 }
 #main-content{
-  overflow: visible;
+ /* overflow: visible;*/
 }
 .foliageblog_page_option_width_full #main-content {
   max-width: 100%;

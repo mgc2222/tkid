@@ -509,6 +509,7 @@ span[data-cal-date]:hover {
 a.cal-event-week {
   text-decoration: none;
   color: #151515;
+  display: block;
 }
 .badge-important {
   background-color: #b94a48;

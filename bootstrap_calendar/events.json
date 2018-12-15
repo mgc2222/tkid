@@ -6,8 +6,8 @@
 			"title": "Atelier Felicitari hand made unicat",
 			"url": "",
 			"class": "event-warning",
-			"start": "1544774437000",
-			"end":   "1544781637000",
+			"start": "1544803200000",
+			"end":   "1544810400000",
 			"description": "Hai sa confectionam felicitari unicat, ce pot fi oferite celor dragi cu ocazia sarbatorilor de iarna. Daca ti se pare ca sms-urile sunt impersonale si vrei sa-ti inveti copilul ca exista si alte optiuni, atunci foloseste una dintre felicitarile create chiar de voi , copii si parinti si urarile vor fi unele speciale!"
 		},
 		{
@@ -24,8 +24,8 @@
 			"title": "Atelier decoratiuni pentru masa de Craciun",
 			"url": "",
 			"class": "event-success",
-			"start": "1544875200000",
-			"end":   "1544882400000",
+			"start": "1544889600000",
+			"end":   "1544896800000",
 			"description": "Vrei sa pregatesti impreuna cu copilul tau obiecte speciale, cu care poti decora masa de sarbatori sau pe care le poti oferi cadou celor dragi? Atunci alege acest atelier, in care vom lucra cu materiale minunante, creand obiecte de efect!"
 		},
 		{
@@ -33,49 +33,28 @@
 			"title": "Atelier creativ de modelaj şi pictură pe lut",
 			"url": "",
 			"class": "event-info",
-			"start": "1544735650000",
-			"end":   "1544735650000",
+			"start": "1544976000000",
+			"end":   "1544983200000",
 			"description":"Modelam și pictam lut, creand figurine specifice sarbatorilor de iarna, pe care sa le asezam in brad, surprinzandu-i pe cei dragi cu dibacia voastra, copii dragi."
 		},
 		{
 			"id": "297",
-			"title": "This is success event",
-			"url": "http://www.example.com/",
+			"title": "Atelier Ornamente pentru impodobit bradul de Craciun",
+			"url": "",
 			"class": "event-success",
-			"start": "1544735650000",
-			"end":   "1544735650000"
+			"start": "1545062400000",
+			"end":   "1545069600000",
+			"description": "Hai sa mesterim impreuna , copile drag, ornamente pentru brad. Lipim , decupam, folosim materiale din lemn... si la final , ca drept rasplata, impodobim un brad real, imens la locul de joaca &quot;theKid&quot;. Ornamentele create le vei lua acasa pentru a impodobi si tu bradutul cu lucruri create de tine."
 		},
 		{
 			"id": "54",
-			"title": "Test EVENT",
+			"title": "Atelier &quot;Cadou de Craciun pentru parinti, din partea copiilor&quot;",
 			"url": "",
 			"class": "event-success",
-			"start": "1544392800000",
-			"end":   "1544392800000"
-		},
-		{
-			"id": "532",
-			"title": "This is inverse event",
-			"url": "http://www.example.com/",
-			"class": "event-inverse",
-			"start": "1547251200000",
-			"end":   "1547251200000"
-		},
-		{
-			"id": "548",
-			"title": "This is special event",
-			"url": "http://www.example.com/",
-			"class": "event-special",
-			"start": "1547251200000",
-			"end":   "1547251200000"
-		},
-		{
-			"id": "295",
-			"title": "Event 3",
-			"url": "http://www.example.com/",
-			"class": "event-important",
-			"start": "1547251200000",
-			"end":   "1547251200000"
+			"start": "1545148800000",
+			"end":   "1545156000000",
+			"description": "Dragi copii, ce ziceti daca anul acesta le oferiti si voi cadouri parintilor vostri, cu ocazia sarbatorilor de iarna, in semn de apreciere pentru ei Haideti sa mesterim podoabe bratari pentru mamici, tatici si bunici. Sigur vor fi incantati sa poarte \u201Ebijuterii\u201D create de proprii copii."
 		}
+
 	]
 }

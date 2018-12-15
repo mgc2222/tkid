@@ -59,8 +59,8 @@ $trans['navigation.contact'] = 'Contact';
 //		Calendar Buttons
 //	===================================================== //
 
-$trans['calendar.button_previous'] = 'INAINTE';
-$trans['calendar.button_next'] = 'INAPOI';
+$trans['calendar.button_previous'] = 'INAPOI';
+$trans['calendar.button_next'] = 'INAINTE';
 $trans['calendar.button_year'] = 'AN';
 $trans['calendar.button_month'] = 'LUNA';
 $trans['calendar.button_week'] = 'SAPTAMANA';
