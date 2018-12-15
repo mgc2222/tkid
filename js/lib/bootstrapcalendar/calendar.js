@@ -1054,7 +1054,7 @@ if(!String.prototype.formatNum) {
 	Calendar.prototype._update_modal = function() {
 		var self = this;
 
-		$('a[data-event-id]', this.context).unbind('click');
+		$('a[data-event-id]', this.context).unbind('click touchstart');
 
 		if(!self.options.modal) {
 			return;
@@ -1075,7 +1075,7 @@ if(!String.prototype.formatNum) {
 				});
 		}
 
-		$('a[data-event-id]', this.context).on('click', function(event) {
+		$('a[data-event-id]', this.context).on('click touchstart', function(event) {
 			event.preventDefault();
 			event.stopPropagation();
 
@@ -1193,7 +1193,7 @@ if(!String.prototype.formatNum) {
 		var downbox = $(document.createElement('div')).attr('id', 'cal-day-tick').html('<i class="icon-chevron-down glyphicon glyphicon-chevron-down"></i>');
 
 		self.context.find('.cal-month-day, .cal-year-box .span3')
-			.on('mouseenter', function() {
+			.on('mouseenter touchstart', function() {
 				if($('.events-list', this).length == 0) {
 					return;
 				}
@@ -1202,10 +1202,10 @@ if(!String.prototype.formatNum) {
 				}
 				downbox.show().appendTo(this);
 			})
-			.on('mouseleave', function() {
+			.on('mouseleave touchend', function() {
 				downbox.hide();
 			})
-			.on('click', function(event) {
+			.on('click touchstart', function(event) {
 				if($('.events-list', this).length == 0) {
 					return;
 				}
@@ -1264,7 +1264,7 @@ if(!String.prototype.formatNum) {
 			self.activecell = $('[data-cal-date]', cell).text();
 			$('#cal-slide-tick').addClass('tick' + tick_position).show();
 			slider.slideDown('fast', function() {
-				$('body').one('click', function() {
+				$('body').one('click touchstart', function() {
 					slider.slideUp('fast');
 					self.activecell = 0;
 				});
