@@ -1205,7 +1205,7 @@ if(!String.prototype.formatNum) {
 			.on('mouseleave', function() {
 				downbox.hide();
 			})
-			.on('click touchend', function(event) {
+			.on('click touchstart', function(event) {
 				if($('.events-list', this).length == 0) {
 					return;
 				}
@@ -1218,7 +1218,7 @@ if(!String.prototype.formatNum) {
 
 		var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
         slider.popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
-		slider.hide().on('click touchend',function(event) {
+		slider.hide().on('click touchstart',function(event) {
 			/*if(!event.target.classList.contains('calendar-event')){
                 $('[data-toggle="popover"]').popover('destroy');
                 $('.popover').remove();
