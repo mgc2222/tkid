@@ -1212,6 +1212,7 @@ if(!String.prototype.formatNum) {
 				if($(this).children('[data-cal-date]').text() == self.activecell) {
 					return;
 				}
+                $('.popover').remove();
 				showEventsList(event, downbox, slider, self);
 			});
 
@@ -1228,6 +1229,7 @@ if(!String.prototype.formatNum) {
 		this._loadTemplate('events-list');
 
 		downbox.click(function(event) {
+			debugger;
 			showEventsList(event, $(this), slider, self);
 		});
 	};
