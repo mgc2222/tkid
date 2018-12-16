@@ -446,7 +446,11 @@ if(!String.prototype.formatNum) {
 		data.events = this.getEventsBetween(start, end);
 
 		switch(this.options.view) {
+            case 'year':
+                this._calculate_hour_minutes(data);
+                break;
 			case 'month':
+                this._calculate_hour_minutes(data);
 				break;
 			case 'week':
 				this._calculate_hour_minutes(data);
@@ -1229,19 +1233,22 @@ if(!String.prototype.formatNum) {
 		this._loadTemplate('events-list');
 
 		downbox.click(function(event) {
-			debugger;
 			showEventsList(event, $(this), slider, self);
 		});
 	};
 
 	Calendar.prototype.getEventsBetween = function(start, end) {
 		var events = [];
-		$.each(this.options.events, function() {
+		$.each(this.options.events, function(k, event) {
 			if(this.start == null) {
 				return true;
 			}
 			var event_end = this.end || this.start;
 			if((parseInt(this.start) < end) && (parseInt(event_end) > start)) {
+                event.dayStart = new Date(parseInt(event.start)).getDate();
+                event.dayEnd = new Date(parseInt(event.end)).getDate();
+                event.monthStart = new Date(parseInt(event.start)).getMonth();
+                event.monthEnd = new Date(parseInt(event.end)).getMonth();
 				events.push(this);
 			}
 		});

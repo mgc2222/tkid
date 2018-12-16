@@ -1,7 +1,7 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');  ?>
-<section data-id="dkdnqry" class="page type-page status-publish hentry mhmm">
+<section data-id="dkdnqry" class="page type-page status-publish hentry mhmm" id="section-calendar">
     <header class="entry-header">
-        <h2 class="elementor-heading-title elementor-size-large entry-title page-section" id="section-calendar">
+        <h2 class="elementor-heading-title elementor-size-large entry-title page-section">
             <?php echo $trans['calendar.section_title'];?>
         </h2>
     </header>
@@ -91,6 +91,7 @@
         <a href="#" data-dismiss="modal" class="btn">Close</a>
     </div>
 </div>
+<?php if(false){ ?>
 <!--	<script type="text/javascript" src="components/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="components/underscore/underscore-min.js"></script>
 	<script type="text/javascript" src="components/bootstrap2/js/bootstrap.min.js"></script>
@@ -121,5 +122,6 @@
 	<script type="text/javascript" src="js/language/th-TH.js"></script>
 	<script type="text/javascript" src="js/calendar.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>-->
+<?php } ?>
 
 

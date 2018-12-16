@@ -75,7 +75,6 @@ class Home extends AdminController
 	        'theme/css/stylesheet.css',
 	        'bootstrapcalendar/css/calendar.css',
 	        'theme/css/google-place-card.min.css'
-	        //'tippy/tippy.min.css'
 	        //'popper/popper.css'
 	    );
 
@@ -97,7 +96,6 @@ class Home extends AdminController
 			'lib/bootstrapcalendar/calendar.js',
 			'lib/bootstrapcalendar/app.js',
             'theme/custom.js',
-			//'lib/tippy/tippy.min.js',
 			//'lib/popper/popper.min.js',
 		    //'theme/popper-init.js',
 		    'theme/navigation.js',
