@@ -32,6 +32,8 @@ $trans['home.page_title'] = 'The Kid';
 
 $trans['events.section_title'] = 'Evenimente';
 
+$trans['calendar.section_title'] = 'Calendar';
+
 $trans['gallery.section_title'] = 'Galerie Foto';
 
 $trans['about.section_title'] = 'Despre noi';

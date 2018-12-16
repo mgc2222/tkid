@@ -165,6 +165,8 @@ $trans['home.page_title'] = 'The Kid';
 
 $trans['events.section_title'] = 'Events';
 
+$trans['calendar.section_title'] = 'Calendar';
+
 $trans['gallery.section_title'] = 'Gallery';
 
 $trans['about.section_title'] = 'Our Story';

@@ -8,9 +8,13 @@
 ?>
 <article id="post-16" class="post-16 page type-page status-publish hentry">
     <header class="entry-header mhmm">
-        <h2 class="elementor-heading-title elementor-size-large entry-title page-section" id="section-gallery">
-            <?php echo $trans['gallery.section_title'];?>
-        </h2>
+        <div class="elementor-element elementor-element-jetgboh dtb-heading-line elementor-widget elementor-widget-heading" data-settings="[]" data-element_type="heading.default">
+            <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-large page-section" id="section-gallery">
+                    <?php echo $trans['gallery.section_title'];?>
+                </h2>
+            </div>
+        </div>
     </header>
     <!-- .entry-header -->
     <div class="entry-content">
@@ -66,8 +70,8 @@
                                                                             width="300" height="200"
                                                                             src="<?php echo /*$row->imagePath*/ $row->thumb_gallery?>"
                                                                             class="attachment-medium size-medium"
-                                                                            alt="<?php echo $trans[$row->image_alt]?>"
-                                                                            title="<?php echo $trans[$row->image_title]?>"
+                                                                            alt="<?php echo (isset($trans[$row->image_alt])) ?:'image_alt'?>"
+                                                                            title="<?php echo (isset($trans[$row->image_title])) ?:'image_title'?>"
                                                                             style="object-fit:cover; min-height: 200px; max-height: 200px"
                                                                             aria-describedby="gallery-1-<?php echo $row->id;?>"
                                                                         />

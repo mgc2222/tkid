@@ -21,6 +21,7 @@ $(document).ready(function($) {
         placement: 'top',
         container: 'body',
         //html: true,
+        //trigger: 'manual',
         selector: '[data-toggle="popover"]', //Specify the selector here
         /*content: function () {
             return $('#popover-content').html();
@@ -29,15 +30,32 @@ $(document).ready(function($) {
 
     $('#calendar').popover(popOverSettings);
 
-    $('#calendar').on('show.bs.popover', function () {
-        $('.popover').remove();
-    })
+    /*$('[data-toggle="popover"]').on('show.bs.popover', function (event) {
+        //debugger;
+        var popovers = $('.popover');
+        if(popovers.length){
+            debugger;
+            $('[data-toggle="popover"]').not(event.target).popover('destroy');
+            popovers.remove();
+        }
 
-    $('body').on('click', function (e) {
+    });*/
+
+   /* $('[data-toggle="popover"]').on('hide.bs.popover', function (event) {
+       // debugger;
+        //$(this).popover({trigger: 'click'});
+    });*/
+
+    $('body').on('click touchstart', function (e) {
         var calendarCell = $('.calendar-event');
         var popovers = $('.popover');
+        var tooltips = $('.tooltip');
         if (calendarCell.has(e.target).length === 0 && !calendarCell.is(e.target) && popovers.length) {
+            $('[data-toggle="popover"]').popover('destroy');
             popovers.remove();
+        }
+        if(tooltips.length){
+            tooltips.remove();
         }
     });
 

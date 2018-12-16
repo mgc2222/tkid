@@ -107,10 +107,9 @@ class Home extends AdminController
 		    'theme/slick.min.js',
 		    //'theme/waypoints.min.js',
 		    'theme/frontend.min.js',
-
-		    /*'theme/initMap.js',
+		    'theme/initMap.js',
 		    'theme/google-map-init.js',
-		    'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->languageAbb.'&callback=initMap',*/
+		    'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->languageAbb.'&callback=initMap',
 			//'lib/validator/jquery.validate.min.js',
 			//'lib/wrappers/validator/validator.js',
 			//'lib/toastr/toastr.min.js',

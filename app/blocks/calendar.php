@@ -1,5 +1,10 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');  ?>
-<div class="" id="section-calendar">
+<section data-id="dkdnqry" class="page type-page status-publish hentry mhmm">
+    <header class="entry-header">
+        <h2 class="elementor-heading-title elementor-size-large entry-title page-section" id="section-calendar">
+            <?php echo $trans['calendar.section_title'];?>
+        </h2>
+    </header>
 	<div class="page-header" id="calendar-page-header">
 		<div class="pull-right form-inline text-center">
 			<div class="btn-group">
@@ -14,13 +19,10 @@
 				<button type="button" class="btn hidden <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="day"><?php echo $trans['calendar.button_day'] ?></button>
 			</div>
 		</div>
-
 		<h3 class="text-center"></h3>
 		<div class="text-center hidden"><small>To see example with events navigate to march 2013</small></div>
 	</div>
-
-
-        <div class="row">
+    <div class="row">
             <div class="col-md-12">
                 <div id="calendar"></div>
             </div>
@@ -76,22 +78,19 @@
                 <ul id="eventlist" class="nav nav-list"></ul>
             </div>
         </div>
+</section>
+<div class="clearfix"></div>
+<div class="modal hide fade" id="events-modal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Event</h3>
+    </div>
+    <div class="modal-body" style="height: 400px">
+    </div>
+    <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn">Close</a>
+    </div>
 </div>
-
-	<div class="clearfix"></div>
-	<br><br>
-	<div class="modal hide fade" id="events-modal">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			<h3>Event</h3>
-		</div>
-		<div class="modal-body" style="height: 400px">
-		</div>
-		<div class="modal-footer">
-			<a href="#" data-dismiss="modal" class="btn">Close</a>
-		</div>
-	</div>
-
 <!--	<script type="text/javascript" src="components/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="components/underscore/underscore-min.js"></script>
 	<script type="text/javascript" src="components/bootstrap2/js/bootstrap.min.js"></script>

@@ -1216,9 +1216,12 @@ if(!String.prototype.formatNum) {
 			});
 
 		var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
+        slider.popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
 		slider.hide().on('click touchstart',function(event) {
-            //$('.popover').remove();
-            slider.popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
+			if(!event.target.classList.contains('calendar-event')){
+                $('[data-toggle="popover"]').popover('destroy');
+                $('.popover').remove();
+			}
 			event.stopPropagation();
 		});
 
