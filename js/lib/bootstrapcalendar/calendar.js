@@ -1219,10 +1219,10 @@ if(!String.prototype.formatNum) {
 		var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
         slider.popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
 		slider.hide().on('click touchstart',function(event) {
-			if(!event.target.classList.contains('calendar-event')){
+			/*if(!event.target.classList.contains('calendar-event')){
                 $('[data-toggle="popover"]').popover('destroy');
                 $('.popover').remove();
-			}
+			}*/
 			event.stopPropagation();
 		});
 
