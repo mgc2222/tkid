@@ -142,8 +142,7 @@ a:active {
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 9999;
-    overflow-y: scroll;
+    z-index: 999;
   }
   .menu-main-menu-container{
    /* position: fixed;

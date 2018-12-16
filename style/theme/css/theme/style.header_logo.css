@@ -96,7 +96,10 @@
 @media screen and (max-width: 1200px) {
   .site-header .site-branding div > a {
     margin-left: 1%;
-    width: 40%;
+    width: 47%;
+  }
+  #logo{
+    width: 61%;
   }
   img.custom-logo-3 {
     margin-left: 20%;
