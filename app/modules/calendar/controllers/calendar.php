@@ -4,9 +4,34 @@ class Calendar extends AdminController
 
 	function GetJsonData()
 	{
+	    $facebookevents = _FACEBOOK_GRAPH_API_PATH._FACEBOOK_PAGE_ID."/events/created/?since=2018&access_token="._FACEBOOK_ACCESS_TOKEN;
+		$calendarData = json_decode($this->get_content($facebookevents), true);
+		echo'<pre>';print_r($calendarData);die();
+        //echo'<pre>';print_r($this->FormatFacebookJsonResponce($calendarData));die();
 		$calendarData = file_get_contents('bootstrap_calendar/events.json');
         echo $calendarData;die();
 	}
+	function FormatFacebookJsonResponce($response){
+	    if(!isset($response['data'])) return;
+	    $ret = [];
+	    foreach ($response['data'] as $key=>$val){
+	        (isset($val['description'])) ? $ret['result'][$key]['description'] = $val['description'] : '';
+	        (isset($val['start_time'])) ? $ret['result'][$key]['start'] = $val['start_time'] : '';
+	        (isset($val['end_time'])) ? $ret['result'][$key]['start'] = $val['end'] : '';
+	        (isset($val['name'])) ? $ret['result'][$key]['title'] = $val['name'] : '';
+        }
+        (isset($ret['result']))? $ret['success'] = 1 : '';
+        return $ret;
+    }
+
+	private function get_content($URL){
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_URL, $URL);
+        $data = curl_exec($ch);
+        curl_close($ch);
+        return $data;
+    }
 
     function GetMonthTemplate()
     {
