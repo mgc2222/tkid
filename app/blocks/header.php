@@ -1,10 +1,10 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');?>
-<header id="masthead" class="site-header">
+<header class="site-header" id="section-home">
     <!-- Template Section Start: template-parts/header-logo -->
-    <div class="site-branding page-section" id="section-home">
+    <div class="site-branding page-section" >
         <!-- Start Logo Area -->
         <div id="logo">
-            <a href="/" class="custom-logo-link" role="banner" aria-labelledby="masthead">
+            <a href="/" class="custom-logo-link" role="banner" aria-labelledby="section-home">
                 <img width="292" height="131" src="images/content/logo.png" class="custom-logo" alt="the kid logo" />
                 <img width="200" height="156" src="images/content/rocking-horse.png" class="custom-logo-2" alt="rocking-horse banner" />
             </a>

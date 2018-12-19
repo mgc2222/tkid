@@ -166,7 +166,7 @@ a:active {
     /*margin: 0 30px;*/
     margin: 0;
   }
-  div.elementor-widget {
+  div.elementor-widget, section.elementor-widget {
     padding: 0;
   }
   #site-navigation {

@@ -526,12 +526,11 @@ if(!String.prototype.formatNum) {
 		data.after_time = [];
 		data.before_time = [];
 		$.each(data.events, function(k, e) {
-			var s = (e.start) ? new Date(parseInt(e.start)) : '';
-			var f = (e.end) ? new Date(parseInt(e.end)) : '';
+			var s = new Date(parseInt(e.start));
+			var f = new Date(parseInt(e.end));
 
 			e.start_hour = $self._format_time(s);
 			e.end_hour = $self._format_time(f);
-			debugger;
 
 			if(e.start < start.getTime()) {
 				warn(1);
@@ -633,7 +632,8 @@ if(!String.prototype.formatNum) {
 			if(first_day == 1) {
 				event.start_day = (event.start_day + 6) % 7;
 			}
-			if((eventEnd.getTime() - eventStart.getTime()) <= 86400000) {
+
+			if((eventEnd.getTime() - eventStart.getTime()) <= 86400000 || isNaN(eventEnd.getTime())) {
 				event.days = 1;
 			} else {
 				event.days = ((eventEnd.getTime() - eventStart.getTime()) / 86400000);

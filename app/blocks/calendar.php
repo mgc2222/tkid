@@ -1,29 +1,30 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');  ?>
-<section data-id="dkdnqry" class="page type-page status-publish hentry mhmm" id="section-calendar">
+<section data-id="dkdnqry" class="page type-page status-publish hentry mhmm">
     <header class="entry-header">
-        <h2 class="elementor-heading-title elementor-size-large entry-title page-section">
+        <h2 class="elementor-heading-title elementor-size-large entry-title page-section" id="section-calendar">
             <?php echo $trans['calendar.section_title'];?>
         </h2>
     </header>
-	<div class="page-header" id="calendar-page-header">
-		<div class="pull-right form-inline text-center">
-			<div class="btn-group">
-				<button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="prev"><< <?php echo $trans['calendar.button_previous'] ?></button>
-				<button type="button" class="btn" data-calendar-nav="today"><?php echo $trans['calendar.button_today'] ?></button>
-				<button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="next"><?php echo $trans['calendar.button_next'] ?> >></button>
-			</div>
-			<div class="btn-group">
-				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="year"><?php echo $trans['calendar.button_year'] ?></button>
-				<button type="button" class="btn <!--btn-warning--> active" style="background-color:#e8fde7" data-calendar-view="month"><?php echo $trans['calendar.button_month'] ?></button>
-				<button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="week"><?php echo $trans['calendar.button_week'] ?></button>
-				<button type="button" class="btn hidden <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="day"><?php echo $trans['calendar.button_day'] ?></button>
-			</div>
-		</div>
-		<h3 class="text-center"></h3>
-		<div class="text-center hidden"><small>To see example with events navigate to march 2013</small></div>
-	</div>
-    <div class="row">
-            <div class="col-md-12">
+    <div class="elementor-widget">
+        <div class="page-header" id="calendar-page-header">
+            <div class="pull-right form-inline text-center">
+                <div class="btn-group">
+                    <button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="prev"><< <?php echo $trans['calendar.button_previous'] ?></button>
+                    <button type="button" class="btn" data-calendar-nav="today"><?php echo $trans['calendar.button_today'] ?></button>
+                    <button type="button" class="btn <!--btn-primary-->" style="background-color:#d0f4f0" data-calendar-nav="next"><?php echo $trans['calendar.button_next'] ?> >></button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="year"><?php echo $trans['calendar.button_year'] ?></button>
+                    <button type="button" class="btn <!--btn-warning--> active" style="background-color:#e8fde7" data-calendar-view="month"><?php echo $trans['calendar.button_month'] ?></button>
+                    <button type="button" class="btn <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="week"><?php echo $trans['calendar.button_week'] ?></button>
+                    <button type="button" class="btn hidden <!--btn-warning-->" style="background-color:#e8fde7" data-calendar-view="day"><?php echo $trans['calendar.button_day'] ?></button>
+                </div>
+            </div>
+            <h3 class="text-center"></h3>
+            <div class="text-center hidden"><small>To see example with events navigate to march 2013</small></div>
+        </div>
+        <div class="">
+            <div class="col-md-12" style="padding: 0">
                 <div id="calendar"></div>
             </div>
             <div class="col-md-3 hidden">
@@ -78,6 +79,7 @@
                 <ul id="eventlist" class="nav nav-list"></ul>
             </div>
         </div>
+    </div>
 </section>
 <div class="clearfix"></div>
 <div class="modal hide fade" id="events-modal">
