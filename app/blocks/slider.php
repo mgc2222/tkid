@@ -34,7 +34,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <img class="slick-slide-image" src="<?php echo $row->thumb_slider/*$row->imagePath*/?>" alt="<?php echo (isset($trans[$row->image_alt])) ?:'image_alt' ?>" title="<?php echo (isset($trans[$row->image_title])) ?:'image_title'?>"/>
+                                                <img class="slick-slide-image" src="<?php echo $row->thumb_slider/*$row->imagePath*/?>" alt="<?php echo (isset($trans[$row->image_alt])) ?$trans[$row->image_alt]:'image_alt' ?>" title="<?php echo (isset($trans[$row->image_title])) ? $trans[$row->image_title]:'image_title'?>"/>
                                                 <figcaption class="elementor-image-carousel-caption"></figcaption>
                                             </figure>
                                         </div>
