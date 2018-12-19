@@ -4,11 +4,11 @@ class Calendar extends AdminController
 
 	function GetJsonData()
 	{
-	    $facebookevents = _FACEBOOK_GRAPH_API_PATH._FACEBOOK_PAGE_ID."/events/created/?is_draft=true&since=2018&access_token="._FACEBOOK_USER_ACCESS_TOKEN_NEVER_EXPIRE;
+	    /*$facebookevents = _FACEBOOK_GRAPH_API_PATH._FACEBOOK_PAGE_ID."/events/created/?is_draft=true&since=2018&access_token="._FACEBOOK_USER_ACCESS_TOKEN_NEVER_EXPIRE;
 		$calendarData = json_decode($this->get_content($facebookevents), true);
-        echo json_encode($this->FormatFacebookJsonResponce($calendarData));die();
-		//$content = file_get_contents('bootstrap_calendar/events.json');
-		//echo $content; die();
+        echo json_encode($this->FormatFacebookJsonResponce($calendarData));die();*/
+		$content = file_get_contents('bootstrap_calendar/events.json');
+		echo $content; die();
 
 	}
 	function FormatFacebookJsonResponce($response){
