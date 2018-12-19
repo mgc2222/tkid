@@ -12,8 +12,8 @@
 .dtb-heading-line > div h3 {
   display: inline-block;
   position: relative;
-  border-left: 1px solid #f0f0f0;
-  border-right: 1px solid #f0f0f0;
+  /*border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;*/
   padding: 10px 16px 9px !important;
 }
 .dtb-heading-line > div h1:before,
@@ -56,8 +56,8 @@
 .blog .entry-header .blog-title .entry-title {
   display: inline-block;
   position: relative;
-  border-left: 1px solid #f0f0f0;
-  border-right: 1px solid #f0f0f0;
+  /*border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;*/
   padding: 5px 16px !important;
 }
 .foliageblog_page_option_title_show .page > header .entry-title:before,
@@ -90,8 +90,8 @@
 .archive.foliageblog_page_option_title_show .page-header .page-title {
   display: inline-block;
   position: relative;
-  border-left: 1px solid #f0f0f0;
-  border-right: 1px solid #f0f0f0;
+  /*border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;*/
   padding: 5px 16px !important;
 }
 .archive.foliageblog_page_option_title_show .page-header .page-title:before {
@@ -124,8 +124,8 @@ aside.widget-area .widget .widget-title-wrap {
 aside.widget-area .widget .widget-title-wrap .widget-title {
   display: inline-block;
   position: relative;
-  border-left: 1px solid #f0f0f0;
-  border-right: 1px solid #f0f0f0;
+  /*border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;*/
   padding: 5px 16px;
 }
 .elementor-widget-sidebar .widget .widget-title-wrap .widget-title:before,
