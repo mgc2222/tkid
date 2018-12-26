@@ -74,6 +74,7 @@ class Home extends AdminController
 	        'theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'*/
 	        'theme/css/stylesheet.css',
 	        'bootstrapcalendar/css/calendar.css',
+	        'bootstrapcalendar/css/custom.css',
 	        'theme/css/google-place-card.min.css'
 	        //'popper/popper.css'
 	    );

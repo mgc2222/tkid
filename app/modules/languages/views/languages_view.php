@@ -27,6 +27,7 @@
 		<td><?php echo $rowIndex?></td>
 		<td><?php echo $row->name?></td>
 		<td><?php echo $row->abbreviation?></td>
+		<td><?php echo $row->abbreviation_iso?></td>
 		<td><?php echo $row->is_default?></td>
 		<td class="grid_options">
 			<?php echo HtmlControls::GenerateAdminEditLink('languages', $row->id)?>&nbsp;&nbsp;

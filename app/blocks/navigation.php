@@ -22,7 +22,7 @@
                     foreach ($webpage->languageDdl as $lang){
                     ?>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                            <button type="submit" style="width:100%" value="<?php echo $lang->id;?>" name="language"><?php echo $lang->abbreviation;?></button>
+                            <button type="submit" style="width:100%;text-transform: none;" value="<?php echo $lang->id;?>" name="language"><?php echo $lang->abbreviation_iso;?></button>
                         </li>
                     <?php
                     }

@@ -7,9 +7,13 @@
 			<td><input type="text" name="txtName" id="txtName" class="form-control" data-bind="value: name" /></td>
 		</tr>
 		<tr>
-			<td><label for="txtName"><?php echo $trans['languages.abbreviation']?></label></td>
+			<td><label for="txtAbbreviation"><?php echo $trans['languages.abbreviation']?></label></td>
 			<td><input type="text" name="txtAbbreviation" id="txtAbbreviation" class="form-control" data-bind="value: abbreviation" /></td>
 		</tr>
+        <tr>
+            <td><label for="txtAbbreviationIso"><?php echo $trans['languages.abbreviation']?></label></td>
+            <td><input type="text" name="txtAbbreviationIso" id="txtAbbreviationIso" class="form-control" data-bind="value: abbreviationIso" /></td>
+        </tr>
 		<tr>
 			<td><label for="chkDefaultLanguage"><?php echo $trans['languages.default_language']?></label></td>
 			<td><input type="checkbox" name="chkDefaultLanguage" id="chkDefaultLanguage" data-bind="checked: defaultLanguage" /></td>

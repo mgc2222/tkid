@@ -28,8 +28,9 @@ class AdminController extends AbstractController
 		if ($selectedLanguage == null) die('No language exists');
 		$this->languageId = $selectedLanguage->id;
         $this->webpage->languageAbb = $selectedLanguage->abbreviation;
+        $this->webpage->languageAbbIso = $selectedLanguage->abbreviation_iso;
         $this->webpage->languageDdl = $laguageModel->GetRecordsForDropdown($dataSearch, 'id');
-		$this->LoadLang($selectedLanguage->abbreviation);
+		$this->LoadLang($selectedLanguage->abbreviation_iso);
 		$this->GetSessionMessage();
 		$this->SetDefaultData();
 		$this->GenerateJsCache();
@@ -276,7 +277,8 @@ class AdminController extends AbstractController
 			"var SCRIPTS_URL = '"._SITE_URL."js/';".$endLine.
 			"var auth = { UserId: '{$userIdJs}' };".$endLine.
 			"var gmapApiKey = '"._GOOGLE_API_KEY."';".$endLine.
-			"var language = '".$this->webpage->languageAbb."';".$endLine.
+			"var languageAbb = '".$this->webpage->languageAbb."';".$endLine.
+			"var languageAbbIso = '".$this->webpage->languageAbbIso."';".$endLine.
 			"var latitude = '"._LOCATION_LATITUDE."';".$endLine.
 			"var longitude = '"._LOCATION_LONGITUDE."';".$endLine.
 			"var phone = '"._LOCATION_PHONE."';".$endLine.

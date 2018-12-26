@@ -35,7 +35,8 @@ class WebPage
 	var $SearchLabel;
 
     var $languageAbb; // language abbreviation
-	
+    var $languageAbbIso; // language abbreviation iso
+
 	function __construct()
 	{
 		// messages
