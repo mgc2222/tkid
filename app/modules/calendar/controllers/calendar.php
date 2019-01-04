@@ -1,48 +1,56 @@
 <?php
-class Calendar extends AdminController
+class Calendar extends AbstractController
 {
 
-	function GetJsonData()
+    function __construct()
+    {
+        parent::__construct();
+
+        $this->module = 'calendar';
+        $this->eventsModel = $this->LoadModel('events', 'calendar');
+
+    }
+
+	function GetJsonData($from=null, $to=null)
 	{
-	    /*$facebookevents = _FACEBOOK_GRAPH_API_PATH._FACEBOOK_PAGE_ID."/events/created/?is_draft=true&since=2018&access_token="._FACEBOOK_USER_ACCESS_TOKEN_NEVER_EXPIRE;
-		$calendarData = json_decode($this->get_content($facebookevents), true);
-        echo json_encode($this->FormatFacebookJsonResponce($calendarData));die();*/
-		$content = file_get_contents('bootstrap_calendar/events.json');
-		echo $content; die();
+        $dataSearch = new StdClass();
+        //$dataSearch->from = $from;
+        //$dataSearch->to = $to;
+
+        $events =  $this->GetEvents($dataSearch, '');
+        echo json_encode($this->FormatEvents($events->rows));die();
+        //$content = file_get_contents('bootstrap_calendar/events.json');
+        //echo $content; die();
 
 	}
-	function FormatFacebookJsonResponce($response){
-	    if(!isset($response['data'])) return;
-	    $ret = [];
-	    $ret['success'] = 0;
-	    $cssClasses = array("event-important", "event-info", "event-warning", "event-inverse", "event-success", "event-special");
-	    foreach ($response['data'] as $key=>$val){
-	        (isset($val['description'])) ? $ret['result'][$key]['description'] = $val['description'] : '';
-	        (isset($val['start_time'])) ? $ret['result'][$key]['start'] = $this->GetTimestampInMilliseconds($val['start_time']) : '';
-	        (isset($val['end_time'])) ? $ret['result'][$key]['end'] = $this->GetTimestampInMilliseconds($val['end_time']) : '';
-	        (isset($val['name'])) ? $ret['result'][$key]['title'] = $val['name'] : '';
-	        (isset($val['id'])) ? $ret['result'][$key]['id'] = $val['id'] : '';
-	        $ret['result'][$key]['class'] = $cssClasses[array_rand($cssClasses, 1)];
-	        $ret['result'][$key]['url'] = '';
-        }
-        (isset($ret['result']))? $ret['success'] = 1 : '';
-        return $ret;
-    }
-    function GetTimestampInMilliseconds($dateString){
-	    $date = new DateTime($dateString);
-	    //$date = new DateTime(DateTime::createFromFormat('Y-m-d H:i:s', $dateString));
-	    //print_r($date);die;
-	    return strval($date->format('Uu')/1000);//die;
-	    //return strval($date->getTimestamp()*1000);
+
+    function GetEvents($dataSearch=null, $orderby=null){
+        $data = new stdClass();
+        $data->rows = $this->eventsModel->GetRecordsList($dataSearch, $orderby);
+        return $data;
     }
 
-	private function get_content($URL){
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_URL, $URL);
-        $data = curl_exec($ch);
-        curl_close($ch);
-        return $data;
+    function FormatEvents($rows){
+        if ($rows == null) {
+            return;
+        }
+        $ret = [];
+        $ret['status'] = 'success';
+        //print_r($events);die();
+        foreach ($rows as $key => $row){
+            $ret['result'][$key]['id'] = $row->id;
+            $ret['result'][$key]['title'] = $row->title;
+            $ret['result'][$key]['class'] = $row->event_css_class;
+            $ret['result'][$key]['start'] = $row->event_start_unix_milliseconds;
+            $ret['result'][$key]['end'] = $row->event_end_unix_milliseconds;
+            $ret['result'][$key]['status'] = $row->status;
+            $ret['result'][$key]['description'] = $row->description;
+            $ret['result'][$key]['short_description'] = $row->short_description;
+            $ret['result'][$key]['event_type'] = $row->event_type;
+            $ret['result'][$key]['event_type_id'] = $row->event_type_id;
+            $ret['result'][$key]['external_event_id'] = $row->external_event_id;
+        }
+        return $ret;
     }
 
     function GetMonthTemplate()

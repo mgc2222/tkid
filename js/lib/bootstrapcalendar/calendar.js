@@ -978,7 +978,7 @@ if(!String.prototype.formatNum) {
 							async: false,
 							headers: self.options.headers,
 						}).done(function(json) {
-							if(!json.success) {
+							if(!json.status) {
 								$.error(json.error);
 							}
 							if(json.result) {
