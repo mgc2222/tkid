@@ -161,7 +161,8 @@ $trans['cookies.policy_button_message'] = 'Cookie Policy';
 //		Front Page Sections
 //	===================================================== //
 
-$trans['home.page_title'] = 'The Kid';
+
+$trans['home.page_title'] = 'Playground for children and parents | Bucharest Sector 1 | The Kid';
 
 $trans['events.section_title'] = 'Events';
 
