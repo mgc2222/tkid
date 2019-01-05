@@ -31,7 +31,9 @@
 			months: {
 				general: 'label'
 			}
-		}
+		},
+        time_start: '00:00',
+        time_end: '23:59:59',
 	};
 
 	var calendar = $('#calendar').calendar(options);

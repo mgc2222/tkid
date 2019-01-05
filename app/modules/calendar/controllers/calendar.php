@@ -11,14 +11,40 @@ class Calendar extends AbstractController
 
     }
 
-	function GetJsonData($from=null, $to=null)
+    function HandleAjaxRequest()
+    {
+        $data = $this->GetAjaxJson();
+
+        if ($data == null)
+            return;
+        //print_r($data);die();
+        $ajaxAction = $data['ajaxAction'];
+        unset($data['ajaxAction']);
+
+        $response = null;
+        switch ($ajaxAction)
+        {
+            case 'GetEvents':
+                $res = $this->GetEventsData($data['ajaxDataFrom'], $data['ajaxDataTo']);
+                $response = ($res) ?:$this->GetDefaultResponse('', 1) ;
+                break;
+        }
+        //print_r($response);die();
+        if ($response != null)
+        {
+            $this->WriteResponse($response);
+            die();
+        }
+    }
+
+	function GetEventsData($from=null, $to=null)
 	{
         $dataSearch = new StdClass();
-        //$dataSearch->from = $from;
-        //$dataSearch->to = $to;
+        $dataSearch->from = $from;
+        $dataSearch->to = $to;
 
         $events =  $this->GetEvents($dataSearch, '');
-        echo json_encode($this->FormatEvents($events->rows));die();
+        return $this->FormatEvents($events->rows);
         //$content = file_get_contents('bootstrap_calendar/events.json');
         //echo $content; die();
 

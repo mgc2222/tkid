@@ -13,7 +13,7 @@
 	$routes['tmpls/year.html'] = 'calendar/calendar/GetYearTemplate';
 	$routes['tmpls/year-month.html'] = 'calendar/calendar/GetYearMonthTemplate';
 	$routes['tmpls/events-list.html'] = 'calendar/calendar/GetEventsListTemplate';
-	$routes['events'] = 'calendar/calendar/GetJsonData';
+	$routes['events'] = 'calendar/calendar/HandleAjaxRequest';
 
 	
 	// {id} must be a number (\d+)

@@ -141,9 +141,8 @@ if(!String.prototype.formatNum) {
 		onAfterEventsLoad: function(events) {
 			// Inside this function 'this' is the calendar instance
 		},
-		onBeforeEventsLoad: function(next) {
+		onBeforeEventsLoad: function() {
 			// Inside this function 'this' is the calendar instance
-			next();
 		},
 		onAfterViewLoad: function(view) {
 			// Inside this function 'this' is the calendar instance
@@ -781,20 +780,20 @@ if(!String.prototype.formatNum) {
 		return classes.join(" ");
 	};
 
-	Calendar.prototype.view = function(view) {
-		if(view) {
-			if(!this.options.views[view].enable) {
-				return;
-			}
-			this.options.view = view;
-		}
+    Calendar.prototype.view = function(view) {
+        if(view) {
+            if(!this.options.views[view].enable) {
+                return;
+            }
+            this.options.view = view;
+        }
 
-		this._init_position();
-		this._loadEvents();
-		this._render();
+        this._init_position();
+        this._loadEvents();
 
-		this.options.onAfterViewLoad.call(this, this.options.view);
-	};
+
+        this.options.onAfterViewLoad.call(this, this.options.view);
+    };
 
 	Calendar.prototype.navigate = function(where, next) {
 		var to = $.extend({}, this.options.position);
@@ -938,76 +937,91 @@ if(!String.prototype.formatNum) {
 		return this.options.position.end;
 	}
 
-	Calendar.prototype._loadEvents = function() {
-		var self = this;
-		var source = null;
-		if('events_source' in this.options && this.options.events_source !== '') {
-			source = this.options.events_source;
-		}
-		else if('events_url' in this.options) {
-			source = this.options.events_url;
-			warn('The events_url option is DEPRECATED and it will be REMOVED in near future. Please use events_source instead.');
-		}
-		var loader;
-		switch($.type(source)) {
-			case 'function':
-				loader = function() {
-					return source(self.options.position.start, self.options.position.end, browser_timezone);
-				};
-				break;
-			case 'array':
-				loader = function() {
-					return [].concat(source);
-				};
-				break;
-			case 'string':
-				if(source.length) {
-					loader = function() {
-						var events = [];
-						var d_from = self.options.position.start;
-						var d_to = self.options.position.end;
-						var params = {from: d_from.getTime(), to: d_to.getTime(), utc_offset_from: d_from.getTimezoneOffset(), utc_offset_to: d_to.getTimezoneOffset()};
+    Calendar.prototype._loadEvents = function() {
+        var self = this;
+        var source = null;
 
-						if(browser_timezone.length) {
-							params.browser_timezone = browser_timezone;
-						}
-						$.ajax({
-							url: buildEventsUrl(source, params),
-							dataType: 'json',
-							type: 'GET',
-							async: false,
-							headers: self.options.headers,
-						}).done(function(json) {
-							if(!json.status) {
-								$.error(json.error);
-							}
-							if(json.result) {
-								events = json.result;
-							}
-						});
-						return events;
-					};
-				}
-				break;
-		}
-		if(!loader) {
-			$.error(this.locale.error_loadurl);
-		}
-		this.options.onBeforeEventsLoad.call(this, function() {
-			if (!self.options.events.length || !self.options.events_cache) {
-				self.options.events = loader();
-				self.options.events.sort(function (a, b) {
-					var delta;
-					delta = a.start - b.start;
-					if (delta == 0) {
-						delta = a.end - b.end;
-					}
-					return delta;
-				});
-			}
-			self.options.onAfterEventsLoad.call(self, self.options.events);
-		});
-	};
+        if('events_source' in this.options && this.options.events_source !== '') {
+            source = this.options.events_source;
+        }
+
+        else if('events_url' in this.options) {
+            source = this.options.events_url;
+            warn('The events_url option is DEPRECATED and it will be REMOVED in near future. Please use events_source instead.');
+        }
+        switch($.type(source)) {
+            case 'function':
+                self.options.onBeforeEventsLoad.call(self);
+                self.options.events = source(self.options.position.start, self.options.position.end, browser_timezone);
+                self._sortEvents();
+                self.options.onAfterEventsLoad.call(self, self.options.events);
+                self._render();
+
+                break;
+            case 'array':
+                self.options.onBeforeEventsLoad.call(self);
+                self.options.events = [].concat(source);
+                self._sortEvents();
+                self.options.onAfterEventsLoad.call(self, self.options.events);
+                self._render();
+
+                break;
+            case 'string':
+                if(source.length) {
+                    var events = [];
+                    var d_from = self.options.position.start;
+                    var d_to = self.options.position.end;
+                    var params = {from: d_from.getTime(), to: d_to.getTime(), utc_offset_from: d_from.getTimezoneOffset(), utc_offset_to: d_to.getTimezoneOffset()};
+
+                    if(browser_timezone.length) {
+                        params.browser_timezone = browser_timezone;
+                    }
+                    $.ajax({
+                        url: buildEventsUrl(source, params),
+                        data:JSON.stringify({ ajaxAction: 'GetEvents', ajaxDataFrom: params.from, ajaxDataTo: params.to }),
+                        dataType: 'json',
+                        contentType: "application/json; charset=utf-8",
+                        type: 'POST',
+                        //async: false,
+                        headers: self.options.headers
+                    }).done(function(json) {
+                        //debugger;
+                        self.options.onBeforeEventsLoad.call(self);
+                        if(json.result) {
+                            events = json.result;
+                            self.options.events = events;
+                            self._sortEvents();
+                        }
+                        else{
+                            self.options.events = {};
+                        }
+
+                        self.options.onAfterEventsLoad.call(self, self.options.events);
+                        self._loadTemplate(self.options.view);
+                        self._render();
+                    }).fail(function(json){
+                    });
+                }
+                break;
+
+            default:
+                $.error(this.locale.error_loadurl);
+                break;
+        }
+    };
+
+    Calendar.prototype._sortEvents = function() {
+        if (this.options.sort && (this.options.events.length || this.options.events_cache)) {
+            this.options.events.sort(function (a, b) {
+                var delta;
+                delta = a.start - b.start;
+                if (delta == 0) {
+                    delta = a.end - b.end;
+                }
+                return delta;
+            });
+        }
+    };
 
 	Calendar.prototype._templatePath = function(name) {
 		if(typeof this.options.tmpl_path == 'function') {
