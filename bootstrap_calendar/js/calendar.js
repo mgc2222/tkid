@@ -1205,7 +1205,7 @@ if(!String.prototype.formatNum) {
     };
 
     Calendar.prototype._update_month = function() {
-        //this._update_month_year();
+        this._update_month_year();
         var self = this;
 
         if(this.options.weekbox == true) {
