@@ -73,11 +73,14 @@ class Home extends AdminController
 			'theme/css/theme/style.back_to_top.css',
 	        'theme/css/content/34ff2b96c4deb0896841c73b9b9f43a7.css'*/
 	        'theme/css/stylesheet.css',
-	        'bootstrapcalendar/css/calendar.css',
-	        'bootstrapcalendar/css/custom.css',
 	        'theme/css/google-place-card.min.css'
 	        //'popper/popper.css'
 	    );
+
+        array_push($this->webpage->StyleSheetsOutsideStyleFolder,
+            'bootstrap_calendar/css/calendar.css',
+            'bootstrap_calendar/css/custom.css'
+        );
 
 		array_push($this->webpage->ScriptsFooter,
 		    //'theme/jquery.form.min.js',
@@ -91,11 +94,13 @@ class Home extends AdminController
 		    //'theme/jquery.cookie.min.js',
 		    //'theme/system/core.min.js',
 		    //'theme/javascript.js',
-			'lib/underscore/underscore-min.js',
-            'lib/jstimezonedetect/jstz.min.js',
-			'lib/bootstrapcalendar/language/ro-RO.js',
-			'lib/bootstrapcalendar/calendar.js',
-			'lib/bootstrapcalendar/app.js',
+            //_JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/components/moment/moment.min.js',
+            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/components/underscore/underscore-min.js',
+            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/components/jstimezonedetect/jstz.min.js',
+            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/language/ro-RO.js',
+            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/calendar.js',
+            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/app.js',
+
             'theme/custom.js',
 			//'lib/popper/popper.min.js',
 		    //'theme/popper-init.js',
