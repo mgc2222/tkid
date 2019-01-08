@@ -103,6 +103,7 @@ if(!String.prototype.formatNum) {
                 today: 'cal-day-today'
             }
         },
+        sort: true,
         // ID of the element of modal window. If set, events URLs will be opened in modal windows.
         modal: null,
         //	modal handling setting, one of "iframe", "ajax" or "template"
@@ -123,7 +124,7 @@ if(!String.prototype.formatNum) {
                 enable: 1
             },
             day: {
-                enable: 1
+                enable: 0 // disable day by setting enable to 0
             }
         },
         merge_holidays: false,
@@ -147,10 +148,14 @@ if(!String.prototype.formatNum) {
         onAfterViewLoad: function(view) {
             // Inside this function 'this' is the calendar instance
         },
-        onAfterModalShown: function(events) {
+        onBeforeModalShow: function(event, modal){
+            // Inside this function 'this' is the calendar instance
+            //objEvents.initEditEventModal(event, modal);
+        },
+        onAfterModalShown: function(event, modal) {
             // Inside this function 'this' is the calendar instance
         },
-        onAfterModalHidden: function(events) {
+        onAfterModalHidden: function(event, modal) {
             // Inside this function 'this' is the calendar instance
         },
         // -------------------------------------------------------------
@@ -424,7 +429,7 @@ if(!String.prototype.formatNum) {
 
     Calendar.prototype._render = function() {
         this.context.html('');
-        this._loadTemplate(this.options.view);
+
         this.stop_cycling = false;
 
         var data = {};
@@ -613,8 +618,6 @@ if(!String.prototype.formatNum) {
     };
 
     Calendar.prototype._week = function(event) {
-        this._loadTemplate('week-days');
-
         var t = {};
         var start = parseInt(this.options.position.start.getTime());
         var end = parseInt(this.options.position.end.getTime());
@@ -658,7 +661,6 @@ if(!String.prototype.formatNum) {
     }
 
     Calendar.prototype._month = function(month) {
-        this._loadTemplate('year-month');
 
         var t = {cal: this};
         var newmonth = month + 1;
@@ -673,7 +675,6 @@ if(!String.prototype.formatNum) {
     }
 
     Calendar.prototype._day = function(week, day) {
-        this._loadTemplate('month-day');
 
         var t = {tooltip: '', cal: this};
         var cls = this.options.classes.months.outmonth;
@@ -727,25 +728,27 @@ if(!String.prototype.formatNum) {
     }
 
     Calendar.prototype._getHoliday = function(date) {
-        var result = false;
-        $.each(getHolidays(this, date.getFullYear()), function() {
-            var found = false;
+        var result = '';
+        var count = 1;
+        var holidays = getHolidays(this, date.getFullYear());
+        $.each(holidays, function() {
+            var holiday = this;
             $.each(this.days, function() {
                 if(this.toDateString() == date.toDateString()) {
-                    found = true;
-                    return false;
+                    result += count+'.'+holiday.name+'&#010;';
+                    count++;
+                    return result;
                 }
             });
-            if(found) {
-                result = this.name;
-                return false;
-            }
+
         });
-        return result;
+        return (result) ? (count===2) ? result.substring(2):result : false;
     };
 
     Calendar.prototype._getHolidayName = function(date) {
+        //debugger;
         var holiday = this._getHoliday(date);
+        //debugger;
         return (holiday === false) ? "" : holiday;
     };
 
@@ -985,7 +988,7 @@ if(!String.prototype.formatNum) {
                         //async: false,
                         headers: self.options.headers
                     }).done(function(json) {
-                        //debugger;
+                        //(json.status && json.message) ? toastr[json.status](json.message): '';
                         self.options.onBeforeEventsLoad.call(self);
                         if(json.result) {
                             events = json.result;
@@ -995,11 +998,10 @@ if(!String.prototype.formatNum) {
                         else{
                             self.options.events = {};
                         }
-
                         self.options.onAfterEventsLoad.call(self, self.options.events);
-                        self._loadTemplate(self.options.view);
-                        self._render();
+                        self._loadTemplateByPriority(self.options.view);
                     }).fail(function(json){
+                        (json.status && json.message) ? toastr[json.status](json.message): '';
                     });
                 }
                 break;
@@ -1009,6 +1011,36 @@ if(!String.prototype.formatNum) {
                 break;
         }
     };
+
+    Calendar.prototype._loadTemplateByPriority = function(name) {
+        var self = this;
+        switch (name){
+            case 'month':
+                if(!this.options.templates['month-day'] && !this.options.templates['month']){
+                    self._loadTemplate('month-day', function(){self._loadTemplate('month', function(){self._render()})});
+                }
+                else{self._render()}
+                break;
+            case 'week':
+                if(!this.options.templates['week-days'] && !this.options.templates['week']){
+                    self._loadTemplate('week-days', function(){self._loadTemplate('week', function(){self._render()})});
+                }
+                else{self._render()}
+                break;
+            case 'year':
+                if(!this.options.templates['year-month'] && !this.options.templates['year']){
+                    self._loadTemplate('year-month', function(){self._loadTemplate('year', function(){self._render()})});
+                }
+                else{self._render()}
+                break;
+            case 'day':
+                if(!this.options.templates['day']){
+                    self._loadTemplate('day', function(){self._render()});
+                }
+                else{self._render()}
+                break;
+        }
+    }
 
     Calendar.prototype._sortEvents = function() {
         if (this.options.sort && (this.options.events.length || this.options.events_cache)) {
@@ -1023,6 +1055,7 @@ if(!String.prototype.formatNum) {
         }
     };
 
+
     Calendar.prototype._templatePath = function(name) {
         if(typeof this.options.tmpl_path == 'function') {
             return this.options.tmpl_path(name)
@@ -1032,7 +1065,7 @@ if(!String.prototype.formatNum) {
         }
     };
 
-    Calendar.prototype._loadTemplate = function(name) {
+    Calendar.prototype._loadTemplate = function(name, callbackDone, callbackFail) {
         if(this.options.templates[name]) {
             return;
         }
@@ -1040,11 +1073,14 @@ if(!String.prototype.formatNum) {
         $.ajax({
             url: self._templatePath(name),
             dataType: 'html',
-            type: 'GET',
-            async: false,
+            type: 'POST',
+            //async: false,
             cache: this.options.tmpl_cache
         }).done(function(html) {
             self.options.templates[name] = _.template(html);
+            if(callbackDone){callbackDone()}
+        }).fail(function(){
+            if(callbackFail){callbackFail()}
         });
     };
 
@@ -1058,11 +1094,11 @@ if(!String.prototype.formatNum) {
             self.options.day = $(this).data('cal-date');
             self.view(view);
         });
-        $('.cal-cell').dblclick(function() {
+        /*$('.cal-cell').dblclick(function() {
             var view = $('[data-cal-date]', this).data('cal-view');
             self.options.day = $('[data-cal-date]', this).data('cal-date');
             self.view(view);
-        });
+        });*/
 
         this['_update_' + this.options.view]();
 
@@ -1073,11 +1109,10 @@ if(!String.prototype.formatNum) {
     Calendar.prototype._update_modal = function() {
         var self = this;
 
-        $('a[data-event-id]', this.context).unbind('click touchstart');
-
         if(!self.options.modal) {
             return;
         }
+        $('a[data-event-id]', this.context).unbind('click touchstart');
 
         var modal = $(self.options.modal);
 
@@ -1123,34 +1158,39 @@ if(!String.prototype.formatNum) {
 
                             case "ajax":
                                 $.ajax({
-                                    url: url, dataType: "html", async: false, success: function(data) {
-                                        modal_body.html(data);
-                                    }
+                                    url: url,
+                                    dataType: "html",
+                                    type:"POST"
+                                }).done(function(response) {
+                                    if(_.isFunction(self.options.modal_title)) {
+                                        modal.find("#eventTitle").attr('value',self.options.modal_title(event));
+                                    };
+                                    self.options.onBeforeModalShow.call(self, event, modal);
+                                    self._updateModalBody(($(this), response));
+                                }).fail(function(response) {
+
                                 });
                                 break;
-
-                            case "template":
-                                self._loadTemplate("modal");
-                                //	also serve calendar instance to underscore template to be able to access current language strings
-                                modal_body.html(self.options.templates["modal"]({"event": event, "calendar": self}))
-                                break;
                         }
 
-                        //	set the title of the bootstrap modal
-                        if(_.isFunction(self.options.modal_title)) {
-                            modal.find(".modal-title").html(self.options.modal_title(event));
-                        }
                     })
                     .on('shown.bs.modal', function() {
-                        self.options.onAfterModalShown.call(self, self.options.events);
+                        //self.options.onAfterModalShown.call(self, self.options.events);
+                        self.options.onAfterModalShown.call(self, event, modal);
                     })
                     .on('hidden.bs.modal', function() {
-                        self.options.onAfterModalHidden.call(self, self.options.events);
+                        //self.options.onAfterModalHidden.call(self, self.options.events);
+                        self.options.onAfterModalHidden.call(self, event, modal);
                     })
                     .data('handled.bootstrap-calendar', true).data('handled.event-id', event.id);
             }
             modal.modal('show');
         });
+    };
+
+    Calendar.prototype._updateModalBody = function(modal, data){
+        var modal_body = modal.find('.modal-body');
+        modal_body.html(data)
     };
 
     Calendar.prototype._update_day = function() {
@@ -1165,8 +1205,7 @@ if(!String.prototype.formatNum) {
     };
 
     Calendar.prototype._update_month = function() {
-        this._update_month_year();
-
+        //this._update_month_year();
         var self = this;
 
         if(this.options.weekbox == true) {
@@ -1236,20 +1275,21 @@ if(!String.prototype.formatNum) {
             });
 
         var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
-        slider.popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
-        slider.hide().on('click touchstart',function(event) {
-            /*if(!event.target.classList.contains('calendar-event')){
+        //slider.popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
+        /*slider.hide().on('click touchstart',function(event) {
+            if(!event.target.classList.contains('calendar-event')){
                 $('[data-toggle="popover"]').popover('destroy');
                 $('.popover').remove();
-            }*/
+            }
             event.stopPropagation();
-        });
+        });*/
 
-        this._loadTemplate('events-list');
+
 
         downbox.click(function(event) {
             showEventsList(event, $(this), slider, self);
         });
+        this._loadTemplate('events-list');
     };
 
     Calendar.prototype.getEventsBetween = function(start, end) {
@@ -1291,7 +1331,7 @@ if(!String.prototype.formatNum) {
             self.activecell = $('[data-cal-date]', cell).text();
             $('#cal-slide-tick').addClass('tick' + tick_position).show();
             slider.slideDown('fast', function() {
-                $('body').one('click touchstart', function() {
+                $('body').one('click touchstart', function(e) {
                     slider.slideUp('fast');
                     self.activecell = 0;
                 });
@@ -1299,7 +1339,7 @@ if(!String.prototype.formatNum) {
         });
 
         // Wait 400ms before updating the modal & attach the mouseenter&mouseleave(400ms is the time for the slider to fade out and slide up)
-        setTimeout(function() {
+        /*setTimeout(function() {
             $('a.event-item').mouseenter(function() {
                 $('a[data-event-id="' + $(this).data('event-id') + '"]').closest('.cal-cell1').addClass('day-highlight dh-' + $(this).data('event-class'));
             });
@@ -1307,7 +1347,7 @@ if(!String.prototype.formatNum) {
                 $('div.cal-cell1').removeClass('day-highlight dh-' + $(this).data('event-class'));
             });
             self._update_modal();
-        }, 400);
+        }, 400);*/
     }
 
     function getEasterDate(year, offsetDays) {
