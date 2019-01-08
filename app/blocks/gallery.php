@@ -77,7 +77,7 @@
                                                                         />
                                                                     </a>
                                                                 </div>
-                                                                <figcaption class='wp-caption-text gallery-caption' id='gallery-1-<?php echo $row->id;?>'><?php echo (!empty($trans[$row->image_caption]))? $trans[$row->image_caption]:((!empty($row->image_description))? $row->image_description : '');?></figcaption>
+                                                                <figcaption class='wp-caption-text gallery-caption' id='gallery-1-<?php echo $row->id;?>'><?php echo $row->image_caption?></figcaption>
                                                             </figure>
 
                                                 <?php
