@@ -67,17 +67,17 @@
                                                                 <div class='gallery-icon landscape'>
                                                                     <a href='<?php echo $row->imagePath /*$row->thumb_gallery*/?>' data-rel="prettyPhoto[gallery]">
                                                                         <img
-                                                                            width="300" height="200"
-                                                                            src="<?php echo /*$row->imagePath*/ $row->thumb_gallery?>"
-                                                                            class="attachment-medium size-medium"
-                                                                            alt="<?php echo (!empty($trans[$row->image_alt])) ?$trans[$row->image_alt]:((!empty($row->image_alt))? $row->image_alt :'image_alt') ;?>"
-                                                                            title="<?php echo (!empty($trans[$row->image_title])) ? $trans[$row->image_title]:((!empty($row->image_title))? $row->image_title:'image_title') ;?>"
-                                                                            style="object-fit:cover; min-height: 200px; max-height: 200px"
-                                                                            aria-describedby="gallery-1-<?php echo $row->id;?>"
+                                                                                width="300" height="200"
+                                                                                src="<?php echo /*$row->imagePath*/ $row->thumb_gallery?>"
+                                                                                class="attachment-medium size-medium"
+                                                                                alt="<?php echo (!empty($trans[$row->image_alt])) ?$trans[$row->image_alt]:((!empty($row->image_alt))? $row->image_alt :'image_alt') ;?>"
+                                                                                title="<?php echo (!empty($trans[$row->image_title])) ? $trans[$row->image_title]:((!empty($row->image_title))? $row->image_title:'image_title') ;?>"
+                                                                                style="object-fit:cover; min-height: 200px; max-height: 200px"
+                                                                                aria-describedby="gallery-1-<?php echo $row->id;?>"
                                                                         />
                                                                     </a>
                                                                 </div>
-                                                                <figcaption class='wp-caption-text gallery-caption' id='gallery-1-<?php echo $row->id;?>'><?php echo (!empty($trans[$row->image_caption]))? $trans[$row->image_caption]:((!empty($row->image_description))? $row->image_description : '');?></figcaption>
+                                                                <figcaption class='wp-caption-text gallery-caption' id='gallery-1-<?php echo $row->id;?>'><?php echo $row->image_caption?></figcaption>
                                                             </figure>
 
                                                 <?php
