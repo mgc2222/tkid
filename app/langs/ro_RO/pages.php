@@ -28,7 +28,7 @@ $trans['cookies.policy_button_message'] = 'Politica Cookie';
 
 $trans['javascript.disabled_message'] = 'Vă rugăm să activați JavaScript pentru a vizualiza corect această pagină.';
 
-$trans['home.page_title'] = 'Loc joaca copii parinti | The Kid';
+$trans['home.page_title'] = 'Loc de joaca copii parinti | The Kid';
 
 $trans['events.section_title'] = 'Evenimente';
 
