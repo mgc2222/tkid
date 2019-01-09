@@ -162,7 +162,7 @@ $trans['cookies.policy_button_message'] = 'Cookie Policy';
 //	===================================================== //
 
 
-$trans['home.page_title'] = 'Playground children and parents | The Kid';
+$trans['home.page_title'] = 'Playground children parents | The Kid';
 
 $trans['events.section_title'] = 'Events';
 
