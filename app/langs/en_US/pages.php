@@ -208,7 +208,7 @@ $trans['calendar.button_today'] = 'TODAY';
 //		Front Page Meta Description Content
 //	===================================================== //
 
-$trans['meta.description'] ='The Kid is a unique space in Bucharest that combines quality play, creation and fun of children with the relaxation of their parents.';
+$trans['meta.description'] ='the Kid is a playground, an unique space in Bucharest that combines quality play, creation and fun of children with the relaxation of their parents.';
 
 $trans['meta.keywords'] ='the Kid, Bucharest, play, creation, fun, children, relaxation, parents, montessori toys.';
 
@@ -235,7 +235,7 @@ $trans['events.section_content_p_1'] = 'During the cold period we organize daily
 $trans['about.section_content_quote_1'] = '"When you are free, you can play, and when you play, you get free!"<br><span style="display:block;text-align:right">Heidi Kaduson</span>';
 
 
-$trans['about.section_content_p_1'] = 'The Kid is a unique space in Bucharest that combines "quality play" with the creation and fun of children with the relaxation of their parents.';
+$trans['about.section_content_p_1'] = 'the Kid is a unique space in Bucharest that combines "quality play" with the creation and fun of children with the relaxation of their parents.';
 
 $trans['about.section_content_p_2'] = 'For you beautiful child, for you dear parent, for YOU whoever you are and want to feel joy, relaxation and positive energy ...';
 
@@ -248,7 +248,7 @@ $trans['about.section_content_p_4'] =  'Why do I say "unique" ?! Because it\'s c
                                         You can leave your child alone at age-based workshops and when we leave, we want to hear him say, Mommy, Daddy, when we return to this 
                                         wonderful place? ... You can always join the workshops and create together beautiful things.';
 
-$trans['about.section_content_p_5'] = 'The KID is divided into 2 spaces: the outdoor one, where outdoor / outdoor parties (adults and children) are organized near the beautiful 
+$trans['about.section_content_p_5'] = 'the Kid is divided into 2 spaces: the outdoor one, where outdoor / outdoor parties (adults and children) are organized near the beautiful 
                                        Baneasa Forest, with outdoor playground for children, dining places, relaxation areas for parents.
                                         The interior space has a common place for parents and children for parties and other individual rooms where workshops specially designed 
                                         for children will be held (painting, drawing, collage, clay / kinetic sand, fashion design, personal development,  Montessori workshops with 
@@ -262,7 +262,7 @@ $trans['about.section_content_p_6'] ='Dearfully';
 $trans['about.section_content_p_7'] ='Alina';
 
 
-$trans['location.section_content'] = 'Street Varful Berivoiul Mare, 72A, sector 1, Bucharest';/*...we are easy to recognize, see The Kid flags :)';*/
+$trans['location.section_content'] = 'Street Varful Berivoiul Mare, 72A, sector 1, Bucharest';/*...we are easy to recognize, see the Kid flags :)';*/
 
 $trans['quotes.henry_ward_beecher'] = '"Children are the hands with which we reach the heavens." Henry Ward Beecher';
 

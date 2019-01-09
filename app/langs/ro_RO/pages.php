@@ -28,7 +28,7 @@ $trans['cookies.policy_button_message'] = 'Politica Cookie';
 
 $trans['javascript.disabled_message'] = 'Vă rugăm să activați JavaScript pentru a vizualiza corect această pagină.';
 
-$trans['home.page_title'] = 'Loc de joaca copii parinti | the Kid';
+$trans['home.page_title'] = 'Loc de joaca pentru copii si parinti | the Kid Bucuresti';
 
 $trans['events.section_title'] = 'Evenimente';
 
@@ -76,7 +76,7 @@ $trans['calendar.button_today'] = 'ASTAZI';
 //		Front Page Meta Description Content
 //	===================================================== //
 
-$trans['meta.description'] ='The Kid este un spatiu unic in Bucuresti, care imbina joaca de calitate, creatia si distractia copiilor cu relaxarea parintilor.';
+$trans['meta.description'] ='the Kid este un loc de joaca, un spatiu unic in Bucuresti, care imbina joaca de calitate, creatia si distractia copiilor cu relaxarea parintilor.';
 
 $trans['meta.keywords'] ='joaca, creatie, jucarii montessori, distractie, copii, relaxare, parinti, the Kid, Bucuresti';
 
@@ -102,7 +102,7 @@ $trans['events.section_content_p_1'] = 'In perioada rece organizam in spatiul in
 $trans['about.section_content_quote_1'] = '„Atunci cand esti liber, te poti juca, iar cand te joci, devii liber!"<br><span style="display:block;text-align:right">Heidi Kaduson</span>';
 
 
-$trans['about.section_content_p_1'] = 'The KID este un spatiu unic in Bucuresti, care imbina "joaca de calitate" cu creatia si distractia copiilor cu relaxarea parintilor.';
+$trans['about.section_content_p_1'] = 'the Kid este un spatiu unic in Bucuresti, care imbina "joaca de calitate" cu creatia si distractia copiilor cu relaxarea parintilor.';
 
 $trans['about.section_content_p_2'] = 'Pentru tine-COPIL frumos, pentru tine- PARINTE drag, pentru TINE- oricine ai fi si vrei sa simti bucurie, relaxare si energie pozitiva...';
 
@@ -115,7 +115,7 @@ $trans['about.section_content_p_4'] =  'De ce spun “unic”?! Pentru ca este c
                                         Poti sa iti lasi singur copilul la ateliere in functie de varsta , iar la plecare ne dorim sa il auzim zicand: mami, tati, cand ne reintoarcem 
                                         in acest minunat  loc?...Poti oricand sa te alaturi si tu atelierelor si sa creati impreuna lucruri frumoase.';
 
-$trans['about.section_content_p_5'] = 'TheKID este impartit in 2 spatii: cel exterior , unde se organizeaza aniversari/petreceri (adulti si copii) in aer liber langa superba Padure Baneasa, 
+$trans['about.section_content_p_5'] = 'the Kid este impartit in 2 spatii: cel exterior , unde se organizeaza aniversari/petreceri (adulti si copii) in aer liber langa superba Padure Baneasa, 
                                         cu loc de joaca exterior pentru copii, locuri de luat masa , spatii de relaxare pentru parinti. Spatiul interior beneficiaza de un loc comun pentru 
                                         parinti si copii pentru petreceri si alte camere individuale, unde vor avea loc atelierele special concepute pentru copii ( pictura, desen, colaj,
                                         modelaj in lut/nisip kinetic, design vestimentar, dezvoltare personala, ateliere Montessori cu personal acreditat, 
@@ -128,7 +128,7 @@ $trans['about.section_content_p_6'] ='Va astept cu drag,';
 
 $trans['about.section_content_p_7'] ='Alina';
 
-$trans['location.section_content'] = 'Str. Varful Berivoiul Mare, nr 72A , sector 1, Bucuresti';/* ...suntem usor de recunoscut , vezi Gardul cu steguletele The Kid :)';*/
+$trans['location.section_content'] = 'Str. Varful Berivoiul Mare, nr 72A , sector 1, Bucuresti';/* ...suntem usor de recunoscut , vezi Gardul cu steguletele the Kid :)';*/
 
 $trans['quotes.henry_ward_beecher'] = '„Copiii sunt mainile cu ajutorul carora atingem cerurile." Henry Ward Beecher';
 
