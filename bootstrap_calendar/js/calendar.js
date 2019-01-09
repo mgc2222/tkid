@@ -1198,6 +1198,12 @@ if(!String.prototype.formatNum) {
     };
 
     Calendar.prototype._update_week = function() {
+        this.context.find('.cal-week-box .cal-row-fluid [data-toggle="popover"]').on('click', function(e) {
+            e.stopPropagation();
+            $('.cal-week-box .cal-row-fluid [data-toggle="popover"]').popover('destroy');
+            $(this).popover({placement:'top', container:'body'});
+            $(this).popover('show');
+        });
     };
 
     Calendar.prototype._update_year = function() {
@@ -1270,19 +1276,20 @@ if(!String.prototype.formatNum) {
                 if($(this).children('[data-cal-date]').text() == self.activecell) {
                     return;
                 }
-                $('.popover').remove();
                 showEventsList(event, downbox, slider, self);
             });
 
         var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
-        //slider.popover({ placement: 'top', container: 'body', selector: '[data-toggle="popover"]'});
-        /*slider.hide().on('click touchstart',function(event) {
-            if(!event.target.classList.contains('calendar-event')){
-                $('[data-toggle="popover"]').popover('destroy');
-                $('.popover').remove();
+        slider.click(function(){
+            $('#'+slider.attr('id')+' [data-toggle="popover"]').popover('destroy');
+        });
+        slider.hide().on('click touchstart',function(event) {
+            if($(event.target).attr('data-toggle')==='popover'){
+                $(event.target).popover({placement:'top', container:'body'})
+                $(event.target).popover('show');
             }
             event.stopPropagation();
-        });*/
+        });
 
 
 
@@ -1311,7 +1318,6 @@ if(!String.prototype.formatNum) {
     };
 
     function showEventsList(event, that, slider, self) {
-
         event.stopPropagation();
 
         var that = $(that);
