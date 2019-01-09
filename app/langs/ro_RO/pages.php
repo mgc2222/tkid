@@ -28,7 +28,7 @@ $trans['cookies.policy_button_message'] = 'Politica Cookie';
 
 $trans['javascript.disabled_message'] = 'Vă rugăm să activați JavaScript pentru a vizualiza corect această pagină.';
 
-$trans['home.page_title'] = 'Loc de joaca copii parinti | The Kid';
+$trans['home.page_title'] = 'Loc de joaca copii parinti | the Kid';
 
 $trans['events.section_title'] = 'Evenimente';
 
@@ -78,7 +78,7 @@ $trans['calendar.button_today'] = 'ASTAZI';
 
 $trans['meta.description'] ='The Kid este un spatiu unic in Bucuresti, care imbina joaca de calitate, creatia si distractia copiilor cu relaxarea parintilor.';
 
-$trans['meta.keywords'] ='The Kid, Bucuresti, joaca, creatie, distractie, copii, relaxare, parinti.';
+$trans['meta.keywords'] ='joaca, creatie, jucarii montessori, distractie, copii, relaxare, parinti, the Kid, Bucuresti';
 
 //	===================================================== //
 //		Front Page Sections Content

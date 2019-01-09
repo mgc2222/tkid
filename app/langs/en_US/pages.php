@@ -162,7 +162,7 @@ $trans['cookies.policy_button_message'] = 'Cookie Policy';
 //	===================================================== //
 
 
-$trans['home.page_title'] = 'Playground children parents | The Kid';
+$trans['home.page_title'] = 'Playground children parents | the Kid';
 
 $trans['events.section_title'] = 'Events';
 
@@ -210,7 +210,7 @@ $trans['calendar.button_today'] = 'TODAY';
 
 $trans['meta.description'] ='The Kid is a unique space in Bucharest that combines quality play, creation and fun of children with the relaxation of their parents.';
 
-$trans['meta.keywords'] ='The Kid, Bucharest, play, creation, fun, children, relaxation, parents.';
+$trans['meta.keywords'] ='the Kid, Bucharest, play, creation, fun, children, relaxation, parents, montessori toys.';
 
 //	===================================================== //
 //		Front Page Sections Content
