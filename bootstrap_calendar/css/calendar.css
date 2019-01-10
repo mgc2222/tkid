@@ -462,7 +462,7 @@ span.data-cal-date:hover {
 }
 .cal-day-outmonth span[data-cal-date],
 .cal-day-outmonth span.data-cal-date {
-  opacity: 0.1;
+  opacity: 0.2;
   cursor: default;
 }
 .cal-day-today {
