@@ -28,7 +28,7 @@ $trans['cookies.policy_button_message'] = 'Politica Cookie';
 
 $trans['javascript.disabled_message'] = 'Vă rugăm să activați JavaScript pentru a vizualiza corect această pagină.';
 
-$trans['home.page_title'] = 'Loc de joaca copii & parinti | the Kid Bucuresti';
+$trans['home.page_title'] = 'Loc de joaca copii | the Kid';
 
 $trans['events.section_title'] = 'Evenimente';
 
