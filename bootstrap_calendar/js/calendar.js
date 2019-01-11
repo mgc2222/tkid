@@ -1112,7 +1112,7 @@ if(!String.prototype.formatNum) {
         if(!self.options.modal) {
             return;
         }
-        $('a[data-event-id]', this.context).unbind('click touchstart');
+        $('a[data-event-id]', this.context).unbind('click tap');
 
         var modal = $(self.options.modal);
 
@@ -1129,7 +1129,7 @@ if(!String.prototype.formatNum) {
                 });
         }
 
-        $('a[data-event-id]', this.context).on('click touchstart', function(event) {
+        $('a[data-event-id]', this.context).on('click tap', function(event) {
             event.preventDefault();
             event.stopPropagation();
 
@@ -1218,7 +1218,7 @@ if(!String.prototype.formatNum) {
             //var week = $(document.createElement('div')).attr('id', 'cal-week-box');
             //var start = this.options.position.start.getFullYear() + '-' + this.options.position.start.getMonthFormatted() + '-';
             self.context.find('.cal-month-box .cal-row-fluid')
-                .on('mouseenter touchstart', function() {
+                .on('mouseenter tap', function() {
                     var p = new Date(self.options.position.start);
                     var child = $('.cal-cell1:first-child .cal-month-day', this);
                     var day = (child.hasClass('cal-month-first-row') ? 1 : $('[data-cal-date]', child).text());
@@ -1257,7 +1257,7 @@ if(!String.prototype.formatNum) {
         var downbox = $(document.createElement('div')).attr('id', 'cal-day-tick').html('<i class="icon-chevron-down glyphicon glyphicon-chevron-down"></i>');
 
         self.context.find('.cal-month-day, .cal-year-box .span3')
-            .on('mouseenter touchstart', function() {
+            .on('mouseenter', function() {
                 if($('.events-list', this).length == 0) {
                     return;
                 }
@@ -1269,7 +1269,7 @@ if(!String.prototype.formatNum) {
             .on('mouseleave', function() {
                 downbox.hide();
             })
-            .on('click touchstart', function(event) {
+            .on('click tap', function(event) {
                 if($('.events-list', this).length == 0) {
                     return;
                 }
@@ -1280,10 +1280,8 @@ if(!String.prototype.formatNum) {
             });
 
         var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
-        slider.click(function(){
-            $('#'+slider.attr('id')+' [data-toggle="popover"]').popover('destroy');
-        });
-        slider.hide().on('click touchstart',function(event) {
+        slider.hide().on('click tap',function(event) {
+           $('#'+slider.attr('id')+' [data-toggle="popover"]').popover('destroy');
             if($(event.target).attr('data-toggle')==='popover'){
                 $(event.target).popover({placement:'top', container:'body'})
                 $(event.target).popover('show');
@@ -1337,7 +1335,7 @@ if(!String.prototype.formatNum) {
             self.activecell = $('[data-cal-date]', cell).text();
             $('#cal-slide-tick').addClass('tick' + tick_position).show();
             slider.slideDown('fast', function() {
-                $('body').one('click touchstart', function(e) {
+                $('body').one('click tap', function(e) {
                     slider.slideUp('fast');
                     self.activecell = 0;
                 });

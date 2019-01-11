@@ -30,32 +30,21 @@ $(document).ready(function($) {
 
     $('#calendar').popover(popOverSettings);
 
-    /*$('[data-toggle="popover"]').on('show.bs.popover', function (event) {
-        //debugger;
-        var popovers = $('.popover');
-        if(popovers.length){
-            debugger;
-            $('[data-toggle="popover"]').not(event.target).popover('destroy');
-            popovers.remove();
-        }
-
-    });*/
-
-   /* $('[data-toggle="popover"]').on('hide.bs.popover', function (event) {
-       // debugger;
-        //$(this).popover({trigger: 'click'});
-    });*/
-
-    $('body').on('click touchstart', function (e) {
-        var calendarCell = $('.calendar-event');
-        var popovers = $('.popover');
-        var tooltips = $('.tooltip');
-        if (calendarCell.has(e.target).length === 0 && !calendarCell.is(e.target) && popovers.length) {
-            $('[data-toggle="popover"]').popover('destroy');
-            popovers.remove();
-        }
-        if(tooltips.length){
+    $('body').on('click', function (e) {
+        if($('.tooltip').length){
             tooltips.remove();
+        }
+        if($(e.target).closest('.popover').length){
+            e.stopImmediatePropagation();
+            return false;
+        }
+        else{
+            var calendarCell = $('.calendar-event');
+            var popovers = $('.popover');
+            if (calendarCell.has(e.target).length === 0 && !calendarCell.is(e.target) && popovers.length) {
+                $('[data-toggle="popover"]').popover('destroy');
+                popovers.remove();
+            }
         }
     });
 
