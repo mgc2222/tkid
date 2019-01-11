@@ -31,9 +31,8 @@ $(document).ready(function($) {
     $('#calendar').popover(popOverSettings);
 
     $('body').on('click', function (e) {
-        if($('.tooltip').length){
-            tooltips.remove();
-        }
+        $('.tooltip').remove();
+
         if($(e.target).closest('.popover').length){
             e.stopImmediatePropagation();
             return false;

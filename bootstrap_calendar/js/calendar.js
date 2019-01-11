@@ -1092,7 +1092,9 @@ if(!String.prototype.formatNum) {
         $('*[data-cal-date]').click(function() {
             var view = $(this).data('cal-view');
             self.options.day = $(this).data('cal-date');
-            self.view(view);
+            if(view){
+                self.view(view);
+            }
         });
         /*$('.cal-cell').dblclick(function() {
             var view = $('[data-cal-date]', this).data('cal-view');
@@ -1273,27 +1275,28 @@ if(!String.prototype.formatNum) {
                 if($('.events-list', this).length == 0) {
                     return;
                 }
+
                 if($(this).children('[data-cal-date]').text() == self.activecell) {
+                    //debugger;
                     return;
                 }
                 showEventsList(event, downbox, slider, self);
             });
 
         var slider = $(document.createElement('div')).attr('id', 'cal-slide-box');
+        slider.on('click', function(){
+            $('#'+slider.attr('id')+' [data-toggle="popover"]').popover('destroy');
+        });
         slider.hide().on('click tap',function(event) {
-           $('#'+slider.attr('id')+' [data-toggle="popover"]').popover('destroy');
             if($(event.target).attr('data-toggle')==='popover'){
                 $(event.target).popover({placement:'top', container:'body'})
                 $(event.target).popover('show');
             }
             event.stopPropagation();
         });
-
-
-
-        downbox.click(function(event) {
+        /*downbox.click(function(event) {
             showEventsList(event, $(this), slider, self);
-        });
+        });*/
         this._loadTemplate('events-list');
     };
 
@@ -1316,15 +1319,14 @@ if(!String.prototype.formatNum) {
     };
 
     function showEventsList(event, that, slider, self) {
-        event.stopPropagation();
-
+        //event.stopPropagation();
         var that = $(that);
         var cell = that.closest('.cal-cell');
         var row = cell.closest('.cal-before-eventlist');
         var tick_position = cell.data('cal-row');
 
         that.fadeOut('fast');
-
+        $('.popover').remove();
         slider.slideUp('fast', function() {
             var event_list = $('.events-list', cell);
             slider.html(self.options.templates['events-list']({
@@ -1335,7 +1337,7 @@ if(!String.prototype.formatNum) {
             self.activecell = $('[data-cal-date]', cell).text();
             $('#cal-slide-tick').addClass('tick' + tick_position).show();
             slider.slideDown('fast', function() {
-                $('body').one('click tap', function(e) {
+                $('body').one('click tap', function() {
                     slider.slideUp('fast');
                     self.activecell = 0;
                 });
