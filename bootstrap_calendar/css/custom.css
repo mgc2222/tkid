@@ -35,6 +35,7 @@
 .popover-content, .tooltip-inner, .ui-widget-shadow{
     background: #fcf4a8;
     opacity: 1;
+    white-space: pre-line;
 }
 .popover{
     max-width: 600px;
