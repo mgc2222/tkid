@@ -38,7 +38,7 @@
 										</div>
 									</div>
 								</div>
-								<div data-id="w1ss624" class="elementor-element elementor-element-w1ss624 elementor-column <?php if (false) echo 'elementor-col-33'?> elementor-top-column" data-settings="[]" data-element_type="column">
+								<!--<div data-id="w1ss624" class="elementor-element elementor-element-w1ss624 elementor-column <?php /*if (false) echo 'elementor-col-33'*/?> elementor-top-column" data-settings="[]" data-element_type="column">
 									<div class="elementor-column-wrap elementor-element-populated">
 										<div class="elementor-widget-wrap">
 											<div data-id="adrhqhw" class="elementor-element elementor-element-adrhqhw elementor-widget elementor-widget-image" data-settings="[]" data-element_type="image.default">
@@ -50,7 +50,7 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</section>
