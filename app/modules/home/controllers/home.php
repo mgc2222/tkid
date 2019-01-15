@@ -101,7 +101,7 @@ class Home extends AdminController
             _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/calendar.js',
             _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/app.js',
 
-            'theme/custom.js',
+
 			//'lib/popper/popper.min.js',
 		    //'theme/popper-init.js',
 		    'theme/navigation.js',
@@ -111,6 +111,7 @@ class Home extends AdminController
 		    'theme/slick.min.js',
             'theme/frontend.min.js',
             'theme/scroll-smooth.js',
+            'theme/custom.js',
 		    //'theme/waypoints.min.js',
 
 		    'theme/initMap.js',
