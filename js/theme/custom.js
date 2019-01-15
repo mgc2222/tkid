@@ -51,7 +51,7 @@ $(document).ready(function($) {
         animation_speed:'normal',
         //overlay_gallery: false,
         theme: 'light_rounded',
-        //social_tools: false
+        social_tools: false
     });
 
 
