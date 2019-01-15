@@ -49,8 +49,9 @@ $(document).ready(function($) {
 
     $(".gallery-item a[data-rel='prettyPhoto[gallery]']").prettyPhoto({
         animation_speed:'normal',
-        overlay_gallery: false,
-        social_tools: false
+        //overlay_gallery: false,
+        theme: 'light_rounded',
+        //social_tools: false
     });
 
 
