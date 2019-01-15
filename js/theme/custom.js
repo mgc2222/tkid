@@ -47,12 +47,12 @@ $(document).ready(function($) {
         }
     });
 
-    $(".gallery-item a[data-rel='prettyPhoto[gallery]']").prettyPhoto({
+   /* $(".gallery-item a[data-rel='prettyPhoto[gallery]']").prettyPhoto({
         animation_speed:'normal',
         overlay_gallery: true,
-        theme: 'dark_rounded',
+        //theme: 'light_rounded',
         social_tools: false
     });
-
+*/
 
 });
