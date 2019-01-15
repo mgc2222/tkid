@@ -65,7 +65,7 @@
                                                 ?>
                                                             <figure class='gallery-item'>
                                                                 <div class='gallery-icon landscape'>
-                                                                    <a href='<?php echo $row->imagePath /*$row->thumb_gallery*/?>' data-rel="prettyPhoto[gallery]">
+                                                                    <a href='<?php echo $row->imagePath /*$row->thumb_gallery*/?>'>
                                                                         <img
                                                                             width="300" height="200"
                                                                             src="<?php echo /*$row->imagePath*/ $row->thumb_gallery?>"

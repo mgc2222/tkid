@@ -47,7 +47,7 @@ $(document).ready(function($) {
         }
     });
 
-    $(".gallery-item a[data-rel='prettyPhoto[gallery]']").prettyPhoto({
+    $(".gallery-item a").prettyPhoto({
         animation_speed:'normal',
         overlay_gallery: false,
         //theme: 'light_rounded',
