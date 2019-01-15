@@ -50,7 +50,7 @@ $(document).ready(function($) {
     $(".gallery-item a[data-rel='prettyPhoto[gallery]']").prettyPhoto({
         animation_speed:'normal',
         overlay_gallery: false,
-        //social_tools: false
+        social_tools: false
     });
 
 
