@@ -107,7 +107,7 @@ class Home extends AdminController
 		    'theme/navigation.js',
 		    //'theme/skip-link-focus-fix.js',
 		    'theme/jquery.prettyPhoto.min.js',
-		    'theme/jquery.prettyPhoto.init.min.js',
+		    'theme/jquery.prettyPhoto.init.js',
 		    'theme/slick.min.js',
             'theme/frontend.min.js',
             'theme/scroll-smooth.js',
