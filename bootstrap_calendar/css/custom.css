@@ -36,6 +36,7 @@
     background: #fcf4a8;
     opacity: 1;
     white-space: pre-line;
+    text-align: justify;
 }
 .popover{
     max-width: 600px;
