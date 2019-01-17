@@ -44,8 +44,8 @@
                 '<div class="pp_overlay"></div>';
             var gallery_markup =
                 '<div class="pp_gallery">' +
-                '   <a href="#" class="pp_arrow_previous">Previous</a>' +
-                '   <a href="#" class="pp_arrow_next">Next</a>' +
+                //'   <a href="#" class="pp_arrow_previous">Previous</a>' +
+                //'   <a href="#" class="pp_arrow_next">Next</a>' +
                 '</div>';
 
             a("a.zoom").prettyPhoto( {
