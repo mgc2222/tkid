@@ -28,8 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `events`
 --
 
-CREATE TABLE `events` (
-  `id` int(10) UNSIGNED NOT NULL,
+CREATE TABLE `events` (10
   `url_key` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
   `title` varchar(250) CHARACTER SET utf8 NOT NULL,
   `description` text CHARACTER SET utf8,
@@ -39,8 +38,8 @@ CREATE TABLE `events` (
   `event_type_id` int(10) UNSIGNED NOT NULL,
   `event_id` tinyint(10) DEFAULT NULL,
   `event_css_class_id` tinyint(3) UNSIGNED DEFAULT NULL,
-  `event_start_unix_milliseconds` int(10) UNSIGNED NOT NULL,
-  `event_end_unix_miliseconds` int(10) UNSIGNED DEFAULT NULL
+  `event_start_unix_milliseconds` bigint(13) UNSIGNED NOT NULL,
+  `event_end_unix_miliseconds` bigint(13) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -59,13 +58,13 @@ CREATE TABLE `event_css_classes` (
 -- Dumping data for table `event_css_classes`
 --
 
-INSERT INTO `event_css_classes` (`id`, `name`, `color_hex_code`) VALUES
-(1, 'day-highlight dh-event-important', '#fae3e3'),
-(2, 'day-highlight dh-event-success', '#caffca'),
-(3, 'day-highlight dh-event-warning', '#fdf1ba'),
-(4, 'day-highlight dh-event-info', '#d1e8ff'),
-(5, 'day-highlight dh-event-special', '#ffe6ff'),
-(6, 'day-highlight dh-event-inverse', '#c1c1c1');
+INSERT INTO `event_css_classes` (`id`, `name`) VALUES
+(1, 'event-important'),
+(2, 'event-success'),
+(3, 'event-warning'),
+(4, 'event-info'),
+(5, 'event-special'),
+(6, 'event-inverse');
 
 -- --------------------------------------------------------
 
