@@ -6,6 +6,7 @@ class AdminController extends AbstractController
 	var $webpage;
 	var $menu;
 	var $trans;
+	var $transJson;
 	var $arrLoadedClasses;
 	var $languageId; // user selected language id
 	var $defaultLanguageId; // default language id
@@ -183,6 +184,7 @@ class AdminController extends AbstractController
 	{
 		require_once(_APPLICATION_FOLDER.'langs/'.$langId.'/pages.php');
 		$this->trans = $trans;
+		$this->transJson = json_decode(file_get_contents(_APPLICATION_FOLDER.'langs/'.$langId.'/pages.json'),true, JSON_UNESCAPED_UNICODE);
 	}
 	
 	function GetSelectedLanguage()

@@ -163,7 +163,7 @@ class Home extends AdminController
     	else{
     		$this->FormatRow($data->productCategories, $categoriesMap);
     	}*/
-		//echo '<pre>'; print_r($data); echo '</pre>'; die;
+		//echo '<pre>'; print_r($this->transJson); echo '</pre>'; die;
 
 		$data->PageTitle = $this->webpage->PageTitle;
 		
