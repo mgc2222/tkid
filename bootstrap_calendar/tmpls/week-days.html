@@ -1,10 +1,10 @@
 <% _.each(events, function(event){ %>
 	<% if (event.status > 0) { %>
 	<div class="cal-row-fluid">
-		<div title="<%= event.dayStart %> <%= cal.locale['ms' + event.monthStart] %> <%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> - <%= (event.dayStart < event.dayEnd) ? event.dayEnd +' '+ cal.locale['ms' + event.monthStart] + ' '+event.end_hour : (event.end_hour !='NaN:NaN') ? event.end_hour : '' %> <%= event.title %>"
+		<div title="<%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> - <%= (event.dayStart < event.dayEnd) ? event.end_hour : (event.end_hour !='NaN:NaN') ? event.end_hour : '' %> <%= event.title %>"
 			 data-toggle="popover"
 			 data-content="<%= (event.short_description)? event.short_description : event.description %>"
-			 class="calendar-event cal-cell<%= event.days%> cal-offset<%= event.start_day %> day-highlight dh-<%= event['class'] %>"
+			 class="calendar-event text-center cal-cell<%= event.days%> cal-offset<%= event.start_day %> day-highlight dh-<%= event['class'] %>"
 			 data-event-class="<%= event['class'] %>">
 			<div class="cal-hours" ><%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> <%= (event.start_hour !='NaN:NaN' && event.end_hour !='NaN:NaN') ? '- '+event.end_hour : '' %> </div>
 			<% if (event.url) { %>

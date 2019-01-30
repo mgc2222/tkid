@@ -981,7 +981,7 @@ if(!String.prototype.formatNum) {
                     }
                     $.ajax({
                         url: buildEventsUrl(source, params),
-                        data:JSON.stringify({ ajaxAction: 'GetEvents', ajaxDataFrom: params.from, ajaxDataTo: params.to }),
+                        data:JSON.stringify({ ajaxAction: 'GetEvents', ajaxDataFrom: parseInt(params.from)-(1000 * 60 * 60 * 24 * 31), ajaxDataTo: params.to }), // start with one month early to get events that last max one month
                         dataType: 'json',
                         contentType: "application/json; charset=utf-8",
                         type: 'POST',
