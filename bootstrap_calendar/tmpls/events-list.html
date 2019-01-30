@@ -8,7 +8,7 @@
 						<a href="<%= event.url %>"
 							data-event-id="<%= event.id %>"
 							data-event-class="<%= event['class'] %>"
-							title="<%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> - <%= (event.dayStart < event.dayEnd) ? event.end_hour : (event.end_hour !='NaN:NaN') ? event.end_hour : '' %> <%= event.title %>"
+							title="<%= (event.start_hour) ? event.start_hour : '' %> - <%= (event.end_hour) ? event.end_hour : '' %> <%= event.title %>"
 							data-toggle="popover"
 							data-content="<%= (event.short_description)? event.short_description : event.description %>"
 							class="calendar-event event-item">
@@ -19,7 +19,7 @@
 						<a role="button"
 						   data-event-id="<%= event.id %>"
 						   data-event-class="<%= event['class'] %>"
-						   title="<%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> - <%= (event.dayStart < event.dayEnd) ? event.end_hour : (event.end_hour !='NaN:NaN') ? event.end_hour : '' %> <%= event.title %>"
+						   title="<%= (event.start_hour) ? event.start_hour : '' %> - <%= (event.end_hour) ? event.end_hour : '' %> <%= event.title %>"
 						   data-toggle="popover"
 						   data-content="<%= (event.short_description)? event.short_description : event.description %>"
 						   class="calendar-event event-item">

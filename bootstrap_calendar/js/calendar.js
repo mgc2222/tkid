@@ -536,15 +536,17 @@ if(!String.prototype.formatNum) {
             e.start_hour = $self._format_time(s);
             e.end_hour = $self._format_time(f);
 
-            if(e.start < start.getTime()) {
+            /*if(e.start < start.getTime()) {
                 warn(1);
                 e.start_hour = s.getDate() + ' ' + $self.locale['ms' + s.getMonth()] + ' ' + e.start_hour;
-            }
+            }*/
+            e.start_hour = (s.getDate()) ? s.getDate() + ' ' + $self.locale['ms' + s.getMonth()] + ' ' + e.start_hour : '';
 
-            if(e.end > end.getTime()) {
+            /*if(e.end > end.getTime()) {
                 warn(1);
                 e.end_hour = f.getDate() + ' ' + $self.locale['ms' + f.getMonth()] + ' ' + e.end_hour;
-            }
+            }*/
+            e.end_hour = (f.getDate()) ? f.getDate() + ' ' + $self.locale['ms' + f.getMonth()] + ' ' + e.end_hour : '';
 
             if(!$self.options.show_events_which_fits_time) {
                 if(e.start <= start.getTime() && e.end >= end.getTime()) {

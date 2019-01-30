@@ -10,14 +10,14 @@
 						data-event-class="<%= event['class'] %>"
 						class="pull-left event <%= event['class'] %> event<%= event.id %>"
 						data-toggle="tooltip"
-					   title="<%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> - <%= (event.dayStart < event.dayEnd) ? event.end_hour : (event.end_hour !='NaN:NaN') ? event.end_hour : '' %> <%= event.title %>">
+					   title="<%= (event.start_hour) ? event.start_hour : '' %> - <%= (event.end_hour) ? event.end_hour : '' %> <%= event.title %>">
 					</a>
 				<% } else {%>
 					<a role="button" data-event-id="<%= event.id %>"
 					   data-event-class="<%= event['class'] %>"
 					   class="pull-left event <%= event['class'] %> event<%= event.id %>"
 					   data-toggle="tooltip"
-					   title="<%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> - <%= (event.dayStart < event.dayEnd) ? event.end_hour : (event.end_hour !='NaN:NaN') ? event.end_hour : '' %> <%= event.title %>">
+					   title="<%= (event.start_hour) ? event.start_hour : '' %> - <%= (event.end_hour) ? event.end_hour : '' %> <%= event.title %>">
 					</a>
 				<% } %>
 			<% } %>

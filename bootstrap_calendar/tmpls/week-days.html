@@ -1,12 +1,12 @@
 <% _.each(events, function(event){ %>
 	<% if (event.status > 0) { %>
 	<div class="cal-row-fluid">
-		<div title="<%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> - <%= (event.dayStart < event.dayEnd) ? event.end_hour : (event.end_hour !='NaN:NaN') ? event.end_hour : '' %> <%= event.title %>"
+		<div title="<%= (event.start_hour) ? event.start_hour : '' %> - <%= (event.end_hour) ? event.end_hour : '' %> <%= event.title %>"
 			 data-toggle="popover"
 			 data-content="<%= (event.short_description)? event.short_description : event.description %>"
 			 class="calendar-event text-center cal-cell<%= event.days%> cal-offset<%= event.start_day %> day-highlight dh-<%= event['class'] %>"
 			 data-event-class="<%= event['class'] %>">
-			<div class="cal-hours" ><%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> <%= (event.start_hour !='NaN:NaN' && event.end_hour !='NaN:NaN') ? '- '+event.end_hour : '' %> </div>
+			<div class="cal-hours" ><%= (event.start_hour) ? event.start_hour : '' %> <%= (event.end_hour) ? '- '+event.end_hour : '' %> </div>
 			<% if (event.url) { %>
 				<a href="<%= event.url %>"
 				   data-event-id="<%= event.id %>"

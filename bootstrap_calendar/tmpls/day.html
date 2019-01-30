@@ -34,7 +34,7 @@
 						 data-toggle="popover"
 						 data-content="<%= (event.short_description)? event.short_description : event.description %>"
 						 class="calendar-event day-highlight dh-<%= event['class'] %>">
-						<span class="cal-hours pull-right"><%= (event.end_hour !='NaN:NaN') ? event.end_hour : '' %></span>
+						<span class="cal-hours pull-right"><%= (event.end_hour) ? event.end_hour : '' %></span>
 						<% if (event.url) { %>
 							<a href="<%= event.url %>" data-event-id="<%= event.id %>"
 							   data-event-class="<%= event['class'] %>" class="event-item">
@@ -69,7 +69,7 @@
 				 data-content="<%= (event.short_description)? event.short_description : event.description %>"
 				 class="calendar-event pull-left day-event day-highlight dh-<%= event['class'] %>"
 				 style="margin-top: <%= (event.top * 30) %>px; /*height: <%= (event.lines * 30) %>px*/">
-				<span class="cal-hours"><%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %> <%= (event.start_hour !='NaN:NaN' && event.end_hour !='NaN:NaN') ? '- '+event.end_hour : '' %> </span>
+				<span class="cal-hours"><%= (event.start_hour) ? event.start_hour : '' %> <%= (event.end_hour) ? '- '+event.end_hour : '' %> </span>
 				<% if (event.url) { %>
 					<a href="<%= event.url %>" data-event-id="<%= event.id %>"
 					   data-event-class="<%= event['class'] %>" class="event-item">
@@ -82,7 +82,7 @@
 			</div>
 		<% }); %>
 	</div>
-	<% if(after_time ==='NaN:NaN') {%>
+	<% if(after_time.length) {%>
 	<div class="row-fluid clearfix cal-day-hour">
 		<div class="span1 col-xs-3"><b><%= cal.locale.after_time %></b></div>
 		<div class="span11 col-xs-9">
@@ -91,7 +91,7 @@
 				 data-toggle="popover"
 				 data-content="<%= (event.short_description)? event.short_description : event.description %>"
 				 class="calendar-event day-highlight dh-<%= event['class'] %>">
-				<span class="cal-hours"><%= (event.start_hour !='NaN:NaN') ? event.start_hour : '' %></span>
+				<span class="cal-hours"><%= (event.start_hour) ? event.start_hour : '' %></span>
 				<% if (event.url) { %>
 					<a href="<%= event.url %>" data-event-id="<%= event.id %>"
 					   data-event-class="<%= event['class'] %>" class="event-item">
