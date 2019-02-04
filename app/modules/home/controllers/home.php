@@ -116,7 +116,7 @@ class Home extends AdminController
 
             'theme/initMap.js',
             'theme/google-map-init.js',
-            'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->languageAbb.'&callback=initMap',
+            'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->language->abbreviation.'&callback=initMap',
             //'lib/validator/jquery.validate.min.js',
             //'lib/wrappers/validator/validator.js',
             //'lib/toastr/toastr.min.js',
@@ -126,7 +126,7 @@ class Home extends AdminController
         $this->webpage->SearchBlock = $this->GetGeneralBlockPath('search_block');
         $this->webpage->PageDescription = $this->trans['meta.description'];
         $this->webpage->PageKeywords = $this->trans['meta.keywords'];
-        $this->webpage->FormAction = 'change_language';
+        $this->webpage->FormAction = '';
         $this->webpage->ScriptsHeader = array(
             'lib/cookieconsent/cookieconsent.min.js',
             'theme/cookie-consent-init.js');
@@ -165,6 +165,8 @@ class Home extends AdminController
         }*/
         //echo '<pre>'; print_r($this->transJson); echo '</pre>'; die;
 
+        //echo'<pre>';print_r($this->webpage);echo'</pre>';die;
+        //echo'<pre>';print_r($this);echo'</pre>';die;
         $data->PageTitle = $this->webpage->PageTitle;
 
         $this->webpage->AppendQueryParams($this->webpage->PageUrl);

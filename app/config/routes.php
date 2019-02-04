@@ -3,7 +3,7 @@
 	$routes['ajax'] = 'ajax/ajax/HandleRequest';
 	
 	$routes[''] = 'home/home/GetViewData';
-	$routes['change_language'] = 'languages/change_language/SetSelectedLanguage';
+	//$routes['change_language'] = 'languages/languages/SetSelectedLanguage';
 	$routes['tmpls/month.html'] = 'calendar/calendar/GetMonthTemplate';
 	$routes['tmpls/day.html'] = 'calendar/calendar/GetDayTemplate';
 	$routes['tmpls/month-day.html'] = 'calendar/calendar/GetMonthDayTemplate';

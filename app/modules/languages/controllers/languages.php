@@ -2,6 +2,8 @@
 class Languages extends AdminController
 {
 	var $languagesModel;
+	var $translationPrefix;
+	var $pageId;
 	function __construct()
 	{
 		parent::__construct();
@@ -199,6 +201,6 @@ class Languages extends AdminController
 				$this->webpage->RedirectPostToGet($this->webpage->PageUrl, 'sys_Action', 'SortColumn', array('hidSortColumn_'.$this->pageId), array('sc'));
 			break;
 		}
-	}	
+	}
 }
 ?>

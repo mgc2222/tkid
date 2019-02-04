@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php echo $webpage->languageAbb?>">
+<html lang="<?php echo $webpage->language->abbreviation?>">
 <?php include(_APPLICATION_FOLDER.'blocks/html_head_block.php'); ?>
 <body class="<?php echo $webpage->BodyClasses?>">
 <noscript><div class="talign-center"><strong><?php echo $trans['javascript.disabled_message'];?></strong></div></noscript>

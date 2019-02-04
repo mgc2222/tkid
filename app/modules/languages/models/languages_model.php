@@ -43,8 +43,8 @@ class LanguagesModel extends AbstractModel
         if (isset($dataSearch->abbreviationIso) && $dataSearch->abbreviationIso != '')
             $cond .= " AND abbreviation_iso = {$dataSearch->abbreviationIso}";
 
-        if (isset($dataSearch->id) && $dataSearch->id != '')
-            $cond .= " AND id IN ({$dataSearch->id})";
+        if (isset($dataSearch->languageId) && $dataSearch->languageId != '')
+            $cond .= " AND id IN ({$dataSearch->languageId})";
         return $cond;
     }
 

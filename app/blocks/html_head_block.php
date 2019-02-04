@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=yes" >
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="alternate" hreflang="<?php echo $webpage->languageAbb?>" href="<?php echo _SITE_URL.$webpage->PageRoute?>" />
+    <link rel="alternate" hreflang="<?php echo $webpage->language->abbreviation?>" href="<?php echo _SITE_URL.$webpage->PageRoute?>" />
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png" />

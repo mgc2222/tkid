@@ -15,11 +15,11 @@
         <?php /*if(false){*/?>
             <li id="translate-menu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ">
                 <span id="translate-text"><i class="fa fa-language"></i> <?php echo $trans['navigation.select_language'];?></span>
-                <?php if($webpage->languageDdl){
+                <?php if($webpage->languagesDdl){
                 ?>
                 <ul class="sub-menu" style="width: 100%;margin: 0;">
                 <?php
-                    foreach ($webpage->languageDdl as $lang){
+                    foreach ($webpage->languagesDdl as $lang){
                     ?>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
                             <button type="submit" style="width:100%;text-transform: none;" value="<?php echo $lang->id;?>" name="language"><?php echo $lang->abbreviation_iso;?></button>
