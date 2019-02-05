@@ -18,7 +18,8 @@
                                     <?php echo $trans['location.section_title'].':';?>
                                 </h2>
                                 <h6 class="elementor-heading-title talign-center">
-                                    <?php echo $trans['location.section_content'];?>
+                                    <?php $arrContentContact = (isset($transJson['category_id_'.$dataView->categoryContentContactId])) ? $transJson['category_id_'.$dataView->categoryContentContactId] : [] ;?>
+                                    <?php echo (isset($arrContentContact['html'])) ? $arrContentContact['html'] : '';?>
                                 </h6>
                             </div>
                         </div>

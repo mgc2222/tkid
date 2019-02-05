@@ -25,6 +25,7 @@ $auth = (method_exists($ctl, 'GetAuthObject')) ? $ctl->GetAuthObject(): '';
 $menu = (method_exists($ctl, 'GetMenuObject')) ? $ctl->GetMenuObject(): '';
 $webpage = (method_exists($ctl, 'GetWebPageObject')) ? $ctl->GetWebPageObject(): '';
 $trans = (method_exists($ctl, 'GetTranslation')) ? $ctl->GetTranslation(): '';
+$transJson = (method_exists($ctl, 'GetTranslation')) ? $ctl->GetTranslationJson(): '';
 $dataView = $result->data;
 
 if (isset($webpage->PageLayout)){

@@ -2,6 +2,7 @@
 class Home extends AdminController
 {
     private $homeModel;
+    private $categoriesModel;
 
     function __construct()
     {
@@ -9,7 +10,7 @@ class Home extends AdminController
         $this->module = 'home';
         //$this->Auth();
         $this->homeModel = $this->LoadModel('app_pictures', 'pictures');
-
+        $this->categoriesModel = $this->LoadModel('categories', 'categories');
         $basePath = $this->GetBasePath();
         $appCategoriesPath = $basePath._APPLICATION_FOLDER.'lib/app_categories/app_categories.php';
         $categoriesMapPath = $basePath.'system/lib/dbutils/categories_map.php';
@@ -145,28 +146,18 @@ class Home extends AdminController
             'home page-template-default page page-id-20 page-id-10 page-parent wp-custom-logo site_color_white foliageblog_header_header1bottomlgpng foliageblog_header_bottom foliageblog_post_option_columns_1 foliageblog_page_option_title_show foliageblog_page_option_width_normal foliageblog_page_option_background_transparent elementor-default elementor-page';
         $appCategories = AppCategories::GetInstance();
         $data = new stdClass();
-        $data->slider = $appCategories->GetAppCategoryDataById(1); //get slider data
+        $data->slider = $appCategories->GetAppCategoryDataById(5); //get slider data
         $appCategories->FormatAppImagesRows($data->slider->rows);
-        $data->gallery = $appCategories->GetAppCategoryDataById(12); //get gallery data
+        $data->gallery = $appCategories->GetAppCategoryDataById(7); //get gallery data
         $appCategories->FormatAppImagesRows($data->gallery->rows);
-        $data->events = $appCategories->GetAppCategoryDataById(5); //get events data
-        $appCategories->FormatAppImagesRows($data->bannerUpcomingEvents->rows);
+        $data->categoryContentAboutId = $this->categoriesModel->GetCategoryIdByCategoryName('Content About');
+        $data->categoryContentEventsId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Events');
+        $data->categoryContentContactId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Contact');
+        //$data->events = $appCategories->GetAppCategoryDataById(5); //get events data
+        //$appCategories->FormatAppImagesRows($data->bannerUpcomingEvents->rows);
         /*$data->bannerTableReservation = $appCategories->GetAppCategoryDataById(6); //get banner table reservation data
         $appCategories->FormatAppImagesRows($data->bannerTableReservation->rows);*/
 
-        /*$categoriesMap = ProductCategoriesMap::GetInstance();
-           $categoriesMap->MapCategories();
-        $data->productCategories = $categoriesMap->GetTreeList(0);
-        if(is_array($data->productCategories)){
-            $this->FormatRows($data->productCategories, $categoriesMap);
-        }
-        else{
-            $this->FormatRow($data->productCategories, $categoriesMap);
-        }*/
-        //echo '<pre>'; print_r($this->transJson); echo '</pre>'; die;
-
-        //echo'<pre>';print_r($this->webpage);echo'</pre>';die;
-        //echo'<pre>';print_r($this);echo'</pre>';die;
         $data->PageTitle = $this->webpage->PageTitle;
 
         $this->webpage->AppendQueryParams($this->webpage->PageUrl);

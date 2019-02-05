@@ -23,7 +23,7 @@ class AdminController extends AbstractController
         $this->webpage = new WebPage();
         $this->languageModel = $this->LoadModel('languages', 'languages');
         $dataSearch = new StdClass();
-        //$dataSearch->languageId = '1,2';
+        $dataSearch->languageId = '1,2';
         $this->defaultLanguage = $this->GetDefaultLanguage();
         $this->SetSelectedLanguage();
         $selectedLanguage = $this->GetSelectedLanguage();
@@ -43,7 +43,8 @@ class AdminController extends AbstractController
 	function GetAuthObject() { return $this->auth; }
 	function GetMenuObject() { return $this->menu; }
 	function GetTranslation() { return $this->trans; }
-	
+	function GetTranslationJson() { return $this->transJson; }
+
 	function Auth()
 	{
 		if (!$this->auth->AuthenticateUser())

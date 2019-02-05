@@ -22,10 +22,8 @@
                         <div data-id="" class="elementor-element elementor-element-mewjspa elementor-widget elementor-widget-text-editor" data-settings="[]" data-element_type="text-editor.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-text-editor elementor-clearfix">
-                                    <h4 class="elementor-heading-title elementor-size-large">
-                                        <?php echo $trans['events.section_content_quote_1'];?>
-                                    </h4>
-                                    <p><?php echo $trans['events.section_content_p_1'];?></p>
+                                    <?php $arrContentEvents = (isset($transJson['category_id_'.$dataView->categoryContentEventsId])) ? $transJson['category_id_'.$dataView->categoryContentEventsId] : [] ;?>
+                                    <?php echo (isset($arrContentEvents['html'])) ? $arrContentEvents['html'] : '';?>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +36,7 @@
                                         <!-- Template Section Start: template-parts/content-summary -->
                                         <!-- foliageblog template: content-summary -->
                             <?php
-                                if ($dataView->events->rows != null)
+                                if (!empty($dataView->events->rows))
                                 {
                                 $index = 1;
                                     foreach ($dataView->events->rows as &$row)
