@@ -135,8 +135,7 @@ class Home extends AdminController
         $dataSearch->languageId = $this->languageId;
 
         $this->webpage->PageHeadTitle = $this->trans[$this->translationPrefix.'.page_title'];
-        $this->webpage->BodyClasses =
-            'home site_color_white foliageblog_header_header1bottomlgpng foliageblog_header_bottom elementor-default elementor-page';
+        $this->webpage->BodyClasses = 'home site_color_white foliageblog_header_header1bottomlgpng foliageblog_header_bottom elementor-default elementor-page';
         $categorySliderId = $this->categoriesModel->GetCategoryIdByCategoryName('Slider');
         $categoryGalleryId = $this->categoriesModel->GetCategoryIdByCategoryName('Gallery');
         //$categoryEventsId = $this->categoriesModel->GetCategoryIdByCategoryName('Events');
