@@ -14,8 +14,8 @@ class Home extends AdminController
         $basePath = $this->GetBasePath();
         $appCategoriesPath = $basePath._APPLICATION_FOLDER.'lib/app_categories/app_categories.php';
         $categoriesMapPath = $basePath.'system/lib/dbutils/categories_map.php';
-        $productCategoriesMapPath = $basePath._APPLICATION_FOLDER.'lib/categories_map/product_categories_map.php';
-        $this->IncludeClasses(array($appCategoriesPath, $categoriesMapPath, $productCategoriesMapPath));
+        //$productCategoriesMapPath = $basePath._APPLICATION_FOLDER.'lib/categories_map/product_categories_map.php';
+        $this->IncludeClasses(array($appCategoriesPath, $categoriesMapPath));
 
         $this->pageId = 'home';
         $this->translationPrefix = 'home';
@@ -134,108 +134,36 @@ class Home extends AdminController
 
         // if search
         //$this->webpage->RedirectPostToGet($this->webpage->PageUrl, 'actionSearch', '1', array('txtSearch'), array('search'));
-
-        $form = new Form();
-
-        $formData = $form->data;
-        $this->ProcessFormAction($formData, $dataSearch);
+        //$form = new Form();
+        //$formData = $form->data;
+        //$this->ProcessFormAction($formData, $dataSearch);
         $dataSearch->languageId = $this->languageId;
 
         $this->webpage->PageHeadTitle = $this->trans[$this->translationPrefix.'.page_title'];
         $this->webpage->BodyClasses =
             'home page-template-default page page-id-20 page-id-10 page-parent wp-custom-logo site_color_white foliageblog_header_header1bottomlgpng foliageblog_header_bottom foliageblog_post_option_columns_1 foliageblog_page_option_title_show foliageblog_page_option_width_normal foliageblog_page_option_background_transparent elementor-default elementor-page';
+        $categorySliderId = $this->categoriesModel->GetCategoryIdByCategoryName('Slider');
+        $categoryGalleryId = $this->categoriesModel->GetCategoryIdByCategoryName('Gallery');
+        //$categoryEventsId = $this->categoriesModel->GetCategoryIdByCategoryName('Events');
         $appCategories = AppCategories::GetInstance();
         $data = new stdClass();
-        $data->slider = $appCategories->GetAppCategoryDataById(5); //get slider data
+
+        $data->slider = $appCategories->GetAppCategoryDataById($categorySliderId); //get slider data
         $appCategories->FormatAppImagesRows($data->slider->rows);
-        $data->gallery = $appCategories->GetAppCategoryDataById(7); //get gallery data
+        $data->gallery = $appCategories->GetAppCategoryDataById($categoryGalleryId); //get gallery data
         $appCategories->FormatAppImagesRows($data->gallery->rows);
+        //$data->events = $appCategories->GetAppCategoryDataById($categoryEventsId); //get events data
+        //$appCategories->FormatAppImagesRows($data->bannerUpcomingEvents->rows);
+
         $data->categoryContentAboutId = $this->categoriesModel->GetCategoryIdByCategoryName('Content About');
         $data->categoryContentEventsId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Events');
         $data->categoryContentContactId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Contact');
-        //$data->events = $appCategories->GetAppCategoryDataById(5); //get events data
-        //$appCategories->FormatAppImagesRows($data->bannerUpcomingEvents->rows);
-        /*$data->bannerTableReservation = $appCategories->GetAppCategoryDataById(6); //get banner table reservation data
-        $appCategories->FormatAppImagesRows($data->bannerTableReservation->rows);*/
+        $data->categoryContentMottoId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Motto');
 
         $data->PageTitle = $this->webpage->PageTitle;
 
         $this->webpage->AppendQueryParams($this->webpage->PageUrl);
         return $data;
-    }
-
-    function ProcessFormAction(&$formData, &$dataSearch)
-    {
-        switch($formData->Action)
-        {
-            case 'Save':
-                $permissionId = $this->homeModel->SaveRecord($formData, false);
-                if ($permissionId != 0)
-                {
-                    Session::SetFlashMessage($this->trans[$this->translationPrefix.'.save_success'], 'success', $this->webpage->PageUrl.'/'.$permissionId);
-                }
-                else
-                    $this->webpage->SetMessage($this->trans['general.save_error'], 'error');
-                break;
-            case 'Delete':
-                $id = (int)$formData->Params;
-                $this->homeModel->DeleteRecord($id);
-                Session::SetFlashMessage($this->trans[$this->translationPrefix.'.delete_success'], 'success', $this->webpage->PageUrl);
-                break;
-            case 'DeleteSelected':
-                $selectedRecords = $this->GetSelectedRecords();
-                if ($selectedRecords != '')
-                {
-                    $this->homeModel->DeleteSelectedRecords($selectedRecords);
-                    Session::SetFlashMessage($this->trans[$this->translationPrefix.'.delete_selected_success'], 'success', $this->webpage->PageUrl);
-                }
-                else $this->webpage->SetMessage($this->trans[$this->translationPrefix.'.error_selected_elements'], 'error');
-                break;
-            case 'SortColumn':
-                $this->webpage->RedirectPostToGet($this->webpage->PageUrl, 'sys_Action', 'SortColumn', array('hidSortColumn_'.$this->pageId), array('sc'));
-                break;
-        }
-    }
-
-    function FormatRows(&$productCategories, $categoriesMap)
-    {
-        $categoryChildrenList = array();
-        //echo'<pre>';print_r($productCategories);echo'</pre>';die;
-        foreach ($productCategories as $key=>&$row)
-        {
-            if ($row->DirectChildrenCount > 0  && $row->display_separate_status > 0 && $row->status > 0)
-                //get only active, separate meniu categories => status = 1 ; display_separate_status = 1
-            {
-                $categoryChildrenList[$key] = $categoriesMap->GetCategoryChildrenList($row->id);
-            }
-            else{
-                if($row->display_separate_status > 0 && $row->status > 0){
-                    //get only active, separate meniu categories => status = 1 ; display_separate_status = 1
-                    $categoryChildrenList[$key] = $row;
-                }
-
-            }
-        }
-        //echo '<pre>'; print_r($productCategories); echo '</pre>'; die;
-        $productCategories = $categoryChildrenList;
-        //echo'<pre>';print_r($productCategories);echo'</pre>';die;
-    }
-
-    function FormatRow(&$productCategories, $categoriesMap)
-    {
-
-        if ($productCategories->display_separate_status == 0){
-            //get only active, separate meniu categories => status = 1 ; display_separate_status = 1
-            return $productCategories=null;
-        }
-        if ($productCategories->DirectChildrenCount > 0 && $productCategories->display_separate_status > 0 && $productCategories->status > 0)
-            //get only active, separate meniu categories => status = 1 ; display_separate_status = 1
-        {
-            $categoryChildrenList = $categoriesMap->GetCategoryChildrenList($productCategories->id);
-            $productCategories = $categoryChildrenList;
-        }
-        return $productCategories;
-        //echo'<pre>';print_r($productCategories);echo'</pre>';die;
     }
 
 

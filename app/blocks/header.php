@@ -19,8 +19,8 @@
         </div>
     </div>
     <div id="motto">
-        <i><?php echo $trans['header.motto_content'];?></i>
-        <?php /*echo '<pre>';print_r($webpage);die();*/?>
+        <?php $arrContentMotto = (isset($transJson['category_id_'.$dataView->categoryContentMottoId])) ? $transJson['category_id_'.$dataView->categoryContentMottoId] : [] ;?>
+        <?php echo (isset($arrContentMotto['html'])) ? $arrContentMotto['html'] : '';?>
     </div>
     <!-- .site-branding -->
     <!-- Template Section End: template-parts/header-logo -->
