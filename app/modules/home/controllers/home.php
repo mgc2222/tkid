@@ -1,7 +1,7 @@
 <?php
 class Home extends AdminController
 {
-    private $homeModel;
+    private $appPicturesModel;
     private $categoriesModel;
 
     function __construct()
@@ -9,13 +9,8 @@ class Home extends AdminController
         parent::__construct();
         $this->module = 'home';
         //$this->Auth();
-        $this->homeModel = $this->LoadModel('app_pictures', 'pictures');
+        $this->appPicturesModel = $this->LoadModel('app_pictures', 'pictures');
         $this->categoriesModel = $this->LoadModel('categories', 'categories');
-        $basePath = $this->GetBasePath();
-        $appCategoriesPath = $basePath._APPLICATION_FOLDER.'lib/app_categories/app_categories.php';
-        $categoriesMapPath = $basePath.'system/lib/dbutils/categories_map.php';
-        //$productCategoriesMapPath = $basePath._APPLICATION_FOLDER.'lib/categories_map/product_categories_map.php';
-        $this->IncludeClasses(array($appCategoriesPath, $categoriesMapPath));
 
         $this->pageId = 'home';
         $this->translationPrefix = 'home';
@@ -141,24 +136,25 @@ class Home extends AdminController
 
         $this->webpage->PageHeadTitle = $this->trans[$this->translationPrefix.'.page_title'];
         $this->webpage->BodyClasses =
-            'home page-template-default page page-id-20 page-id-10 page-parent wp-custom-logo site_color_white foliageblog_header_header1bottomlgpng foliageblog_header_bottom foliageblog_post_option_columns_1 foliageblog_page_option_title_show foliageblog_page_option_width_normal foliageblog_page_option_background_transparent elementor-default elementor-page';
+            'home site_color_white foliageblog_header_header1bottomlgpng foliageblog_header_bottom elementor-default elementor-page';
         $categorySliderId = $this->categoriesModel->GetCategoryIdByCategoryName('Slider');
         $categoryGalleryId = $this->categoriesModel->GetCategoryIdByCategoryName('Gallery');
         //$categoryEventsId = $this->categoriesModel->GetCategoryIdByCategoryName('Events');
-        $appCategories = AppCategories::GetInstance();
         $data = new stdClass();
-
-        $data->slider = $appCategories->GetAppCategoryDataById($categorySliderId); //get slider data
-        $appCategories->FormatAppImagesRows($data->slider->rows);
-        $data->gallery = $appCategories->GetAppCategoryDataById($categoryGalleryId); //get gallery data
-        $appCategories->FormatAppImagesRows($data->gallery->rows);
-        //$data->events = $appCategories->GetAppCategoryDataById($categoryEventsId); //get events data
-        //$appCategories->FormatAppImagesRows($data->bannerUpcomingEvents->rows);
-
         $data->categoryContentAboutId = $this->categoriesModel->GetCategoryIdByCategoryName('Content About');
         $data->categoryContentEventsId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Events');
         $data->categoryContentContactId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Contact');
         $data->categoryContentMottoId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Motto');
+
+        $data->slider = $this->appPicturesModel->GetAppImagesWithMeta($categorySliderId); //get slider data
+        $this->FormatAppImagesRows($data->slider);
+        $data->gallery = $this->appPicturesModel->GetAppImagesWithMeta($categoryGalleryId); //get gallery data
+        $this->FormatAppImagesRows($data->gallery);
+        //echo'<pre>';print_r($data);die();
+        //$data->events = $this->appPicturesModel->GetAppCategoryDataById($categoryEventsId); //get events data
+        //$this->FormatAppImagesRows($data->bannerUpcomingEvents->rows);
+
+
 
         $data->PageTitle = $this->webpage->PageTitle;
 
@@ -166,6 +162,22 @@ class Home extends AdminController
         return $data;
     }
 
+    function FormatAppImagesRows(&$rows)
+    {
+        if ($rows == null) {
+            return;
+        }
+        $filePathThumb = _SITE_ADMIN_URL.'app_thumb/';
+        $filePath = _SITE_ADMIN_URL.'render_app_image/';
 
+        foreach ($rows as &$row) {
+            $row->imagePath = $filePath.$row->app_category_id.'/'.$row->file;
+            $fileNameNoExtension =  substr($row->file,  0, -(strlen($row->extension) + 1));
+            $row->thumb = $filePathThumb.$row->app_category_id.'/'.$fileNameNoExtension.'-120x120.'.$row->extension;
+            $row->thumb_gallery = $filePathThumb.$row->app_category_id.'/'.$fileNameNoExtension.'-300x200.'.$row->extension;
+            $row->thumb_slider = $filePathThumb.$row->app_category_id.'/'.$fileNameNoExtension.'-1080x480.'.$row->extension;
+
+        }
+    }
 }
 ?>

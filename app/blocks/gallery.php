@@ -56,10 +56,10 @@
                                                     <div class="elementor-image-gallery">
                                                         <div id='gallery-1' class='gallery galleryid-16 gallery-columns-3 gallery-size-medium'>
                                                 <?php
-                                                    if ($dataView->gallery->rows != null)
+                                                    if ($dataView->gallery != null)
                                                     {
                                                     $index = 1;
-                                                        foreach ($dataView->gallery->rows as &$row)
+                                                        foreach ($dataView->gallery as &$row)
                                                         {
                                                     //echo $row->image_caption;
                                                 ?>

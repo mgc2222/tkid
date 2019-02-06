@@ -11,11 +11,11 @@
 								<div class="elementor-image-carousel-wrapper elementor-slick-slider" dir="ltr">
 									<div class="elementor-image-carousel slick-image-stretch" data-slider_options='{&quot;slidesToShow&quot;:1,&quot;autoplaySpeed&quot;:5000,&quot;autoplay&quot;:true,&quot;infinite&quot;:true,&quot;pauseOnHover&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:false,&quot;dots&quot;:false,&quot;rtl&quot;:false,&quot;fade&quot;:false}'>
                             <?php 
-                                if ($dataView->slider->rows != null)
+                                if ($dataView->slider != null)
                                 {
                                     $index = 0;
 
-                                    foreach ($dataView->slider->rows as &$row)
+                                    foreach ($dataView->slider as &$row)
                                     {
                                         //echo $row->image_caption;
                             ?>
