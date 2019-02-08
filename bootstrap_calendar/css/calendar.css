@@ -218,7 +218,7 @@
 .cal-week-box .cal-column {
   position: absolute;
   height: 100%;
-  /*z-index: -1;*/
+  z-index: -1;
 }
 .cal-week-box .arrow-before,
 .cal-week-box .arrow-after {
