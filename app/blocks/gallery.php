@@ -6,6 +6,18 @@
  * Time: 4:11 PM
  */
 ?>
+<style>
+    .appear[data-src], .appear[data-bkg], .appear [data-src], .appear [data-bkg] {
+        opacity: 0;
+        -webkit-transition: opacity 1s ease-in;
+        -moz-transition: opacity 1s ease-in;
+        transition: opacity 1s ease-in;
+    }
+    .appeared[data-src], .appeared[data-bkg], .appeared [data-src], .appeared [data-bkg] {
+        opacity: 1;
+    }
+
+</style>
 <article id="post-16" class="post-16 page type-page status-publish hentry">
     <header class="entry-header mhmm">
         <div class="elementor-element elementor-element-jetgboh dtb-heading-line elementor-widget elementor-widget-heading" data-settings="[]" data-element_type="heading.default">
@@ -64,11 +76,15 @@
                                                     //echo $row->image_caption;
                                                 ?>
                                                             <figure class='gallery-item'>
-                                                                <div class='gallery-icon landscape'>
+                                                                <div class='gallery-icon landscape appear'>
                                                                     <a href='<?php echo $row->imagePath /*$row->thumb_gallery*/?>' data-rel="prettyPhoto[gallery]">
                                                                         <img
                                                                             width="300" height="200"
+                                                                        <?php if(false){ ?>
+
                                                                             src="<?php echo /*$row->imagePath*/ $row->thumb_gallery?>"
+                                                                        <?php } ?>
+                                                                            data-src="<?php echo /*$row->imagePath*/ $row->thumb_gallery?>"
                                                                             class="attachment-medium size-medium"
                                                                             alt="<?php echo (!empty($trans[$row->image_alt])) ?$trans[$row->image_alt]:((!empty($row->image_alt))? $row->image_alt :'image_alt') ;?>"
                                                                             title="<?php echo (!empty($trans[$row->image_title])) ? $trans[$row->image_title]:((!empty($row->image_title))? $row->image_title:'image_title') ;?>"

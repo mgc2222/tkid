@@ -116,6 +116,8 @@ class Home extends AdminController
             //'lib/validator/jquery.validate.min.js',
             //'lib/wrappers/validator/validator.js',
             //'lib/toastr/toastr.min.js',
+            'lib/appear/appear.js',
+            'lib/appear/appearlazy.js',
             _JS_APPLICATION_FOLDER.'default_init.js');
         //_JS_APPLICATION_FOLDER.'contact/contact_form.js');
         parent::SetWebpageData($this->pageId, '', '','','');
