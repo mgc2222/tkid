@@ -7,7 +7,7 @@
   /*margin-bottom: 34px;*/
   background-repeat: no-repeat, repeat-x;
   /*background-position: 50% 0, 0 100%;*/
-  background-position:50% 10%;
+  background-position:50% -50%;
   position: relative;
 }
 .home .site-header {
@@ -31,7 +31,7 @@
   margin: 0 auto;
   position: relative;
   font-size: 16px;
-  min-height: 300px;
+  min-height: 410px;
 }
 .site-header .site-branding a {
   display: block;
@@ -58,7 +58,7 @@
   width: 37%;
 }
 .foliageblog_header_header1bottomlgpng .site-header .site-branding {
-  padding: 51px 0 0 0;
+  /*padding: 51px 0 0 0;*/
   text-align: right;
 }
 .site-header .site-branding img {

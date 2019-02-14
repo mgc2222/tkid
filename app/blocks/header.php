@@ -3,17 +3,17 @@
     <!-- Template Section Start: template-parts/header-logo -->
     <div class="site-branding page-section" >
         <!-- Start Logo Area -->
-        <div id="logo">
+        <!--<div id="logo">
             <a href="/" class="custom-logo-link" role="banner" aria-labelledby="section-home">
                 <img width="292" height="131" src="images/content/logo.png" class="custom-logo" alt="the kid logo" />
                 <img width="200" height="156" src="images/content/rocking-horse.png" class="custom-logo-2" alt="rocking-horse banner" />
             </a>
 
-        </div>
+        </div>-->
         <!-- End Logo Area -->
-        <div id="logo-aside">
+        <!--<div id="logo-aside">
             <img src="images/content/dreamcatcher.png" class="custom-logo-3" alt="dreamcatcher banner" />
-        </div>
+        </div>-->
         <div class="site-title">
             <div><h1><a href="/" role="heading">The Kid</a></h1></div>
         </div>
