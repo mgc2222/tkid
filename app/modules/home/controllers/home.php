@@ -78,6 +78,10 @@ class Home extends AdminController
             'bootstrap_calendar/css/custom.css'
         );
 
+        $calendarLanguageJsFile = (file_exists('bootstrap_calendar/js/language/'.str_replace('_', '-', $this->webpage->language->abbreviation_iso).'.js')) ?
+            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/language/'.str_replace('_', '-', $this->webpage->language->abbreviation_iso).'.js' :
+            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/language/ro-RO.js' ;
+
         array_push($this->webpage->ScriptsFooter,
             //'theme/jquery.form.min.js',
             //'lib/bootstrap/bootstrap-2.3.2.min.js',
@@ -93,7 +97,7 @@ class Home extends AdminController
             //_JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/components/moment/moment.min.js',
             _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/components/underscore/underscore-min.js',
             _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/components/jstimezonedetect/jstz.min.js',
-            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/language/ro-RO.js',
+            $calendarLanguageJsFile,
             _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/calendar.js',
             _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/app.js',
 
