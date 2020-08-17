@@ -98,8 +98,8 @@ class Home extends AdminController
             _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/components/underscore/underscore-min.js',
             _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/components/jstimezonedetect/jstz.min.js',
             $calendarLanguageJsFile,
-            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/calendar.js',
-            _JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/app.js',
+            //_JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/calendar.js',
+            //_JS_OUTSIDE_JS_FOLDER.'bootstrap_calendar/js/app.js',
 
 
             //'lib/popper/popper.min.js',
@@ -114,9 +114,9 @@ class Home extends AdminController
             'theme/custom.js',
             //'theme/waypoints.min.js',
 
-            'theme/initMap.js',
-            'theme/google-map-init.js',
-            'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->language->abbreviation.'&callback=initMap',
+            //'theme/initMap.js',
+            //'theme/google-map-init.js',
+            //'https://maps.google.com/maps/api/js?v=3&libraries=places&key='._GOOGLE_API_KEY.'&language='.$this->webpage->language->abbreviation.'&callback=initMap',
             //'lib/validator/jquery.validate.min.js',
             //'lib/wrappers/validator/validator.js',
             //'lib/toastr/toastr.min.js',
