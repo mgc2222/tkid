@@ -25,6 +25,7 @@
                         </div>
                         <div data-id="hpollqw" class="elementor-element elementor-element-hpollqw elementor-widget elementor-widget-dtbaker-google-map p0" data-settings="[]" data-element_type="dtbaker-google-map.default">
                             <div class="elementor-widget-container p0">
+                                <?php if(false){?>
                                 <div id="googlemap1" class="googlemap" style="height:400px;">
                                     <?php if(false){?>
                                     <!--<iframe  style="border:0;height:100%;width:100%" src="https://www.google.com/maps/embed/v1/place?key=<?php /*echo _GOOGLE_API_KEY;*/?>&q=Drumul+Vârful+Berivoiul+Mare+72a+București+Sector+1&zoom=15" allowfullscreen></iframe>-->
@@ -41,6 +42,7 @@
                                 <?php }?>
 
                             </div>
+                                <?php }?>
                         </div>
                     </div>
                 </div>
