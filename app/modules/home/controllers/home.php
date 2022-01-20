@@ -150,6 +150,8 @@ class Home extends AdminController
         $data->categoryContentEventsId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Events');
         $data->categoryContentContactId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Contact');
         $data->categoryContentMottoId = $this->categoriesModel->GetCategoryIdByCategoryName('Content Motto');
+        $data->categoryContentPartiesId = $this->categoriesModel->GetCategoryIdByCategoryName('Petreceri Copii');
+        $data->categoryContentKindergartenId = $this->categoriesModel->GetCategoryIdByCategoryName('Gradinita');
 
         $data->slider = $this->appPicturesModel->GetAppImagesWithMeta($categorySliderId); //get slider data
         $this->FormatAppImagesRows($data->slider);

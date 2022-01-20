@@ -1,6 +1,8 @@
 <?php if (!isset($webpage)) die('Direct access not allowed');  
 include(_APPLICATION_FOLDER.'blocks/slider.php');
 include(_APPLICATION_FOLDER.'blocks/about.php');
+include(_APPLICATION_FOLDER.'blocks/parties.php');
+include(_APPLICATION_FOLDER.'blocks/kindergarten.php');
 //include(_APPLICATION_FOLDER.'blocks/events_calendar.php');
 //include(_APPLICATION_FOLDER.'blocks/calendar.php');
 include(_APPLICATION_FOLDER.'blocks/gallery.php');

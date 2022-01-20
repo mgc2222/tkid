@@ -173,6 +173,8 @@ $trans['gallery.section_title'] = 'Gallery';
 $trans['about.section_title'] = 'Our Story';
 
 $trans['location.section_title'] = 'Our Location';
+$trans['parties.section_title'] = 'Parties';
+$trans['kindergarten.section_title'] = 'Kindergarten';
 
 //	===================================================== //
 //		Front Navigation Menu
@@ -183,6 +185,8 @@ $trans['navigation.home'] = 'Home';
 $trans['navigation.select_language'] = 'Select Language';
 
 $trans['navigation.events'] = 'Events';
+$trans['navigation.parties'] = 'Parties';
+$trans['navigation.kindergarten'] = 'Kindergarten';
 
 $trans['navigation.calendar'] = 'Calendar';
 

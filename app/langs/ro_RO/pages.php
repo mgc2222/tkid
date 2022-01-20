@@ -39,6 +39,8 @@ $trans['gallery.section_title'] = 'Galerie Foto';
 $trans['about.section_title'] = 'Despre noi';
 
 $trans['location.section_title'] = 'Locatia';
+$trans['parties.section_title'] = 'Petreceri Copii';
+$trans['kindergarten.section_title'] = 'Gradinita';
 
 //	===================================================== //
 //		Front Navigation Menu
@@ -49,6 +51,8 @@ $trans['navigation.home'] = 'Acasa';
 $trans['navigation.select_language'] = 'Selecteaza Limba';
 
 $trans['navigation.events'] = 'Evenimente';
+$trans['navigation.parties'] = 'Petreceri Copii';
+$trans['navigation.kindergarten'] = 'Gradinita';
 
 $trans['navigation.calendar'] = 'Calendar';
 

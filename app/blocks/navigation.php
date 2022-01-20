@@ -8,10 +8,13 @@
         </li>
 
         <li id="menu-section-about" class="menu-item menu-item-type-post_type menu-item-object-page"> <a href="#section-about"><?php echo $trans['navigation.about'];?></a> </li>
-        <li id="menu-section-events" class="menu-item menu-item-type-post_type menu-item-object-page"> <a href="#section-events"><?php echo $trans['navigation.events'];?></a> </li>
+<!--        <li id="menu-section-events" class="menu-item menu-item-type-post_type menu-item-object-page"> <a href="#section-events">--><?php //echo $trans['navigation.events'];?><!--</a> </li>-->
+        <li id="menu-section-contact" class="menu-item menu-item-type-post_type menu-item-object-page"> <a href="#section-parties"><?php echo $trans['navigation.parties'];?></a> </li>
+        <li id="menu-section-contact" class="menu-item menu-item-type-post_type menu-item-object-page"> <a href="#section-kindergarten"><?php echo $trans['navigation.kindergarten'];?></a> </li>
         <?php if(false) { ?><li id="menu-section-calendar" class="menu-item menu-item-type-post_type menu-item-object-page"> <a href="#section-calendar"><?php echo $trans['navigation.calendar'];?></a> </li><?php } ?>
         <li id="menu-section-gallery" class="menu-item menu-item-type-post_type menu-item-object-page"> <a href="#section-gallery"><?php echo $trans['navigation.gallery'];?></a> </li>
         <li id="menu-section-contact" class="menu-item menu-item-type-post_type menu-item-object-page"> <a href="#section-contact"><?php echo $trans['navigation.contact'];?></a> </li>
+
         <?php /*if(false){*/?>
             <li id="translate-menu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ">
                 <span id="translate-text"><i class="fa fa-language"></i> <?php echo $trans['navigation.select_language'];?></span>
