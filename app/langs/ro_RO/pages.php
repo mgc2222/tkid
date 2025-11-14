@@ -40,7 +40,7 @@ $trans['about.section_title'] = 'Despre noi';
 
 $trans['location.section_title'] = 'Locatia';
 $trans['parties.section_title'] = 'Petreceri Copii';
-$trans['kindergarten.section_title'] = 'Gradinita';
+$trans['kindergarten.section_title'] = 'Escape Room';
 
 //	===================================================== //
 //		Front Navigation Menu
@@ -52,8 +52,7 @@ $trans['navigation.select_language'] = 'Selecteaza Limba';
 
 $trans['navigation.events'] = 'Evenimente';
 $trans['navigation.parties'] = 'Petreceri Copii';
-$trans['navigation.kindergarten'] = 'Gradinita';
-
+$trans['navigation.kindergarten'] = 'Escape Room';
 $trans['navigation.calendar'] = 'Calendar';
 
 $trans['navigation.about'] = 'Despre noi';

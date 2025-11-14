@@ -174,7 +174,7 @@ $trans['about.section_title'] = 'Our Story';
 
 $trans['location.section_title'] = 'Our Location';
 $trans['parties.section_title'] = 'Parties';
-$trans['kindergarten.section_title'] = 'Kindergarten';
+$trans['kindergarten.section_title'] = 'Escape Room';
 
 //	===================================================== //
 //		Front Navigation Menu
@@ -186,7 +186,7 @@ $trans['navigation.select_language'] = 'Select Language';
 
 $trans['navigation.events'] = 'Events';
 $trans['navigation.parties'] = 'Parties';
-$trans['navigation.kindergarten'] = 'Kindergarten';
+$trans['navigation.kindergarten'] = 'Escape Room';
 
 $trans['navigation.calendar'] = 'Calendar';
 
